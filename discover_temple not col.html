@@ -20,7 +20,7 @@
 
 
     <style>
-        /* navbar ~~~~~~~~~~~~~~~~~~~~~~*/
+        /* navbar */
         .imgtest {
             background-color: blueviolet;
             width: 100px;
@@ -40,55 +40,7 @@
             background-color: darkgreen;
         }
 
-        /* 共用設定 微調 ~~~~~~~~~~~*/
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .textleftpd15 {
-            padding-left: 15px;
-        }
-
-        .textrightpd15 {
-            padding-right: 15px;
-        }
-
-        .borderline_text {
-            justify-content: flex-end;
-        }
-
-        .phidden {
-            visibility: hidden;
-        }
-
-        .font-weight-bold {
-            font-weight: bold;
-        }
-
-        .leftpad {
-            padding: 0 0 0 50px;
-        }
-
-        .midmargin_left50 {
-            margin: 0 0 0 50px;
-        }
-
-        .midmargin_right50 {
-            margin: 0 50px 0 0;
-        }
-
-        .left_pagepd {
-            padding: 40px;
-        }
-
-        .padtop {
-            padding-top: 20px;
-        }
-.padtop_page2all{
-    padding-top: 150px;
-}
-        /* page_1 ~~~~~~~~~~~~~~~~~~~~~~~~*/
+        /* page_1 */
         .discover_temple_page_1 {
             background-color: rgb(216, 216, 216);
         }
@@ -120,10 +72,9 @@
         .discover_temple_page_box1 {
             width: 100%;
             /* height: 75vh; */
-            /* height: 700px; */
+            height: 700px;
             background-color: rgba(67, 65, 192, 0.151);
         }
-
         /* .discover_temple_page_1_down{
             height: 780px;
         } */
@@ -161,55 +112,36 @@
             justify-content: flex-end;
         }
 
-
-
-        .discover_temple_page_1_rightpage_img {
-            padding-top: 30px;
-            height: 350px;
+        .borderline_text {
+            justify-content: flex-end;
         }
 
-        .discover_temple_page_1_rightpage_img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .phidden {
+            visibility: hidden;
         }
 
-        /* page_2~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-        .page2boximg3 {
-            height: 200px;
+        .font-weight-bold {
+            font-weight: bold;
         }
 
-        .page2boximg3 img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .leftpad {
+            padding: 0 0 0 50px;
         }
 
-        .page2boximg3_3 {
-            height: 300px;
+        .midmargin_left {
+            margin: 0 0 0 50px;
+            
         }
 
-        .page2boximg3_3 img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .midmargin_right {
+            margin: 0 50px 0 0;
         }
-
-        .page2boximg2 {
-            width: 33.3%;
-            height: 400px;
+        .calc50{
+            width: calc(50% - 20px);
         }
-
-        .page2boximg2 img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
+        .jusbt{
+            justify-content: space-between;
         }
-
-        .imgpad {
-            padding-bottom: 20px;
-        }
-        
     </style>
 </head>
 
@@ -257,23 +189,23 @@
 
         <!-- page_1_down -->
         <div class="discover_temple_page_1_down ">
-            <div class="container col-10 d-flex flex-wrap discover_temple_page_1_down_pb">
+            <div class="container col-10 d-flex flex-wrap discover_temple_page_1_down_pb jusbt">
                 <!-- 左邊 -->
-                <div class="row no-gutters col p-0   ">
-                    <div class="discover_temple_page_box midmargin_right50">
+                <div class="row no-gutters  p-0  flex-grow-5 calc50 ">
+                    <div class="discover_temple_page_box ">
                         <div class="discover_temple_page_1_title font-weight-bold">
                             <h1>廟宇介紹</h1>
                         </div>
 
-                        <div class="discover_temple_page_1_box d-flex">
-                            <div class="discover_temple_page_1_box_small col-6 p-0">
+                        <div class="discover_temple_page_1_box d-flex jusbt">
+                            <div class="discover_temple_page_1_box_small calc50 p-0">
                                 <div class="discover_temple_page_1_box_img">
                                     <img src="./img/geraldine-ng-qIACfEYEIEc-unsplash (1).jpg">
                                 </div>
                                 <div class="discover_te_page_1empl_box_h3">
                                     <div class="borderline_name d-flex">
                                         <div class="borderline_space">
-                                            <h3>ㅡㅡㅡ</h3>
+                                            <h3>ㅡㅡ</h3>
                                         </div>
                                         <div class="borderline">
                                             <div class="borderline_up"></div>
@@ -292,7 +224,7 @@
                                 </div>
 
                             </div>
-                            <div class="discover_temple_page_1_box_small leftpad ">
+                            <div class="discover_temple_page_1_box_small calc50 ">
                                 <div class="discover_temple_page_1_box_textup ">
                                     <h5 class="font-weight-bold">INTRODUCE | 簡介</h5>
                                     <br>
@@ -302,7 +234,7 @@
                                     <p>本宮位於臺灣臺北市中山區，為行天三宮最晚成立者，行天宮也成為大臺北地區關帝廟的代表，廟門設計上與文廟臺北市孔廟相同，大門均沒有門神圖樣，用欞星門108顆門釘代表108位神靈，即36天罡星、72地煞星。
                                     </p>
                                     <br>
-                                    <br>
+
                                 </div>
                                 <div class="discover_temple_page_1_box_textdown">
                                     <h5 class="font-weight-bold">HISTORY | 歷史</h5>
@@ -311,7 +243,7 @@
                                     </p>
                                     <br>
                                     <p>
-
+                                       
 
                                     </p>
                                 </div>
@@ -327,34 +259,25 @@
                 </div> -->
 
                 <!-- 右邊 -->
-                <div class="row no-gutters col p-0   midpad_left">
-                    <div class="discover_temple_page_box midmargin_left50 left_pagepd">
+                <div class="row no-gutters  p-0  flex-grow-5 midpad_left calc50">
+                    <div class="discover_temple_page_box ">
                         <div class="discover_temple_page_1_rightpage">
-                            <div class="discover_temple_page_1_rightpage_text d-flex">
-                                <div class="discover_temple_page_1_rightpage_left col">
+                            <div class="discover_temple_page_1_rightpage_text d-flex jusbt">
+                                <div class="discover_temple_page_1_rightpage_left calc50 ">
                                     <p> 1945年，三峽「白雞」「海山」二坑煤礦附近瘧疾肆虐，居住於臺北縣樹林的基隆煤礦業主黃欉（玄空師父）為地方請命，遂得關聖帝君聖允，於辦公室闢一靜室，創設「行修堂」。不久，疫情趨緩，遠近信眾無不叩恩感謝。
-                                        <br>
-                                        <br>
-                                        1949年，因「行天堂」場地不夠理想，黃玄空在臺北市九臺街（今林森北路、民權東路交叉口一帶）購入原為宮前町的小型民間信仰簡易齋教鸞堂及附設土地公廟。不久，該鸞堂即吸引不少香客前往參訪，並形成多達
-                                    </p>
+
+                                    1949年，因「行天堂」場地不夠理想，黃玄空在臺北市九臺街（今林森北路、民權東路交叉口一帶）購入原為宮前町的小型民間信仰簡易齋教鸞堂及附設土地公廟。不久，該鸞堂即吸引不少香客前往參訪，並形成多達250戶住家的違章建築[來源請求]。
+                                        </p>
                                 </div>
-                                <div class="discover_temple_page_1_rightpage_right col">
-                                    <p>250戶住家的違章建築[來源請求]。
-                                        <br><br>1956年，黃玄空著手於北投（平埔族嗄嘮別社舊址）、三峽兩地整建以祭祀關公為主的民間信仰廟宇，即北投忠義廟與三峽行修宮。行天宮落成後，由黃欉所主導興建的三座廟宇合稱為「行天三宮」——新建於臺北市中心的行天宮稱為本宮，其餘兩間為行天宮分宮。
-                                        <br>
-                                        <br>
-                                        1960年代初，黃玄空原本已有將齋教鸞堂原地擴建為廟宇的計畫，不過，該片佔地2,000坪的私人用地，
+                                <div class="discover_temple_page_1_rightpage_right calc50 ">
+                                    <p>基隆煤礦業主黃欉（玄空師父）為地方請命，遂得關聖帝君聖允，於辦公室闢一靜室，創設「行修堂」。不久，疫情趨緩，遠近信眾無不叩恩感謝。
 
-
-                                        <!-- 
-                                        1960年代初，黃玄空原本已有將齋教鸞堂原地擴建為廟宇的計畫，不過，該片佔地2,000坪的私人用地，在教育部開始推動九年國民教育後，被改劃為國民中學預定用地（現為臺北市立新興國民中學）。經交涉後，臺北市政府採取「以地易地」的方式，讓原地主黃欉以九臺街（今林森北路、民權東路交叉口一帶）的私有地交換當時仍為瑠公圳末梢支流、沼澤的公有地。在取得位於西新庄子，現今民權東路、松江路口東北角的建廟用地後，黃欉商請已有興建多處廟宇經驗的造廟匠師廖石成設計、施工，並於1968年順利完成臺北本宮。 -->
-
-                                    </p>
+                                    1949年，因「行天堂」場地不夠理想，黃玄空在臺北市九臺街（今林森北路、民權東路交叉口一帶）購入原為宮前町的小型民間信仰簡易齋教鸞堂及附設土地公廟。不久，該鸞堂即吸引不少香客前往參訪，並形成多達250戶住家的違章建築[來源請求]。
+                                        </p>
                                 </div>
                             </div>
                             <div class="discover_temple_page_1_rightpage_img">
                                 <!-- 照片 -->
-                                <img src="./img/148734164_2873410199651704_1518161076735561058_n.jpg">
                             </div>
                         </div>
                     </div>
@@ -365,133 +288,28 @@
     </div>
 
 
-    <!-- page_2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="discover_temple_page_2">
-        <div class="discover_temple_page_2_set container d-flex flex-wrap col-10 padtop_page2all">
-            <!-- page_2左邊 -->
-            <div class="discover_temple_page_2_left row no-gutters col p-0">
-
-                <!-- page_2左邊_集合 -->
-                <div class="discover_temple_page_box midmargin_right50 d-flex">
-
-                    <!-- page_2左邊_左邊文字 -->
-                    <div class="discover_temple_page_1_box col-5  p-0">
-
-
-
-                        <div class="discover_temple_page_1_box_small  ">
-                            <div class="discover_temple_page_1_box_textup ">
-                                <br><br>
-
-                                <p>在教育部開始推動九年國民教育後，被改劃為國民中學預定用地（現為臺北市立新興國民中學）。
-                                    <br><br>經交涉後，臺北市政府採取「以地易地」的方式，讓原地主黃欉以九臺街（今林森北路、民權東路交叉口一帶）的私有地交換當時仍為瑠公圳末梢支流、沼澤的公有地。<br><br>在取得位於西新庄子，現今民權東路、松江路口東北角的建廟用地後，黃欉商請已有興建多處廟宇經驗的造廟匠師廖石成設計、施工，並於1968年順利完成臺北本宮。
-                                </p>
-                                <br>
-
-                                <br>
-                                <br>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- page_2左邊_右邊照片 -->
-                    <div class="discover_temple_page_1_box_small col  leftpad ">
-                        <div class="discover_temple_page_2_box_img page2boximg3 imgpad">
-                            <img src="./img/geraldine-ng-qIACfEYEIEc-unsplash (1).jpg">
-                        </div>
-                        <div class="discover_temple_page_2_box_img page2boximg3 imgpad">
-                            <img src="./img/145339854_2867480686911322_1265099753961658071_n.jpg">
-                        </div>
-                        <div class="discover_temple_page_2_box_img  page2boximg3_3">
-                            <img src="./img/1280px-Hsing_Tian_Kong_20121003b.jpg">
-                        </div>
-
-                    </div>
-
-
-
-
-
-                </div>
-
-            </div>
-            <!-- page_2右邊 -->
-            <div class="discover_temple_page_2_right row no-gutters col p-0 ">
-                <div class="discover_temple_page_2_right_set midmargin_left50">
-                    <!-- page_2右邊_上面照片 -->
-                    <div class="discover_temple_page_2_right_img_set d-flex ">
-                        <div class="discover_temple_page_2_right_img_set_img page2boximg2">
-                            <img src="./img/img789.png">
-                        </div>
-                        <div class="discover_temple_page_2_right_img_set_img page2boximg2">
-                            <img src="./img/img123.png">
-                        </div>
-                        <div class="discover_temple_page_2_right_img_set_img page2boximg2">
-                            <img src="./img/img981.png">
-                        </div>
-                    </div>
-
-                    <!-- page_2右邊_下面文字 -->
-                    <div class="discover_temple_page_1_box_textup padtop">
-                        <h5 class="font-weight-bold">architecture | 建築</h5>
-                        <div class="page_2_rigth_down_p col-7 p-0">
-                            <br>
-                            <p>行天宮台北本宮屬於閩南燕尾翹脊式的建築，
-                                其特色在於採用鋼筋混凝土，創造出類似傳統孝廟木造建築的品味。在學界，被公認為台灣光復後所建的廟宇中，傑出的作品之一。
-                            </p>
-                            <br>
-                            <p>
-                                格局舒坦大方，比例均勻優美；特別是屋脊的旮線，弧度適中，在天際中漸次昂揚，透露著空靈的俊秀之氣，彰顯神聖空間氛圍。而結合文史、書法、繪畫、雕刻之美的楹聯、碑誌、壁畫及彩畫，亦甚有可觀之處，更進一步莊嚴道場，也展現出深刻的情境教化。
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
 
 
 
 
 
 
-
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-
-    <!-- page_3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-    <div class="discover_temple_page_3">
-        <div class="discover_temple_page_3_set container">
-            <!-- page_3左邊 -->
-            <div class="row">
-                <div class="discover_temple_page_3_left"></div>
-            </div>
-            <!-- page_3中間 -->
-            <div class="row">
-                <div class="discover_temple_page_3_mid"></div>
-            </div>
-            <!-- page_3右邊 -->
-            <div class="row">
-                <div class="discover_temple_page_3_right"></div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
+    <p>13213EXPLORE / 探索</p>
+    <p>13213</p>
+    <p>13213EXPLORE / 探索</p>
+    <p>13213</p>
+    <p>13213</p>
+    <p>13213</p>
+    <p>13213</p>
+    <p>13213</p>
+    <p>13213</p>
+    <p>13213</p>
+    <p>13213</p>
+    <p>13213</p>
+    <p>13213</p>
+    <p>13213</p>
+    <p>13213</p>
+    <p>13213</p>
     <p>13213</p>
     <p>13213</p>
     <p>13213</p>
