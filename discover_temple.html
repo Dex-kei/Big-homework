@@ -65,31 +65,37 @@
         /* page_1_down */
         .discover_temple_page_box {
             width: 100%;
-            height: 75vh;
+            /* height: 75vh; */
             background-color: rgba(255, 0, 0, 0.267);
         }
 
         .discover_temple_page_box1 {
             width: 100%;
-            height: 75vh;
+            /* height: 75vh; */
+            height: 700px;
             background-color: rgba(67, 65, 192, 0.151);
         }
-
+        /* .discover_temple_page_1_down{
+            height: 780px;
+        } */
         .discover_temple_page_1_down_pb {
             padding-bottom: 60px;
         }
 
         .discover_temple_page_1_box_img img {
             width: 100%;
+            height: 100%;
         }
 
         .discover_temple_page_1_box_img {
-            /* width: calc(50% - 1px); */
+            height: 500px;
         }
 
         .font-weight-bold h1 {
             font-weight: bold;
             padding-bottom: 20px;
+            margin: 0;
+            font-size: 50px;
         }
 
         .borderline_up {
@@ -98,14 +104,12 @@
 
         .borderline_h3 h3 {
             margin: 0;
+            font-weight: bold;
         }
 
         .borderline_name {
             padding-top: 30px;
-        }
-
-        .borderline_space h3 {
-            /* visibility: hidden; */
+            justify-content: flex-end;
         }
 
         .borderline_text {
@@ -114,6 +118,22 @@
 
         .phidden {
             visibility: hidden;
+        }
+
+        .font-weight-bold {
+            font-weight: bold;
+        }
+
+        .leftpad {
+            padding: 0 0 0 50px;
+        }
+
+        .midmargin_left {
+            margin: 0 0 0 50px;
+        }
+
+        .midmargin_right {
+            margin: 0 50px 0 0;
         }
     </style>
 </head>
@@ -149,7 +169,7 @@
     <div class="discover_temple_page_1">
         <!-- page_1_up -->
         <div class="discover_temple_page_1_up   ">
-            <div class="container col-11">
+            <div class="container col-10">
                 <div class="row discover_temple_page_1_up_pd no-gutters">
                     <p>EXPLORE / 探索</p>
                     <img src="./img/right_img.svg">
@@ -162,23 +182,23 @@
 
         <!-- page_1_down -->
         <div class="discover_temple_page_1_down ">
-            <div class="container col-11 d-flex flex-wrap discover_temple_page_1_down_pb">
+            <div class="container col-10 d-flex flex-wrap discover_temple_page_1_down_pb">
                 <!-- 左邊 -->
-                <div class="row no-gutters col p-0  flex-grow-5">
-                    <div class="discover_temple_page_box">
+                <div class="row no-gutters col p-0  flex-grow-5 ">
+                    <div class="discover_temple_page_box midmargin_right">
                         <div class="discover_temple_page_1_title font-weight-bold">
                             <h1>廟宇介紹</h1>
                         </div>
 
                         <div class="discover_temple_page_1_box d-flex">
-                            <div class="discover_temple_page_1_box_small">
+                            <div class="discover_temple_page_1_box_small col-6 p-0">
                                 <div class="discover_temple_page_1_box_img">
                                     <img src="./img/geraldine-ng-qIACfEYEIEc-unsplash (1).jpg">
                                 </div>
                                 <div class="discover_te_page_1empl_box_h3">
                                     <div class="borderline_name d-flex">
                                         <div class="borderline_space">
-                                            <h3>0 0 0 </h3>
+                                            <h3>ㅡㅡㅡ</h3>
                                         </div>
                                         <div class="borderline">
                                             <div class="borderline_up"></div>
@@ -197,21 +217,63 @@
                                 </div>
 
                             </div>
-                            <div class="discover_temple_page_1_box_small">
-                                <div class="imgtest"></div>
+                            <div class="discover_temple_page_1_box_small leftpad ">
+                                <div class="discover_temple_page_1_box_textup ">
+                                    <h5 class="font-weight-bold">INTRODUCE | 簡介</h5>
+                                    <br>
+                                    <p>行天宮，又稱恩主公廟，為主祀關公的臺灣民間信仰廟宇，是全臺知名的關帝廟，由信仰齋教的煤礦主黃玄空創辦。行天宮參訪香客眾多，本宮位於台北市市區，另有兩座分宮。其中，歷史最悠久的是北投分宮
+                                        ，次之是三峽分宮，</p>
+                                    <br>
+                                    <p>本宮位於臺灣臺北市中山區，為行天三宮最晚成立者，行天宮也成為大臺北地區關帝廟的代表，廟門設計上與文廟臺北市孔廟相同，大門均沒有門神圖樣，用欞星門108顆門釘代表108位神靈，即36天罡星、72地煞星。
+                                    </p>
+                                    <br>
+
+                                </div>
+                                <div class="discover_temple_page_1_box_textdown">
+                                    <h5 class="font-weight-bold">HISTORY | 歷史</h5>
+                                    <br>
+                                    <p>1943年，空真子師父（郭得進居士）及師兄弟，於台北市永樂町（今迪化街）一處民宅三樓設立「行天堂」，恭奉關聖帝君。當年，黃玄空師父（本名黃欉，法號「玄空」，1911年－1970年；行天宮方面敬稱其為「玄空師父」）得三兄黃新火居士引介，遂與「行天堂」關聖帝君結緣。
+                                    </p>
+                                    <br>
+                                    <p>
+                                       
+
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
 
                     </div>
                 </div>
                 <!-- 中間 -->
-                <div class="row no-gutters col-1 p-0  flex-grow-1">
+                <!-- <div class="row no-gutters col-1 p-0  flex-grow-1">
                     <div class="discover_temple_page_box1"></div>
-                </div>
+                </div> -->
 
                 <!-- 右邊 -->
-                <div class="row no-gutters col p-0  flex-grow-5">
-                    <div class="discover_temple_page_box"></div>
+                <div class="row no-gutters col p-0  flex-grow-5 midpad_left">
+                    <div class="discover_temple_page_box midmargin_left">
+                        <div class="discover_temple_page_1_rightpage">
+                            <div class="discover_temple_page_1_rightpage_text d-flex">
+                                <div class="discover_temple_page_1_rightpage_left col-6">
+                                    <p> 1945年，三峽「白雞」「海山」二坑煤礦附近瘧疾肆虐，居住於臺北縣樹林的基隆煤礦業主黃欉（玄空師父）為地方請命，遂得關聖帝君聖允，於辦公室闢一靜室，創設「行修堂」。不久，疫情趨緩，遠近信眾無不叩恩感謝。
+
+                                    1949年，因「行天堂」場地不夠理想，黃玄空在臺北市九臺街（今林森北路、民權東路交叉口一帶）購入原為宮前町的小型民間信仰簡易齋教鸞堂及附設土地公廟。不久，該鸞堂即吸引不少香客前往參訪，並形成多達250戶住家的違章建築[來源請求]。
+                                        </p>
+                                </div>
+                                <div class="discover_temple_page_1_rightpage_right col-6">
+                                    <p>基隆煤礦業主黃欉（玄空師父）為地方請命，遂得關聖帝君聖允，於辦公室闢一靜室，創設「行修堂」。不久，疫情趨緩，遠近信眾無不叩恩感謝。
+
+                                    1949年，因「行天堂」場地不夠理想，黃玄空在臺北市九臺街（今林森北路、民權東路交叉口一帶）購入原為宮前町的小型民間信仰簡易齋教鸞堂及附設土地公廟。不久，該鸞堂即吸引不少香客前往參訪，並形成多達250戶住家的違章建築[來源請求]。
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="discover_temple_page_1_rightpage_img">
+                                <!-- 照片 -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
