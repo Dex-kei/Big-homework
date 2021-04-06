@@ -1,5 +1,5 @@
 body {
-    font-family: 'Sitka Display', NSimSun, 'sans-serif';
+    font-family: 'Faustina', serif !important;
     background-image: url(/bcc.png);
 }
 
@@ -29,7 +29,10 @@ p {
     font-weight: normal;
     /* 追加 */
     margin: 0;
-    letter-spacing:4px
+    letter-spacing:4px;
+    font-family: 'Faustina', serif;
+    /* 追加修正 */
+    text-align: justify;
 }
 
 button {
