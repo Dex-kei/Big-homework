@@ -1,6 +1,6 @@
 body {
     font-family: 'Faustina', serif !important;
-    background-image: url(/bcc.png);
+    background-image: url(./img/deco/bcc.png) ;
 }
 
 h2 {
@@ -55,45 +55,55 @@ i {
 }
 
 nav {
-    width: 90%;
-    background-image: url(/bcc.png);
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    background-image: url(./img/deco/bcc.png);
     position: fixed;
     top: 0;
-    right: 5%;
-    border-bottom: 1px solid rgb(165, 165, 165);
     z-index: 99;
-    background-color: #d3d3d3;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navline {
+    width: 80%;
+    height: 1px;
+    background-color: gray;
+    margin: 0 auto;
 }
 
 nav img {
-    height: 100%;
+    height: 80%;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
 
-    nav {
-        /* height: 180px; */
-        padding: 10px 10px 10px 10px;
+    .navbar {
+        height: 100px;
+        padding: 0 5%;
     }
 
-    nav ul {
-        width: 75%;
+    .navbar ul {
+        width: 80%;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
-        font-size: 20px;
+        padding-top: 1%;
     }
 
-    nav li {
+    .navbar li {
         letter-spacing: 3px;
+        font-size: 16px;
     }
 
-    nav .ham {
+    .navbar .ham {
         display: none;
     }
 }
+
+
 
 .btns {
     margin: 300px;
@@ -110,18 +120,18 @@ footer {
     align-items: center;
 }
 
-@media screen and (max-width: 1400px) {
-    nav {
-        height: 100px;
+@media screen and (max-width: 1000px) {
+    .navbar {
+        height: 80px;
         padding: 10px;
         align-items: center;
     }
 
-    nav ul {
+    .navbar ul {
         display: none;
     }
 
-    nav .fa-bars {
+    .navbar .fa-bars {
         color: #4b4b4b;
         font-size: 30px;
     }

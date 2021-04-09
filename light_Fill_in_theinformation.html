@@ -66,15 +66,48 @@
         .borderbottom {
             border-bottom: 1px solid #707070;
         }
-        .padddingbottom150{
+
+        .padddingbottom150 {
             padding-bottom: 150px;
+        }
+
+        .padright0 {
+            padding-right: 0px;
+        }
+
+        .padright40 {
+            padding-right: 40px;
+
+        }
+
+        .vishidden {
+            visibility: hidden;
+        }
+
+        .butomcolor {
+            background-color: #d1d1d1;
         }
     </style>
 </head>
 
 <body>
     <!-- navbar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
+    <!-- <nav>
+        <div class="navbar">
+            請依檔案位置修改logo路徑
+            <img src='./img/logo/logo-color.svg'>
+            <ul>
+                <li>Explore / 探索</li>
+                <li>TRIP / 行旅</li>
+                <li>SERVICE / 線上服務</li>
+                <li>SHOP / 商店</li>
+                <li>CART / 購物車</li>
+                <li>MEMBER / 會員中心</li>
+            </ul>
+            <div class="ham"><i class="fas fa-bars"></i></div>
+        </div>
+        <hr class="navline">
+    </nav> -->
 
     <!-- page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="light_Fill_in_theinformation_page_1">
@@ -298,13 +331,17 @@
                     </div>
                     <!-- page_1 內容_標題 -->
                     <div class="light_Fill_in_theinformation_page_1_title paddingbottom40">
-                        <h3>申請人資料(付款人)</h3>
+                        <h3>祈福者</h3>
+                        <!-- page_1 內容_標題_刪除按鈕 -->
+                        <button class="graycolor">
+                            <p>刪除</p>
+                        </button>
                     </div>
 
 
                     <!-- page_1 內容_祈福者input集合-->
                     <div class="light_Fill_in_theinformation_page_1_inputset borderbottom ">
-                        <!-- page_1 內容_祈福者input_1-->
+                        <!-- page_1 內容_祈福者input_1_姓名-->
                         <div
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *姓名 -->
@@ -317,38 +354,39 @@
                                 aria-describedby="addon-wrapping">
                         </div>
 
-                        <!-- page_1 內容_祈福者input_1-->
+                        <!-- page_1 內容_祈福者input_1_生日-->
                         <div
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *出生日期 -->
-                            <div class="light_Fill_in_theinformation_page_1_input_text col d-flex alignitems">
+                            <div
+                                class="light_Fill_in_theinformation_page_1_input_text col-4 padright0 d-flex alignitems">
                                 <p>*</p>
                                 <p>出生日期</p>
                             </div>
                             <!-- boostarp 下拉選單 -->
-                            <div class="col-10 d-flex alignitems ">
-                                <div class="col p-0">
+                            <div class="col-11 d-flex alignitems p-0">
+                                <div class="col-3 p-0">
                                     <select class="form-control col-11" id="exampleInputTime">
                                         <option value="國曆">國曆</option>
                                         <option value="農曆">農曆</option>
                                     </select>
                                 </div>
-                                <div class="col d-flex alignitems pad00010">
+                                <div class="col-3 d-flex alignitems p-0 ">
                                     <select class="form-control" id="exampleInputTime">
                                         <option value="">西元1994/民83</option>
                                         <option value="">西元1995/民84</option>
                                     </select>
                                     <p>年</p>
                                 </div>
-                                <div class="col d-flex alignitems pad00010">
-                                    <select class="form-control col-8" id="exampleInputTime">
+                                <div class="col-3 d-flex alignitems p-0">
+                                    <select class="form-control col-7" id="exampleInputTime">
                                         <option value="">1</option>
                                         <option value="">12</option>
                                     </select>
                                     <p>月</p>
                                 </div>
-                                <div class="col d-flex alignitems pad00010">
-                                    <select class="form-control col-8" id="exampleInputTime">
+                                <div class="col-3 d-flex alignitems p-0 ">
+                                    <select class="form-control col-7" id="exampleInputTime">
                                         <option value="">1</option>
                                         <option value="">31</option>
                                     </select>
@@ -358,10 +396,58 @@
                         </div>
 
 
+                        <!-- page_1 內容_祈福者input_1_時辰-->
+                        <div
+                            class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
+                            <!-- *時辰 -->
+                            <div
+                                class="light_Fill_in_theinformation_page_1_input_text col-4 padright0 d-flex alignitems">
+                                <p>*</p>
+                                <p>時辰</p>
+                            </div>
+                            <!-- boostarp 下拉選單 -->
+                            <div class="col-11 d-flex alignitems p-0">
+                                <div class="col-3 p-0">
+                                    <select class="form-control col-11" id="exampleInputTime">
+                                        <option value="">吉時</option>
+                                        <option value="">X時</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- page_1 內容_祈福者input_1_性別-->
+                        <div
+                            class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
+                            <!-- *性別 -->
+                            <div class="light_Fill_in_theinformation_page_1_input_text col-4 d-flex">
+                                <p>*</p>
+                                <p>性別</p>
+                            </div>
+                            <!-- boostarp check 改造-->
+                            <div class="light_Fill_in_theinformation_page_1_check d-flex">
+                                <div class="page_1_check d-flex alignitems padright40">
+                                    <input class="page_1_check_input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <p class="form-check-label" for="exampleRadios1">
+                                        男
+                                    </p>
+                                </div>
+                                <div class="page_1_check d-flex alignitems">
+                                    <input class="page_1_check_input" type="radio" name="exampleRadios"
+                                        id="exampleRadios2" value="option2">
+                                    <p class="form-check-label" for="exampleRadios2">
+                                        女
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
 
 
-                        <!-- page_1 內容_祈福者input_1-->
+
+                        <!-- page_1 內容_祈福者input_1_電話-->
                         <div
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *連絡電話 -->
@@ -373,7 +459,8 @@
                             <input type="text" class="form-control col-8" placeholder="請輸入連絡電話" aria-label="請輸入連絡電話"
                                 aria-describedby="addon-wrapping">
                         </div>
-                        <!-- page_1 內容_祈福者input_1-->
+
+                        <!-- page_1 內容_祈福者input_1_地址-->
                         <div
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *地址 -->
@@ -387,21 +474,73 @@
                         </div>
 
                         <!-- 改 -->
-                        <!-- page_1 內容_祈福者input_1-->
                         <div
-                            class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
-                            <!-- *E-mail -->
-                            <div class="light_Fill_in_theinformation_page_1_input_text col d-flex">
-                                <p>*</p>
-                                <p>E-mail</p>
+                            class="light_Fill_in_theinformation_page_1_input_set d-flex col-8 paddingbottom40 marginauto">
+                            <!-- page_1 內容_祈福者input_1_選擇燈種 -->
+                            <div
+                                class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto p-0 ">
+                                <!-- *燈種 -->
+                                <div
+                                    class="light_Fill_in_theinformation_page_1_input_text col-6 padright0 d-flex alignitems">
+                                    <p>*</p>
+                                    <p>選擇燈種</p>
+                                </div>
+                                <!-- boostarp 下拉選單 -->
+                                <div class="col-9 d-flex alignitems p-0">
+                                    <div class="col-5 p-0">
+                                        <select class="form-control col-11" id="exampleInputTime">
+                                            <option value="">光明燈</option>
+                                            <option value="">安太歲</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- boostarp input -->
-                            <input type="text" class="form-control col-8" placeholder="請輸入E-mail" aria-label="請輸入E-mail"
-                                aria-describedby="addon-wrapping">
+
+                            <!-- page_1 內容_祈福者input_1_ 選擇廟宇-->
+                            <div
+                                class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto p-0 flex-wrap">
+                                <!-- *廟宇 -->
+                                <div
+                                    class="light_Fill_in_theinformation_page_1_input_text col-4 padright0 d-flex alignitems">
+                                    <p>*</p>
+                                    <p>選擇廟宇</p>
+                                </div>
+                                <!-- boostarp 下拉選單 -->
+                                <div class="col-3 d-flex alignitems p-0">
+                                    <div class="col p-0">
+                                        <select class="form-control col-11" id="exampleInputTime">
+                                            <option value="">北部</option>
+                                            <option value="">中部</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-5 d-flex alignitems p-0">
+                                    <div class="col p-0">
+                                        <select class="form-control col-11" id="exampleInputTime">
+                                            <option value="">行天宮</option>
+                                            <option value="">屏東慈鳳</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <!-- page_1 內容_按鈕_新增廟宇 -->
+                        <div class="button_add_set d-flex juscsb col-8 marginauto">
+                            <div class="button_add ">
+                                <button class="graycolor butomcolor">
+                                    <p>+ 新增燈種與廟宇</p>
+                                </button>
+                            </div>
+                            <div class="button_add vishidden ">
+                                <button class="graycolor">
+                                    <p>+ 新增燈種與廟宇</p>
+                                </button>
+                            </div>
                         </div>
                     </div>
-
-
 
 
 
