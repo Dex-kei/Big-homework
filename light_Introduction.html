@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>燈種介紹</title>
     <!-- 重置 -->
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <!-- bootstrap 4.6.0 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -22,14 +22,313 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/sample_body.css">
+
+
     <style>
+        /* 共用設定 */
+        .jucc {
+            justify-content: center;
+        }
 
+        .aic {
+            align-items: center;
+        }
 
+        .postrel {
+            position: relative;
+        }
 
+        .postabu {
+            position: absolute;
+        }
+
+        .redcolor {
+            color: #cc543a;
+        }
+
+        .padtop50 {
+            padding-top: 50px;
+
+        }
+
+        .jusbt {
+            justify-content: space-between;
+        }
+
+        .jucsa {
+            justify-content: space-around;
+        }
+
+        .padtop150 {
+            padding-top: 150px;
+        }
+
+        .padbotm80 {
+            padding-bottom: 80px;
+        }
+
+        .padbotm230 {
+            padding-bottom: 230px;
+        }
+
+        .marginleftatuo {
+            margin: 0 0 0 auto;
+        }
+.fontweight{
+    font-weight:bold;
+}
+        /* page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        .light_Introduction_page_1_set {
+            background-image: url(./img/photo/light.jpg);
+            width: 100%;
+            height: 100vh;
+        }
+
+        .light_Introduction_page_1_set img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .widthheight {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .colorwhite {
+            color: #fff;
+            letter-spacing: 10px;
+            text-shadow: 2px 3px 5px black;
+        }
+
+        /* page_2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~*/
+        .light_Introduction_page_2 {
+            background-image: url(./img/deco/bcc.png);
+            width: 100%;
+            height: 100%;
+        }
+
+        .light_Introduction_page_2_img {
+            width: 30%;
+            opacity: 0.4;
+
+        }
+
+        .light_Introduction_page_2_img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .light_Introduction_page_2_light_img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .light_Introduction_page_2_light_img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .padleft {
+            padding-left: 10px;
+        }
+
+        .light_Introduction_page_2_text_img {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+        }
+
+        .light_Introduction_page_2_text_img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .lip {
+            /* 字級可自訂 */
+            /* font-size: 20px; */
+            font-size: 16px;
+            font-weight: normal;
+            /* 追加 */
+            margin: 0;
+            letter-spacing: 4px;
+            font-family: 'Faustina', serif;
+            /* 追加修正 */
+            text-align: justify;
+        }
+
+        .maxwidth1080 {
+            max-width: 1080px;
+        }
     </style>
 </head>
 
 <body>
+    <!-- page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="light_Introduction_page_1">
+        <!-- page_1 set -->
+        <div class="light_Introduction_page_1_set">
+
+            <!-- page_1 標題 -->
+            <div class="light_Introduction_page_1_title widthheight d-flex jucc aic">
+                <h3 class="colorwhite ">EXPLORE | 探索</h3>
+            </div>
+            <!-- page_1 引導箭頭 -->
+            <div class="light_Introduction_page_1_icon"></div>
+        </div>
+
+
+
+    </div>
+    <!-- page_2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="light_Introduction_page_2">
+        <!-- navbar在這邊 -->
+
+
+        <!-- page_2 god_img -->
+        <div class="light_Introduction_page_2_img postabu">
+            <img src="./img/deco/god_Bodhisattva.png">
+        </div>
+        <!-- page_2 set -->
+        <div class="light_Introduction_page_2_set d-flex col-8 marginleftatuo">
+
+            <!-- page_2 右邊集合 -->
+            <div class="light_Introduction_page_2_rightset maxwidth1080 padbotm230">
+                <!-- page_2 右邊 燈種介紹 -->
+                <div class="light_Introduction_page_2_title padtop50 col">
+                    <h3>燈種介紹</h3>
+                </div>
+                <!-- page_2 右邊 燈種選擇 集合 -->
+                <div class="light_Introduction_page_2_lightchoose_set postrel d-flex padtop50 jusbt col padbotm80">
+                    <!-- page_2 右邊 燈圖+燈字 卡 -->
+                    <div class="light_Introduction_page_2_light_card d-flex aic">
+                        <!-- page_2 右邊 燈圖 可用jquery 輪播牆概念替換 點擊!!!! -->
+                        <div class="light_Introduction_page_2_light_img">
+                            <img src="./img/icon/diwali-lamp.svg">
+                        </div>
+                        <!-- page_2 右邊 燈字  光明燈-->
+                        <div class="light_Introduction_page_2_light_light_name padleft">
+                            <h4>光明燈</h4>
+                        </div>
+                    </div>
+
+                    <div class="light_Introduction_page_2_light_card d-flex aic">
+                        <!-- page_2 右邊  燈圖-->
+                        <div class="light_Introduction_page_2_light_img">
+                            <img src="./img/icon/diwali-lamp.svg">
+                        </div>
+                        <!-- page_2 右邊 燈字  文昌燈-->
+                        <div class="light_Introduction_page_2_light_light_name padleft">
+                            <h4>文昌燈</h4>
+                        </div>
+                    </div>
+                    <div class="light_Introduction_page_2_light_card d-flex aic">
+                        <!-- page_2 右邊 燈圖  -->
+                        <div class="light_Introduction_page_2_light_img">
+                            <img src="./img/icon/diwali-lamp.svg">
+                        </div>
+                        <!-- page_2 右邊 燈字  安太歲-->
+                        <div class="light_Introduction_page_2_light_light_name padleft">
+                            <h4>安太歲</h4>
+                        </div>
+                    </div>
+                    <div class="light_Introduction_page_2_light_card d-flex aic">
+                        <!-- page_2 右邊 燈圖  -->
+                        <div class="light_Introduction_page_2_light_img">
+                            <img src="./img/icon/diwali-lamp.svg">
+                        </div>
+                        <!-- page_2 右邊 燈字 藥師燈 -->
+                        <div class="light_Introduction_page_2_light_light_name padleft">
+                            <h4>藥師燈</h4>
+                        </div>
+                    </div>
+                    <div class="light_Introduction_page_2_light_card d-flex aic">
+                        <!-- page_2 右邊 燈圖  -->
+                        <div class="light_Introduction_page_2_light_img">
+                            <img src="./img/icon/diwali-lamp.svg">
+                        </div>
+                        <!-- page_2 右邊 燈字 發財燈 -->
+                        <div class="light_Introduction_page_2_light_light_name padleft">
+                            <h4>發財燈</h4>
+                        </div>
+                    </div>
+                    <div class="light_Introduction_page_2_light_card d-flex aic">
+                        <!-- page_2 右邊 燈圖  -->
+                        <div class="light_Introduction_page_2_light_img">
+                            <img src="./img/icon/diwali-lamp.svg">
+                        </div>
+                        <!-- page_2 右邊 燈字 平安燈 -->
+                        <div class="light_Introduction_page_2_light_light_name padleft">
+                            <h4>平安燈</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="light_Introduction_page_2_text_img">
+                    <img src="./img/deco/red_circleeeeee.svg">
+                </div>
+                <!-- page_2 右邊 燈種功用資訊 -->
+                <div class="light_Introduction_page_2_text_name_set postrel d-flex padtop150 jucsa">
+                    <!-- page_2 右邊 _左邊 -->
+
+                    <div class="light_Introduction_page_2_text_name_left col-6 d-flex jucc aic">
+                        <div class="light_Introduction_page_2_text_name_set">
+                            <div class="light_Introduction_page_2_text_name">
+                                <h4 class="fontweight">光明燈</h4>
+                            </div>
+                            <div class="light_Introduction_page_2_text_function">
+                                <p class="redcolor">祈求元辰光彩、補運助氣</p>
+                                <br>
+                                <p>適用對象：
+                                    <br>
+                                    欲求平安順遂、未犯太歲之民眾。
+                                    <br>
+                                    <br>
+                                    登記費用：每盞燈新台幣 600 元整
+                                    <br>
+                                    點燈附贈：香火袋
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- page_2 右邊 _右邊說明 -->
+                    <div class="light_Introduction_page_2_text_name_right col-5 d-flex jucc aic">
+                        <li class="lip">
+                            燈是元神的象徵，點光明燈即是將姓名、生辰、住址書寫於燈上，拜請神明保佑，以點亮光明來增添元辰光采， 期許為個人補運助氣、增福益壽，避免運途不順、官災、小人等。
+                            光明燈又名消災燈，適用於本命年非犯太歲者；而犯太歲者除了安太歲之外，也可以點光明燈，以祈求身體健康，前程光明。
+                        </li>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- footer 在這邊~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <footer>
+        <p>Copyright© TempleTrip.tw</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

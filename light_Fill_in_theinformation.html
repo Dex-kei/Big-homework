@@ -24,6 +24,22 @@
 
 
     <style>
+/* navbar墊底 */
+.navbar_test_bottom {
+            width: 100%;
+         
+            background-color: rgba(255, 127, 80, 0.226);
+            border-bottom: 1px solid red;
+        }
+
+        .navbar_test_bottom_1 {
+            width: 100%;
+            height: 100px;
+            background-color: darkgreen;
+        }
+
+
+
         .alignitems {
             align-items: center;
         }
@@ -87,14 +103,17 @@
         .butomcolor {
             background-color: #d1d1d1;
         }
+        .padtop100{
+            padding-top: 100px;
+        }
     </style>
 </head>
 
 <body>
     <!-- navbar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- <nav>
+    <nav>
         <div class="navbar">
-            請依檔案位置修改logo路徑
+            <!-- 請依檔案位置修改logo路徑 -->
             <img src='./img/logo/logo-color.svg'>
             <ul>
                 <li>Explore / 探索</li>
@@ -107,10 +126,15 @@
             <div class="ham"><i class="fas fa-bars"></i></div>
         </div>
         <hr class="navline">
-    </nav> -->
+    </nav>
+
+    <div class="navbar_test_bottom">
+        <div class="navbar_test_bottom_1"></div>
+    </div>
+
 
     <!-- page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="light_Fill_in_theinformation_page_1">
+    <div class="light_Fill_in_theinformation_page_1 padtop100">
         <!-- page_1 col-10 -->
         <div class="light_Fill_in_theinformation_page_1_set col-10 container textalign_center">
 

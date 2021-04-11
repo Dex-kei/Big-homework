@@ -14,7 +14,7 @@
     <!-- 動畫 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- 小圖示 -->
-    <script src="https://kit.fontawesome.com/271f30e909.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/271f30e909.js" crossorigin="anonymous"></script> -->
     <!-- 文字 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -29,15 +29,15 @@
 
     <style>
         /* navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-        .imgtest {
+        /* .imgtest {
             background-color: blueviolet;
             width: 100px;
             height: 100px;
-        }
+        } */
 
         .navbar_test_bottom {
             width: 100%;
-            padding: 10px;
+
             background-color: rgba(255, 127, 80, 0.226);
             border-bottom: 1px solid red;
         }
@@ -49,10 +49,6 @@
         }
 
         /* 共用設定 微調 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-        img {
-            width: 100%;
-            height: 100%;
-        }
 
         .textleftpd15 {
             padding-left: 15px;
@@ -111,6 +107,10 @@
             margin: auto;
         }
 
+        .redcolorh5 {
+            color: #cc543a;
+        }
+
         /* page_1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
         .discover_temple_page_1 {
             /* background-color: rgb(216, 216, 216); */
@@ -138,11 +138,7 @@
         .discover_temple_page_box {
             width: 100%;
             /* height: 75vh; */
-            /* background-color: rgba(255, 0, 0, 0.267); */
-        }
-
-        .backgroundgray {
-            background-color: #FFF;
+            background-color: rgba(255, 0, 0, 0.267);
         }
 
         .discover_temple_page_box1 {
@@ -202,7 +198,12 @@
             object-fit: cover;
         }
 
-        /* page_2~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        .discover_temple_page_1_boxgraycolor {
+            width: 100%;
+            background-color: #d6d6d6;
+        }
+
+        /* page_2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
         .discover_temple_page_2 {
             background-image: url(./img/deco/bcc2.png);
         }
@@ -299,10 +300,6 @@
 
 
         /* page_4~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-        .discover_temple_page_4 {
-            background-image: url(./img/deco/bcc2.png);
-        }
-
         iframe {
             width: 100%;
             height: 100%;
@@ -317,22 +314,20 @@
 <body>
     <!-- navbar 是我 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <nav>
-        <!-- 請依檔案位置修改logo路徑 -->
-        <div class="logo_img">
-            <div class="imgtest"></div>
-            <!-- <img src='/img/logo-long.svg'> -->
+        <div class="navbar">
+            <!-- 請依檔案位置修改logo路徑 -->
+            <img src='./img/logo/logo-color.svg'>
+            <ul>
+                <li>Explore / 探索</li>
+                <li>TRIP / 行旅</li>
+                <li>SERVICE / 線上服務</li>
+                <li>SHOP / 商店</li>
+                <li>CART / 購物車</li>
+                <li>MEMBER / 會員中心</li>
+            </ul>
+            <div class="ham"><i class="fas fa-bars"></i></div>
         </div>
-
-
-        <ul>
-            <li>Explore / 探索</li>
-            <li>TRIP / 行旅</li>
-            <li>SERVICE / 線上服務</li>
-            <li>SHOP / 商店</li>
-            <li>CART / 購物車</li>
-            <li>MEMBER / 會員中心</li>
-        </ul>
-        <div class="ham"><i class="fas fa-bars"></i></div>
+        <hr class="navline">
     </nav>
 
     <div class="navbar_test_bottom">
@@ -360,14 +355,14 @@
         <div class="discover_temple_page_1_down ">
             <div class="container col-10 d-flex flex-wrap discover_temple_page_1_down_pb">
                 <!-- 左邊 -->
-                <div class="row no-gutters col-lg p-0   ">
+                <div class="row no-gutters col p-0   ">
                     <div class="discover_temple_page_box midmargin_right50">
                         <div class="discover_temple_page_1_title font-weight-bold">
                             <h1>廟宇介紹</h1>
                         </div>
 
                         <div class="discover_temple_page_1_box d-flex">
-                            <div class="discover_temple_page_1_box_small col-lg-6 col-10 p-0">
+                            <div class="discover_temple_page_1_box_small col-6 p-0">
                                 <div class="discover_temple_page_1_box_img">
                                     <img src="./img/photo/geraldine-ng-qIACfEYEIEc-unsplash (1).jpg">
                                 </div>
@@ -378,10 +373,17 @@
                                             <hr>
                                         </div>
                                         <div class="borderline">
-                                            <div class="borderline_up"></div>
-                                            <div class="borderline_down"></div>
+                                            <div class="borderline_up">
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <hr>
+                                                <hr>
+                                            </div>
+
                                         </div>
                                         <div class="borderline_h3">
+
                                             <h3>行天宮</h3>
                                         </div>
                                     </div>
@@ -396,7 +398,7 @@
                             </div>
                             <div class="discover_temple_page_1_box_small leftpad ">
                                 <div class="discover_temple_page_1_box_textup ">
-                                    <h5 class="font-weight-bold">INTRODUCE | 簡介</h5>
+                                    <h5 class="font-weight-bold redcolorh5">INTRODUCE | 簡介</h5>
                                     <br>
                                     <p>行天宮，又稱恩主公廟，為主祀關公的臺灣民間信仰廟宇，是全臺知名的關帝廟，由信仰齋教的煤礦主黃玄空創辦。行天宮參訪香客眾多，本宮位於台北市市區，另有兩座分宮。其中，歷史最悠久的是北投分宮
                                         ，次之是三峽分宮，</p>
@@ -407,7 +409,7 @@
                                     <br>
                                 </div>
                                 <div class="discover_temple_page_1_box_textdown">
-                                    <h5 class="font-weight-bold">HISTORY | 歷史</h5>
+                                    <h5 class="font-weight-bold redcolorh5">HISTORY | 歷史</h5>
                                     <br>
                                     <p>1943年，空真子師父（郭得進居士）及師兄弟，於台北市永樂町（今迪化街）一處民宅三樓設立「行天堂」，恭奉關聖帝君。當年，黃玄空師父（本名黃欉，法號「玄空」，1911年－1970年；行天宮方面敬稱其為「玄空師父」）得三兄黃新火居士引介，遂與「行天堂」關聖帝君結緣。
                                     </p>
@@ -429,8 +431,9 @@
                 </div> -->
 
                 <!-- 右邊 -->
-                <div class="row no-gutters col-lg p-0   midpad_left">
-                    <div class="discover_temple_page_box midmargin_left50 left_pagepd">
+                <div class="row no-gutters col p-0   midpad_left">
+                    <div
+                        class="discover_temple_page_box midmargin_left50 left_pagepd discover_temple_page_1_boxgraycolor">
                         <div class="discover_temple_page_1_rightpage">
                             <div class="discover_temple_page_1_rightpage_text d-flex">
                                 <div class="discover_temple_page_1_rightpage_left col">
@@ -468,7 +471,7 @@
 
 
     <!-- page_2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="discover_temple_page_2 padbottom150">
+    <div class="discover_temple_page_2">
         <div class="discover_temple_page_2_set container d-flex flex-wrap col-10 padtop_page2all">
             <!-- page_2左邊 -->
             <div class="discover_temple_page_2_left row no-gutters col p-0">
@@ -537,7 +540,7 @@
 
                     <!-- page_2右邊_下面文字 -->
                     <div class="discover_temple_page_1_box_textup padtop">
-                        <h5 class="font-weight-bold">architecture | 建築</h5>
+                        <h5 class="font-weight-bold redcolorh5">architecture | 建築</h5>
                         <div class="page_2_rigth_down_p col-8 p-0 margin000auto">
                             <br>
                             <br>
@@ -570,13 +573,13 @@
 
     <!-- page_3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-    <div class="discover_temple_page_3 padbottom150">
+    <div class="discover_temple_page_3">
         <div class="discover_temple_page_3_set container mixwidth1586 col-10 padtop_page2all">
             <div class="col p-0 d-flex jcsb">
                 <!-- page_3左邊 -->
                 <div class="discover_temple_page_3_left col-3 page3box1pd">
                     <!-- page_3左邊_標題 -->
-                    <div class="discover_temple_page_3_left_title">
+                    <div class="discover_temple_page_3_left_title redcolorh5">
                         <h5>GOD | 神明</h5>
                     </div>
                     <!-- page_3左邊_文字 -->
@@ -620,13 +623,13 @@
                 <div class="discover_temple_page_3_right col-5 page3box3pd potre p-0">
                     <!-- page_3右邊相對定位圖片 -->
                     <div class="discover_temple_page_3_right_img discover_temple_page_3_right_img_potabu">
-                        <img src="./img/deco/red_circleeeeee.svg">
+                        <img src="img/deco/red_circleeeeee.svg">
                     </div>
                     <!-- page_3右邊_文字 -->
                     <div
                         class="discover_temple_page_3_right_text col-6 p-0 discover_temple_page_3_right_text_mg discover_temple_page_3_right_text_potabu">
                         <!-- page_3右邊_文字_標題 -->
-                        <div class="discover_temple_page_3_right_title">
+                        <div class="discover_temple_page_3_right_title redcolorh5">
                             <h5>TRAFFIC | 交通</h5>
                         </div>
                         <!-- page_3右邊_文字_p -->
@@ -650,21 +653,21 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- page_4~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="discover_temple_page_4">
-        <div class="discover_temple_page_4_set col-10 marginauto padtop_page2all padbottom150">
-            <div class="discover_temple_page_4_title">
-                <h5>HOW TO GO</h5>
-                <br>
-            </div>
-            <div class="discover_temple_page_4_map discover_temple_page_4_map_height">
-                <iframe
+
+        <!-- page_4~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- <div class="discover_temple_page_4">
+    <div class="discover_temple_page_4_set col-10 marginauto padtop_page2all padbottom150">
+        <div class="discover_temple_page_4_title">
+            <h5>HOW TO GO</h5>
+            <br>
+        </div>
+        <div class="discover_temple_page_4_map discover_temple_page_4_map_height">
+            <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.7543887261062!2d121.54324114081022!3d25.033478307359474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x952a88ba2894f51!2z6Ie654Gj5LyB6YqAIOW-qeiIiOWIhuihjA!5e0!3m2!1szh-TW!2stw!4v1615386860612!5m2!1szh-TW!2stw"
                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
         </div>
     </div>
+</div> -->
 
 
 
@@ -683,36 +686,35 @@
 
 
 
-    <!-- footer 是我~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <footer>
-        <p>Copyright© TempleTrip.tw</p>
-    </footer>
+        <!-- footer 是我~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <footer>
+            <p>Copyright© TempleTrip.tw</p>
+        </footer>
 
 
-    <!-- Js  相關設定~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- jquery3.5.1 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <!-- bootstrap4.6.0 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+        <!-- Js  相關設定~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- jquery3.5.1 -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <!-- bootstrap4.6.0 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://unpkg.com/moment-lunar@0.0.4/moment-lunar.min.js"></script>
-    <script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="https://unpkg.com/moment-lunar@0.0.4/moment-lunar.min.js"></script>
+        <script>
 
-        const lunarDate = moment().year(2021).month(2).date(24).lunar().format('YYYY-MM-DD');
-        const solarDate = moment().year(2017).month(0).date(1).solar().format('YYYY-MM-DD');
+            const lunarDate = moment().year(2021).month(2).date(24).lunar().format('YYYY-MM-DD');
+            const solarDate = moment().year(2017).month(0).date(1).solar().format('YYYY-MM-DD');
 
-        console.log(lunarDate);
-        console.log(solarDate);
-    </script>
+            console.log(lunarDate);
+            console.log(solarDate);
+        </script>
 
-    <!-- js jq 開始 -->
-
+        <!-- js jq 開始 -->
 
 
 
