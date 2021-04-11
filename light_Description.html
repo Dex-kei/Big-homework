@@ -24,6 +24,22 @@
     <link rel="stylesheet" href="./css/sample_body.css">
 
     <style>
+        /* navbar墊底 */
+        .navbar_test_bottom {
+            width: 100%;
+
+            background-color: rgba(255, 127, 80, 0.226);
+            /* border-bottom: 1px solid red; */
+        }
+
+        .navbar_test_bottom_1 {
+            width: 100%;
+            height: 100px;
+            background-color: darkgreen;
+        }
+
+
+
         /* page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
         /* p 特別設定 */
@@ -31,8 +47,9 @@
             line-height: 2rem;
         }
 
-        img {
-            width: 100%;
+        .light_Description_page_1{
+           
+            background-image: url(./img/deco/bcc.png);
         }
 
         .textalign_center {
@@ -62,9 +79,9 @@
 
         .buttonstyle {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             flex: 0 0 20%;
-            max-width: 20%;
+            max-width: 285px;
             margin: auto;
         }
 
@@ -87,16 +104,47 @@
             bottom: 0;
             width: 50%;
         }
+        .backgroundimg_god img{
+            width: 100%;
+        }
+        .padtop150{
+            padding-top: 150px;
+        }
+        .redcolor {
+            color: #cc543a;
+        }
+        
     </style>
 </head>
 
 <body>
     <!-- navbar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <nav>
+        <div class="navbar">
+            <!-- 請依檔案位置修改logo路徑 -->
+            <img src='./img/logo/logo-color.svg'>
+            <ul>
+                <li>Explore / 探索</li>
+                <li>TRIP / 行旅</li>
+                <li>SERVICE / 線上服務</li>
+                <li>SHOP / 商店</li>
+                <li>CART / 購物車</li>
+                <li>MEMBER / 會員中心</li>
+            </ul>
+            <div class="ham"><i class="fas fa-bars"></i></div>
+        </div>
+        <hr class="navline">
+    </nav>
+
+    <div class="navbar_test_bottom">
+        <div class="navbar_test_bottom_1"></div>
+    </div>
+
 
 
     <!-- page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="light_Description_page_1 position_relative">
-        <div class="light_Description_page_1_set container col-8 ">
+    <div class="light_Description_page_1 position_relative padtop150">
+        <div class="light_Description_page_1_set container  ">
             <!-- page_1文字集合 -->
             <div class="light_Description_page_1_textset">
                 <!-- page_1上面大標題+敘述 -->
@@ -113,24 +161,24 @@
             </div>
             <!-- page_1內文 祈福燈種 -->
             <div class="light_Description_page_1_h5p padding_bottom_rem ">
-                <h5>祈福燈種:</h5>
+                <h5 class="redcolor">祈福燈種:</h5>
                 <p>祈福燈種包括 (1)安太歲、(2)光明燈、(3)文昌燈、(4)拜斗燈、(5)月老姻緣簿、(6)闔家平安斗。</p>
             </div>
             <!-- page_1內文 安奉費用 -->
             <div class="light_Description_page_1_h5p padding_bottom_rem ">
-                <h5>安奉費用:</h5>
+                <h5 class="redcolor">安奉費用:</h5>
                 <p>除闔家平安斗為每組3,600元，其餘燈種每盞燈安奉費用為600元，各項服務特色請參考本網站相關說明。</p>
             </div>
             <!-- page_1內文 付費方式 -->
             <div class="light_Description_page_1_h5p padding_bottom_rem ">
-                <h5>付費方式</h5>
+                <h5 class="redcolor">付費方式:</h5>
                 <p>(1) 線上刷卡(信用卡、銀聯卡、美國運通卡)、(2) 7-ELEVEN門市 ibon代碼繳費、(3) 中國信託紅利兌換、(4) 新光銀行線上轉帳、(5) 全家 FamiPort代碼繳費、(6)
                     橘子支付。</p>
                 <p> ※ 依活動內容不同可選用付費方式將有變動。</p>
             </div>
             <!-- page_1內文 申請流程 -->
             <div class="light_Description_page_1_h5p padding_bottom_rem ">
-                <h5>付費方式</h5>
+                <h5 class="redcolor">申請流程:</h5>
                 <p>依步驟填寫相關資料以供廟方進行資料確認及安奉作業。
                     <br>
                     完成申請作業後，系統即提供一組訂單編號，供信眾查詢用。
@@ -143,7 +191,7 @@
             </div>
             <!-- page_1內文 其他須知 -->
             <div class="light_Description_page_1_h5p padding_bottom_rem ">
-                <h5>其他須知:</h5>
+                <h5 class="redcolor">其他須知:</h5>
                 <p>填寫國曆生辰者將由廟方轉為農曆生辰進行安奉。
                     <br>
                     本年度線上點燈之贈品為平安符，感謝狀及贈品將依申請人所填寫之寄送地址寄送。
@@ -171,7 +219,7 @@
             </div>
 
 
-            <div class="light_Description_page_1_button buttonstyle padding_bottom150">
+            <div class="light_Description_page_1_button buttonstyle padding_bottom150 ">
 
                 <button class="graycolor">
                     <p>不同意</p>

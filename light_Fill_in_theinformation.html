@@ -24,12 +24,12 @@
 
 
     <style>
-/* navbar墊底 */
-.navbar_test_bottom {
+        /* navbar墊底 */
+        .navbar_test_bottom {
             width: 100%;
-         
+
             background-color: rgba(255, 127, 80, 0.226);
-            border-bottom: 1px solid red;
+            /* border-bottom: 1px solid red; */
         }
 
         .navbar_test_bottom_1 {
@@ -38,7 +38,9 @@
             background-color: darkgreen;
         }
 
-
+        .maxwidth992 {
+            max-width: 992px;
+        }
 
         .alignitems {
             align-items: center;
@@ -58,10 +60,18 @@
             color: #cc543a;
         }
 
-        .pad00010 {
-            padding: 0 0 0 10px;
+        .redcolorh5 {
+            color: #cc543a;
         }
 
+        .pad00010 {
+            padding: 0 0 0 10px;
+
+        }
+
+        .opac {
+            opacity: 0;
+        }
 
         .juscsb {
             justify-content: space-between;
@@ -72,7 +82,7 @@
         }
 
         .paddingbottom40 {
-            padding-bottom: 40px;
+            padding-bottom: 35px;
         }
 
         .padddingtop40 {
@@ -103,8 +113,36 @@
         .butomcolor {
             background-color: #d1d1d1;
         }
-        .padtop100{
+
+        .padtop100 {
             padding-top: 100px;
+        }
+
+        .light_Fill_in_theinformation_page_1 {
+            background-image: url(./img/deco/bcc.png);
+            
+        }
+        .postre{
+            position: relative;
+           
+        }
+        .postab{
+            position: absolute;
+        }
+        .padbut{
+            padding: 6px 12px;
+        }
+        .padleft10{
+            padding-left: 10px;
+        }
+        .butflexmargin{
+            display: flex;
+            margin: auto;
+            justify-content: space-evenly;
+            max-width: 400px;
+        }
+        .butmaxwid{
+            max-width: 600px;
         }
     </style>
 </head>
@@ -135,14 +173,14 @@
 
     <!-- page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="light_Fill_in_theinformation_page_1 padtop100">
-        <!-- page_1 col-10 -->
-        <div class="light_Fill_in_theinformation_page_1_set col-10 container textalign_center">
+        <!-- page_1 max-width 992px -->
+        <div class="light_Fill_in_theinformation_page_1_set textalign_center maxwidth992 marginauto">
 
             <!-- page_1 根目錄 -->
             <div class="light_Fill_in_theinformation_page_1_directory"></div>
 
             <!-- page_1 內容 -->
-            <div class="light_Fill_in_theinformation_page_1_text container col-7">
+            <div class="light_Fill_in_theinformation_page_1_text container ">
                 <!-- page_1 內容_燈種介紹 區塊-->
                 <div class="light_Fill_in_theinformation_page_1_text_1 borderbottom">
                     <!-- page_1 內容_標題 -->
@@ -268,12 +306,12 @@
                         <div class="light_Fill_in_theinformation_page_1_text_star_left">
                             <!-- *的 ICON -->
                             <!-- <img src=""> -->
-                            <p class="redtext">*為必填資料</p>
+                            <p class="redcolorh5">*為必填資料</p>
                         </div>
                         <!-- page_1 內容 小提示 同會員資料 -->
                         <div class="light_Fill_in_theinformation_page_1_text_star_right    alignitems d-flex">
                             <input type="checkbox" id="exampleCheck1">
-                            <p class="form-check-label" for="exampleCheck1">同會員資料</p>
+                            <p class="form-check-label padleft10" for="exampleCheck1">同會員資料</p>
                         </div>
                     </div>
 
@@ -289,7 +327,7 @@
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *姓名 -->
                             <div class="light_Fill_in_theinformation_page_1_input_text col d-flex">
-                                <p>*</p>
+                                <p class="redcolorh5">*</p>
                                 <p>姓名</p>
                             </div>
                             <!-- boostarp input -->
@@ -302,7 +340,7 @@
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *連絡電話 -->
                             <div class="light_Fill_in_theinformation_page_1_input_text col d-flex">
-                                <p>*</p>
+                                <p class="redcolorh5">*</p>
                                 <p>連絡電話</p>
                             </div>
                             <!-- boostarp input -->
@@ -314,7 +352,7 @@
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *地址 -->
                             <div class="light_Fill_in_theinformation_page_1_input_text col d-flex">
-                                <p>*</p>
+                                <p class="redcolorh5">*</p>
                                 <p>地址</p>
                             </div>
                             <!-- boostarp input -->
@@ -326,7 +364,7 @@
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *E-mail -->
                             <div class="light_Fill_in_theinformation_page_1_input_text col d-flex">
-                                <p>*</p>
+                                <p class="redcolorh5">*</p>
                                 <p>E-mail</p>
                             </div>
                             <!-- boostarp input -->
@@ -345,21 +383,23 @@
                         <div class="light_Fill_in_theinformation_page_1_text_star_left">
                             <!-- *的 ICON -->
                             <!-- <img src=""> -->
-                            <p class="redtext">*為必填資料</p>
+                            <p class="redcolorh5">*為必填資料</p>
                         </div>
                         <!-- page_1 內容 小提示 同會員資料 -->
                         <div class="light_Fill_in_theinformation_page_1_text_star_right    alignitems d-flex">
                             <input type="checkbox" id="exampleCheck1">
-                            <p class="form-check-label" for="exampleCheck1">同會員資料</p>
+                            <p class="form-check-label padleft10" for="exampleCheck1">同會員資料</p>
                         </div>
                     </div>
                     <!-- page_1 內容_標題 -->
-                    <div class="light_Fill_in_theinformation_page_1_title paddingbottom40">
-                        <h3>祈福者</h3>
-                        <!-- page_1 內容_標題_刪除按鈕 -->
-                        <button class="graycolor">
-                            <p>刪除</p>
-                        </button>
+                    <div class="light_Fill_in_theinformation_page_1_title paddingbottom40 postre">
+                        <h3 >祈福者
+                            <!-- page_1 內容_標題_刪除按鈕 -->
+                            <button class="graycolor postab padbut">
+                                <p>刪除</p>
+                            </button>
+                        </h3>
+
                     </div>
 
 
@@ -370,7 +410,7 @@
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *姓名 -->
                             <div class="light_Fill_in_theinformation_page_1_input_text col d-flex">
-                                <p>*</p>
+                                <p class="redcolorh5">*</p>
                                 <p>姓名</p>
                             </div>
                             <!-- boostarp input -->
@@ -384,33 +424,33 @@
                             <!-- *出生日期 -->
                             <div
                                 class="light_Fill_in_theinformation_page_1_input_text col-4 padright0 d-flex alignitems">
-                                <p>*</p>
+                                <p class="redcolorh5">*</p>
                                 <p>出生日期</p>
                             </div>
                             <!-- boostarp 下拉選單 -->
                             <div class="col-11 d-flex alignitems p-0">
-                                <div class="col-3 p-0">
+                                <div class="col-2 p-0">
                                     <select class="form-control col-11" id="exampleInputTime">
                                         <option value="國曆">國曆</option>
                                         <option value="農曆">農曆</option>
                                     </select>
                                 </div>
-                                <div class="col-3 d-flex alignitems p-0 ">
-                                    <select class="form-control" id="exampleInputTime">
-                                        <option value="">西元1994/民83</option>
-                                        <option value="">西元1995/民84</option>
+                                <div class="col-2 d-flex alignitems p-0 ">
+                                    <select class="form-control col-10" id="exampleInputTime">
+                                        <option value="">1994</option>
+                                        <option value="">1995</option>
                                     </select>
                                     <p>年</p>
                                 </div>
-                                <div class="col-3 d-flex alignitems p-0">
-                                    <select class="form-control col-7" id="exampleInputTime">
+                                <div class="col-2 d-flex alignitems p-0">
+                                    <select class="form-control col-8" id="exampleInputTime">
                                         <option value="">1</option>
                                         <option value="">12</option>
                                     </select>
                                     <p>月</p>
                                 </div>
-                                <div class="col-3 d-flex alignitems p-0 ">
-                                    <select class="form-control col-7" id="exampleInputTime">
+                                <div class="col-2 d-flex alignitems p-0 ">
+                                    <select class="form-control col-8" id="exampleInputTime">
                                         <option value="">1</option>
                                         <option value="">31</option>
                                     </select>
@@ -426,12 +466,12 @@
                             <!-- *時辰 -->
                             <div
                                 class="light_Fill_in_theinformation_page_1_input_text col-4 padright0 d-flex alignitems">
-                                <p>*</p>
-                                <p>時辰</p>
+                                <p class="redcolorh5 opac">*</p>
+                                <p>出生時辰</p>
                             </div>
                             <!-- boostarp 下拉選單 -->
                             <div class="col-11 d-flex alignitems p-0">
-                                <div class="col-3 p-0">
+                                <div class="col-2 p-0">
                                     <select class="form-control col-11" id="exampleInputTime">
                                         <option value="">吉時</option>
                                         <option value="">X時</option>
@@ -446,7 +486,7 @@
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *性別 -->
                             <div class="light_Fill_in_theinformation_page_1_input_text col-4 d-flex">
-                                <p>*</p>
+                                <p class="redcolorh5">*</p>
                                 <p>性別</p>
                             </div>
                             <!-- boostarp check 改造-->
@@ -476,7 +516,7 @@
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *連絡電話 -->
                             <div class="light_Fill_in_theinformation_page_1_input_text col d-flex">
-                                <p>*</p>
+                                <p class="redcolorh5 opac">*</p>
                                 <p>連絡電話</p>
                             </div>
                             <!-- boostarp input -->
@@ -489,7 +529,7 @@
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto paddingbottom40">
                             <!-- *地址 -->
                             <div class="light_Fill_in_theinformation_page_1_input_text col d-flex">
-                                <p>*</p>
+                                <p class="redcolorh5">*</p>
                                 <p>地址</p>
                             </div>
                             <!-- boostarp input -->
@@ -502,16 +542,16 @@
                             class="light_Fill_in_theinformation_page_1_input_set d-flex col-8 paddingbottom40 marginauto">
                             <!-- page_1 內容_祈福者input_1_選擇燈種 -->
                             <div
-                                class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-8 marginauto p-0 ">
+                                class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-7 marginauto p-0 ">
                                 <!-- *燈種 -->
                                 <div
-                                    class="light_Fill_in_theinformation_page_1_input_text col-6 padright0 d-flex alignitems">
-                                    <p>*</p>
+                                    class="light_Fill_in_theinformation_page_1_input_text col-7 padright0 d-flex alignitems">
+                                    <p class="redcolorh5">*</p>
                                     <p>選擇燈種</p>
                                 </div>
                                 <!-- boostarp 下拉選單 -->
-                                <div class="col-9 d-flex alignitems p-0">
-                                    <div class="col-5 p-0">
+                                <div class="col-4 d-flex alignitems p-0">
+                                    <div class="col p-0">
                                         <select class="form-control col-11" id="exampleInputTime">
                                             <option value="">光明燈</option>
                                             <option value="">安太歲</option>
@@ -526,7 +566,7 @@
                                 <!-- *廟宇 -->
                                 <div
                                     class="light_Fill_in_theinformation_page_1_input_text col-4 padright0 d-flex alignitems">
-                                    <p>*</p>
+                                    <p class="redcolorh5">*</p>
                                     <p>選擇廟宇</p>
                                 </div>
                                 <!-- boostarp 下拉選單 -->
@@ -552,17 +592,17 @@
 
                         </div>
                         <!-- page_1 內容_按鈕_新增廟宇 -->
-                        <div class="button_add_set d-flex juscsb col-8 marginauto">
+                        <div class="button_add_set d-flex juscsb  marginauto paddingbottom40 butmaxwid">
                             <div class="button_add ">
                                 <button class="graycolor butomcolor">
                                     <p>+ 新增燈種與廟宇</p>
                                 </button>
                             </div>
-                            <div class="button_add vishidden ">
+                            <!-- <div class="button_add vishidden ">
                                 <button class="graycolor">
                                     <p>+ 新增燈種與廟宇</p>
                                 </button>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -578,7 +618,7 @@
 
 
                 <!-- page_1 內容_按鈕 -->
-                <div class="light_Fill_in_theinformation_page_1_button buttonstyle padddingtop40 padddingbottom150">
+                <div class="light_Fill_in_theinformation_page_1_button buttonstyle padddingtop40 padddingbottom150 butflexmargin ">
 
                     <button class="graycolor">
                         <p>新增祈福者</p>
