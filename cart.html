@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="/reset.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- 小圖示 -->
+    <script src="https://kit.fontawesome.com/271f30e909.js" crossorigin="anonymous"></script>
+    <!-- 動畫 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        body {
+            font-family: 'Sitka Display', NSimSun, 'sans-serif';
+            background-image: url(/bcc.png);
+            position: relative;
+            min-height: 100vh;
+            padding-bottom: 150px;
+            padding-top: 150px;
+        }
+
+        h2 {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: normal;
+            margin: 0
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        p {
+            /* 字級可自訂 */
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        button {
+            padding: 12px 18px;
+            background-color: #cc543a;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            font-family: 'Sitka Display', NSimSun, 'sans-serif';
+
+        }
+
+        button:focus {
+            outline: 0;
+            box-shadow: 0 0 0 1pt rgb(77, 77, 77);
+        }
+
+        i {
+            padding: 0 8px;
+        }
+
+        nav {
+            width: 90%;
+            background-image: url(/bcc.png);
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            right: 5%;
+            border-bottom: 1px solid rgb(165, 165, 165);
+            z-index: 99;
+        }
+
+        nav img {
+            height: 80%;
+        }
+
+        @media screen and (min-width: 1400px) {
+
+            nav {
+                height: 100px;
+                display: flex;
+                align-items: center;
+
+            }
+
+            nav ul {
+                width: 75%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                font-size: 20px;
+            }
+
+            nav li {
+                letter-spacing: 3px;
+            }
+
+            nav .ham {
+                display: none;
+            }
+        }
+
+        .btns {
+            margin: 300px;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: #cc543a;
+            color: white;
+            letter-spacing: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+        }
+
+        @media screen and (max-width: 1400px) {
+            nav {
+                height: 100px;
+                padding: 10px;
+                align-items: center;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            nav .fa-bars {
+                color: #4b4b4b;
+                font-size: 30px;
+            }
+        }
+
+        hr {
+            height: 1px;
+            width: 100%;
+            background-color: #4D4B4B;
+            position: relative;
+        }
+
+        .abstract {
+            background-color: #D1D2D5;
+            border: 2px solid #C0C0C0;
+        }
+
+        .carttable {
+            width: 100%;
+            padding-top: 100px;
+            display: flex;
+            align-content: space-around;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+
+        .fixrow tr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .fixrow {
+            border: 2px solid #C0C0C0;
+        }
+
+        .info {
+            background-color: white;
+            /* margin-bottom: 0; */
+        }
+
+        .fixrow thead th {
+            min-width: 15%;
+            text-align: center;
+        }
+
+        table img {
+            width: 100%;
+        }
+
+        .detail th {
+            width: 100px;
+        }
+
+        .detail thead {
+            height: fit-content;
+            align-items: center;
+            border-bottom: 1px solid #C0C0C0;
+        }
+
+        .detail td {
+            padding-top: 5%;
+        }
+
+        .less {
+            position: absolute;
+            left: 50%;
+        }
+
+        .detail {
+            background-color: white;
+            text-align: center;
+            border-left: 50px solid white;
+            border-right: 50px solid white;
+            display: none;
+        }
+
+        .cart {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+        }
+
+        .bill {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            padding: 40px 15px;
+            border: 1px solid rgb(168, 168, 168);
+        }
+
+        .bill hr {
+            height: 1px;
+            width: 90%;
+            background-color: rgb(196, 196, 196);
+            margin: 10px;
+        }
+
+        .summary {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .summary li {
+            line-height: 2.5
+        }
+
+        .sale {
+            width: 50%;
+        }
+
+        .sale li {
+            text-align: end;
+        }
+
+        .bill input {
+            width: 100%;
+            height: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- 請依檔案位置修改logo路徑 -->
+        <img src='/SVG/logo-color.svg'>
+        <ul>
+            <li>Explore / 探索</li>
+            <li>TRIP / 行旅</li>
+            <li>SERVICE / 線上服務</li>
+            <li>SHOP / 商店</li>
+            <li>CART / 購物車</li>
+            <li>MEMBER / 會員中心</li>
+        </ul>
+        <div class="ham"><i class="fas fa-bars"></i></div>
+    </nav>
+    <div class="container cart col-11">
+        <section class="bill container-fluid col-3">
+            <h3>訂單明細</h3>
+            <hr>
+            <div class="summary">
+                <ul>
+                    <li>媽祖胸針</li>
+                    <li>媽祖胸針</li>
+                    <li>龍山寺-安太歲</li>
+                    <li>蒐集離島媽祖</li>
+                </ul>
+                <ul>
+                    <li>600</li>
+                    <li>600</li>
+                    <li>600</li>
+                    <li>600</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="summary">
+                <ul>
+                    <li>運費</li>
+                    <li>折扣碼</li>
+                </ul>
+                <ul class="sale">
+                    <li>35</li>
+                    <li><input type="text"></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="summary">
+                <ul>
+                    <li>
+                        <h4>總計</h4>
+                    </li>
+                </ul>
+                <ul>
+                    <li>1235</li>
+                </ul>
+            </div>
+            <button>確認結帳</button>
+
+        </section>
+
+        <section class="carttable container-fluid col-6">
+            <h4>購物車</h4>
+            <h4>商品</h4>
+            <table class="table table-borderless fixrow abstract col-12">
+                <thead>
+                    <tr>
+                        <th>訂購日期</th>
+                        <th>訂購編號</th>
+                        <th>付款方式</th>
+                        <th>處理進度</th>
+                        <th>應付金額</th>
+                        <th>訂單狀態</th>
+                    </tr>
+                </thead>
+            </table>
+            <table class="table table-borderless fixrow info col-12">
+                <thead>
+                    <tr>
+                        <th>2020/01/01</th>
+                        <th>000154</th>
+                        <th>線上刷卡</th>
+                        <th>已出貨</th>
+                        <th>4,115</th>
+                        <th>已完成</th>
+                    </tr>
+                </thead>
+            </table>
+            <table class="table table-borderless detail col-12">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">商品名稱</th>
+                        <th scope="col">內容</th>
+                        <th scope="col">數量</th>
+                        <th scope="col">金額</th>
+                        <th scope="col">備註</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="/00002-a213-2-1000x792.jpg"></th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th><i class="less fas fa-chevron-up"></i></th>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-borderless fixrow info col-12">
+                <thead>
+                    <tr>
+                        <th>2020/01/01</th>
+                        <th>000154</th>
+                        <th>線上刷卡</th>
+                        <th>已出貨</th>
+                        <th>4,115</th>
+                        <th>已完成</th>
+                    </tr>
+                </thead>
+            </table>
+            <table class="table table-borderless detail col-12">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">商品名稱</th>
+                        <th scope="col">內容</th>
+                        <th scope="col">數量</th>
+                        <th scope="col">金額</th>
+                        <th scope="col">備註</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="/00002-a213-2-1000x792.jpg"></th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th><i class="less fas fa-chevron-up"></i></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <footer>
+        <p>Copyright© TempleTrip.tw</p>
+    </footer>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var detail = document.getElementsByClassName(".detail");
+
+        $(".info").click(function () {
+            $(this).next(detail).slideToggle();
+        });
+        $(".less").click(function () {
+            $(".detail").slideUp();
+        });
+    </script>
+</body>
+
+</html>

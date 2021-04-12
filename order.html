@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="/reset.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- 小圖示 -->
+    <script src="https://kit.fontawesome.com/271f30e909.js" crossorigin="anonymous"></script>
+    <!-- 動畫 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        body {
+            font-family: 'Sitka Display', NSimSun, 'sans-serif';
+            background-image: url(/bcc.png);
+            position: relative;
+            min-height: 100vh;
+            padding-bottom: 150px;
+        }
+
+        h2 {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        p {
+            /* 字級可自訂 */
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        button {
+            padding: 12px 18px;
+            background-color: #cc543a;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            font-family: 'Sitka Display', NSimSun, 'sans-serif';
+
+        }
+
+        button:focus {
+            outline: 0;
+            box-shadow: 0 0 0 1pt rgb(77, 77, 77);
+        }
+
+        i {
+            padding: 0 8px;
+        }
+
+        nav {
+            width: 90%;
+            background-image: url(/bcc.png);
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            right: 5%;
+            border-bottom: 1px solid rgb(165, 165, 165);
+            z-index: 99;
+        }
+
+        nav img {
+            height: 80%;
+        }
+
+        .head {
+            margin-top: 100px;
+            padding: 2% 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .root {
+            align-self: flex-start;
+        }
+
+        .tab {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .tab div {
+            display: flex;
+            align-items: center;
+        }
+
+        .tab img,
+        .tab svg {
+            margin-right: 15px;
+        }
+
+        .tab h4 {
+            letter-spacing: 2px;
+        }
+
+        .bigprofile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .bigprofile img {
+            width: 90%;
+        }
+
+        #pointer {
+            height: 1px;
+            width: 100%;
+            background-color: #4D4B4B;
+            position: relative;
+            --myVar: 75%;
+
+        }
+
+        #pointer::before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 15px 15px 15px;
+            border-color: transparent transparent #4D4B4B transparent;
+            position: absolute;
+            top: -15px;
+            left: var(--myVar);
+            transition: 0.5s;
+
+        }
+
+        .abstract {
+            background-color: #D1D2D5;
+            border: 2px solid #C0C0C0;
+        }
+
+        .ordertable {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .fixrow tr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .fixrow {
+            border: 2px solid #C0C0C0;
+        }
+
+        .info {
+            background-color: white;
+            /* margin-bottom: 0; */
+        }
+
+        .fixrow thead th {
+            min-width: 15%;
+            text-align: center;
+        }
+
+        table img {
+            width: 100%;
+        }
+
+        .detail th {
+            width: 100px;
+        }
+
+        .detail thead {
+            height: fit-content;
+            align-items: center;
+            border-bottom: 1px solid #C0C0C0;
+        }
+
+        .detail td {
+            padding-top: 5%;
+        }
+
+        .less {
+            position: absolute;
+            left: 50%;
+        }
+
+        .detail {
+            background-color: white;
+            text-align: center;
+            border-left: 50px solid white;
+            border-right: 50px solid white;
+            display: none;
+        }
+
+        @media screen and (min-width: 1400px) {
+
+            nav {
+                height: 100px;
+                display: flex;
+                align-items: center;
+
+            }
+
+            nav ul {
+                width: 75%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                font-size: 20px;
+            }
+
+            nav li {
+                letter-spacing: 3px;
+            }
+
+            nav .ham {
+                display: none;
+            }
+        }
+
+        .btns {
+            margin: 300px;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: #cc543a;
+            color: white;
+            letter-spacing: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+        }
+
+        @media screen and (max-width: 1400px) {
+            nav {
+                height: 100px;
+                padding: 10px;
+                align-items: center;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            nav .fa-bars {
+                color: #4b4b4b;
+                font-size: 30px;
+            }
+
+            #pointer {
+                margin-top: 5px;
+            }
+
+            #pointer::before {
+                border-width: 0 10px 10px 10px;
+                top: -10px;
+            }
+
+            .hide {
+                display: none;
+            }
+
+            tbody th {
+                display: none;
+            }
+
+            table td,
+            table th {
+                font-size: 14px;
+            }
+
+            .detail {
+                border-left: 10px solid white;
+                border-right: 10px solid white;
+            }
+
+            .bigprofile {
+                width: 40%;
+            }
+
+            .tab {
+                justify-content: space-between;
+                margin: 0px;
+            }
+
+            .tab svg {
+                width: 70%;
+                margin: 0;
+            }
+
+            .tab div {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h4 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- 請依檔案位置修改logo路徑 -->
+        <img src='/SVG/logo-color.svg'>
+        <ul>
+            <li>Explore / 探索</li>
+            <li>TRIP / 行旅</li>
+            <li>SERVICE / 線上服務</li>
+            <li>SHOP / 商店</li>
+            <li>CART / 購物車</li>
+            <li>MEMBER / 會員中心</li>
+        </ul>
+        <div class="ham"><i class="fas fa-bars"></i></div>
+    </nav>
+    <section class="head container-fluid">
+        <h4 class="root">會員中心>訂單列表</h4>
+        <div class="bigprofile">
+            <img src="/SVG/bigprofile.svg">
+            <p>REDSLEEVES</p>
+        </div>
+        <div class="tab col-lg-9  col-12">
+            <div class="profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="89" height="89" viewBox="0 0 89 89">
+                    <g id="account" transform="translate(0.173)">
+                        <circle id="Ellipse_5" data-name="Ellipse 5" cx="44.5" cy="44.5" r="44.5"
+                            transform="translate(-0.173)" fill="silver" />
+                        <g id="Group_92" data-name="Group 92" transform="translate(24.07 22.25)">
+                            <path id="Path_23" data-name="Path 23"
+                                d="M51.65,30.071s0-5.721-6.357-6.039a9.457,9.457,0,0,1-6.357-3.179l-.318-.318h0a3.587,3.587,0,0,0-3.5-.954,11.427,11.427,0,0,1-3.5.636,13.518,13.518,0,0,1-3.5-.636,3.587,3.587,0,0,0-3.5.954h0l-.318.318a10.189,10.189,0,0,1-6.357,3.179c-6.357.636-6.357,6.039-6.357,6.039V32.3c0,1.589-.318,5.086,18.436,5.086H32.9c18.436,0,18.754-3.212,18.754-5.12V30.071Z"
+                                transform="translate(-11.6 7.436)" fill="none" stroke="#f7f8f7" stroke-miterlimit="10"
+                                stroke-width="1.5" />
+                            <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="13.032" cy="13.668" rx="13.032"
+                                ry="13.668" transform="translate(7.311)" fill="none" stroke="#f7f8f7"
+                                stroke-miterlimit="10" stroke-width="1.5" />
+                        </g>
+                    </g>
+                </svg>
+
+                <h4>會員資料</h4>
+            </div>
+            <div class="favorite">
+                <svg xmlns="http://www.w3.org/2000/svg" width="89" height="89" viewBox="0 0 89 89">
+                    <path id="gratipay-brands"
+                        d="M44.5,8A44.5,44.5,0,1,0,89,52.5,44.515,44.515,0,0,0,44.5,8ZM65.063,48.624l-20.276,27.4-20.222-27.4C23,46.489,21.138,39.581,27.005,35.7c5.042-3.248,9.8-.754,12.291,2.135a7.713,7.713,0,0,0,11.071,0c2.494-2.889,7.249-5.383,12.22-2.135,5.9,3.876,4.055,10.766,2.476,12.919Z"
+                        transform="translate(0 -8)" fill="silver" />
+                </svg>
+                <h4>收藏清單</h4>
+            </div>
+            <div class="order">
+                <svg id="orderlist" xmlns="http://www.w3.org/2000/svg" width="89" height="89" viewBox="0 0 89 89">
+                    <path id="Path_18" data-name="Path 18"
+                        d="M47.5,92h0A44.631,44.631,0,0,1,3,47.5H3A44.631,44.631,0,0,1,47.5,3h0A44.631,44.631,0,0,1,92,47.5h0A44.631,44.631,0,0,1,47.5,92Z"
+                        transform="translate(-3 -3)" fill="#cc543a" />
+                    <g id="Group_90" data-name="Group 90" transform="translate(14.741 24.614)">
+                        <g id="Group_89" data-name="Group 89" transform="translate(7.37 7.787)">
+                            <line id="Line_53" data-name="Line 53" x2="13.35" transform="translate(30.594 12.098)"
+                                fill="none" stroke="#efeeee" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="1.778" />
+                            <line id="Line_54" data-name="Line 54" x2="13.35" transform="translate(30.594)" fill="none"
+                                stroke="#efeeee" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                stroke-width="1.778" />
+                            <line id="Line_55" data-name="Line 55" x2="13.35" transform="translate(30.594 5.841)"
+                                fill="none" stroke="#efeeee" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="1.778" />
+                            <line id="Line_56" data-name="Line 56" x2="13.35" transform="translate(30.594 24.753)"
+                                fill="none" stroke="#efeeee" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="1.778" />
+                            <line id="Line_57" data-name="Line 57" x2="13.35" transform="translate(30.594 17.8)"
+                                fill="none" stroke="#efeeee" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="1.778" />
+                            <g id="Group_88" data-name="Group 88" transform="translate(0 0)">
+                                <path id="Path_19" data-name="Path 19"
+                                    d="M43.792,30.9V44.528a4.985,4.985,0,0,1-5.006,5.006H23.906A4.985,4.985,0,0,1,18.9,44.528V30.9Z"
+                                    transform="translate(-18.9 -24.503)" fill="none" stroke="#efeeee"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                    stroke-width="1.778" />
+                                <path id="Path_20" data-name="Path 20"
+                                    d="M23.1,37.7V29.5a3.332,3.332,0,0,1,3.2-3.2h6.953a3.332,3.332,0,0,1,3.2,3.2v8.2"
+                                    transform="translate(-17.259 -26.3)" fill="none" stroke="#efeeee"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                    stroke-width="1.778" />
+                            </g>
+                        </g>
+                        <path id="Path_21" data-name="Path 21"
+                            d="M67.139,60.333H19.58a6.118,6.118,0,0,1-5.98-5.98V26.68a6.118,6.118,0,0,1,5.98-5.98H66.861a6.118,6.118,0,0,1,5.98,5.98v27.4A5.788,5.788,0,0,1,67.139,60.333Z"
+                            transform="translate(-13.6 -20.7)" fill="none" stroke="#efeeee" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.778" />
+                    </g>
+                </svg>
+
+                <h4>訂單列表</h4>
+            </div>
+        </div>
+        <hr id=pointer>
+    </section>
+    <section class="ordertable container-fluid">
+        <table class="table table-borderless fixrow abstract col-lg-8 col-10">
+            <thead>
+                <tr>
+                    <th>訂購日期</th>
+                    <th>訂購編號</th>
+                    <th class="hide">付款方式</th>
+                    <th>處理進度</th>
+                    <th>應付金額</th>
+                    <th class="hide">訂單狀態</th>
+                </tr>
+            </thead>
+        </table>
+        <table class="table table-borderless fixrow info col-lg-8 col-10">
+            <thead>
+                <tr>
+                    <th>2020/01/01</th>
+                    <th>000154</th>
+                    <th class="hide">線上刷卡</th>
+                    <th>已出貨</th>
+                    <th>4,115</th>
+                    <th class="hide">已完成</th>
+                </tr>
+            </thead>
+        </table>
+        <table class="table table-borderless detail col-lg-8 col-10">
+            <thead>
+                <tr>
+                    <th scope="col" class="hide"></th>
+                    <th scope="col">商品名稱</th>
+                    <th scope="col">內容</th>
+                    <th scope="col">數量</th>
+                    <th scope="col">金額</th>
+                    <th scope="col" class="hide">備註</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><img src="/00002-a213-2-1000x792.jpg"></th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Otto</td>
+                    <th>@mdo</th>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Thornton</td>
+                    <th>@fat</th>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <th>@fat</th>
+                </tr>
+                <tr>
+                    <td><i class="less fas fa-chevron-up"></i></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-borderless fixrow info col-lg-8 col-10">
+            <thead>
+                <tr>
+                    <th>2020/01/01</th>
+                    <th>000154</th>
+                    <th class="hide">線上刷卡</th>
+                    <th>已出貨</th>
+                    <th>4,115</th>
+                    <th class="hide">已完成</th>
+                </tr>
+            </thead>
+        </table>
+        <table class="table table-borderless detail col-lg-8 col-10">
+            <thead>
+                <tr>
+                    <th scope="col" class="hide"></th>
+                    <th scope="col">商品名稱</th>
+                    <th scope="col">內容</th>
+                    <th scope="col">數量</th>
+                    <th scope="col">金額</th>
+                    <th scope="col" class="hide">備註</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><img src="/00002-a213-2-1000x792.jpg"></th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Otto</td>
+                    <th>@mdo</th>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Thornton</td>
+                    <th>@fat</th>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <th>@fat</th>
+                </tr>
+                <tr>
+                    <td><i class="less fas fa-chevron-up"></i></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Copyright© TempleTrip.tw</p>
+    </footer>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var detail = document.getElementsByClassName(".detail");
+
+        $(".info").click(function () {
+            $(this).next(detail).slideToggle();
+        });
+        $(".less").click(function () {
+            $(".detail").slideUp();
+        });
+
+        $('.profile').click(function () {
+            $('#pointer').css('--myVar', '25%');
+            $('#Ellipse_5').attr('fill', '#cc543a')
+            $('#Path_18').attr('fill', 'silver')
+            $('#gratipay-brands').attr('fill', 'silver')
+
+        })
+
+        $('.favorite').click(function () {
+            $('#pointer').css('--myVar', '50%');
+            $('#gratipay-brands').attr('fill', '#cc543a')
+            $('#Path_18').attr('fill', 'silver')
+            $('#Ellipse_5').attr('fill', 'silver')
+
+        })
+
+        $('.order').click(function () {
+            $('#pointer').css('--myVar', '75%');
+            $('#gratipay-brands').attr('fill', 'silver')
+            $('#Ellipse_5').attr('fill', 'silver')
+            $('#Path_18').attr('fill', '#cc543a')
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+nav {
+    width: 100%;
+    background-image: url(../img/deco/bcc.png);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+@media screen and (min-width: 1000px) {
+
+    nav {
+        height: 100px;
+        padding: 0 10%;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 20px;
+    }
+
+    nav li {
+        letter-spacing: 3px;
+    }
+
+    nav .ham {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        height: 80px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .fa-bars {
+        color: #4b4b4b;
+        font-size: 30px;
+    }
+}
