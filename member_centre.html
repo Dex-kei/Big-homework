@@ -108,14 +108,117 @@
 
         }
 
+        /* 共用~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        .jucc {
+            justify-content: center;
+        }
 
+        .aic {
+            align-items: center;
 
+        }
 
+        .tac {
+            text-align: center;
+        }
 
+        .maxwidth {
+            max-width: 1100px;
+            margin: auto;
+        }
 
+        .postre {
+            position: relative;
+        }
 
-        .member_relative_information {
+        .postab {
+            position: absolute;
+        }
+
+        .right0 {
+            right: 0;
+        }
+
+        .margin0auto {
             margin: 0 auto;
+        }
+
+        .maxwidth1100 {
+            max-width: 1100px;
+        }
+
+        .maxwidth1400 {
+            max-width: 1500px;
+        }
+
+        .marginauto {
+            margin: auto;
+        }
+
+        .margin0 {
+            margin: 0;
+        }
+
+        /* .overtext {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        } */
+
+        /* page_1 down~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        .member_centre_page_1_down_img {
+            width: 30%;
+        }
+
+        .member_centre_page_1_down_img img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .tttd {
+            padding-left: 20px;
+        }
+
+        .padright10 {
+            padding-right: 10px;
+        }
+
+        .padleft50 {
+            padding-left: 50px;
+        }
+
+        th,
+        tr {
+            font-size: 18px;
+            line-height: 3rem;
+            letter-spacing: 2px;
+        }
+
+        .member_tablehead {
+            position: relative;
+        }
+
+        .member_tablehead::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: gold;
+            position: absolute;
+            left: -2%;
+            top: 3rem
+        }
+
+        .butstyle {
+            padding: 0px 15px;
+            background-color: #c0c0c0;
+        }
+
+        .maxwidth300 {
+            max-width: 320px;
+
+        }
+
+        .borderline {
+            border-bottom: 1px solid #000;
         }
     </style>
 </head>
@@ -148,13 +251,13 @@
     <div class="member_centre_page_1">
         <!-- page_1 集合 -->
         <div class="member_centre_page_1_set">
-            <!-- page_1 上半部共用head -->
+            <!-- page_1 上半部共用head~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <div class="member_centre_page_1_up">
 
                 <section class="head container-fluid">
                     <h4 class="root">會員中心>訂單列表</h4>
                     <div class="bigprofile">
-                        <img src="/SVG/bigprofile.svg">
+                        <img src="./img/icon/profile.svg">
                         <p>REDSLEEVES</p>
                     </div>
                     <div class="tab col-lg-9  col-12">
@@ -242,85 +345,105 @@
             </div>
 
 
-            <!-- page_1底部 -->
+            <!-- page_1底部 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
             <div class="member_centre_page_1_down">
-                <img src="./img/photo/my.png" alt="">
+                <!-- page_1底部照片+個人資料 -->
+                <div class="member_centre_page_1_down_imgtext d-flex jucc aic maxwidth">
+                    <!-- page_1底部照片頭像 -->
+                    <div class="member_centre_page_1_down_img col-5">
+                        <img src="./img/photo/my.png">
+                    </div>
 
-                <table class="member_centre_page_1__information">
-                    <tr>
-                        <th>大頭照</th>
-                        <td>上傳</td>
-                    </tr>
-                    <tr>
-                        <th>暱稱</th>
-                        <td>redsleeve</td>
-                    </tr>
-                    <tr>
-                        <th>電話</th>
-                        <td>0987654321</td>
-                    </tr>
-                    <tr>
-                        <th>電子信箱</th>
-                        <td>abc@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <th>生日</th>
-                        <td>1990/01/01</td>
-                    </tr>
-                    <tr>
-                        <th>性別</th>
-                        <td>女</td>
-                    </tr>
-                    <tr>
-                        <th>密碼</th>
-                        <td>******123</td>
-                    </tr>
-                    <tr>
-                        <th>地址</th>
-                        <td>100 台北市中正區中正路100號1樓</td>
-                    </tr>
-                </table>
-            </div>
+                    <table class="member_centre_page_1_information ">
 
-            <div>
-                <p class="member_relative">親友資料</p>
-            </div>
+                        <tr>
+                            <th class="">姓名</th>
+                            <td class="tttd postre"> |&ensp; redsleeve<button class="butstyle postab right0">
+                                    <p>修改</p>
+                                </button></td>
+                        </tr>
+                        <tr>
+                            <th>電話</th>
+                            <td class="tttd"> |&ensp; 0987654321</td>
+                        </tr>
+                        <tr>
+                            <th>電子信箱</th>
+                            <td class="tttd">|&ensp; abc@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>生日</th>
 
-            <div>
-                <table class="member_relative_information">
-                    <tr>
-                        <th>姓名</th>
-                        <th>性別</th>
-                        <th>生日(國立)</th>
-                        <th>生日(農曆)</th>
-                        <th>生辰</th>
-                        <th>地址</th>
-                    </tr>
-                    <tr>
-                        <td>小李</td>
-                        <td>男</td>
-                        <td>1990/01/01</td>
-                        <td>1990/01/01</td>
-                        <td>子時</td>
-                        <td>100 台北市中正區中正路100號1樓</td>
-                    </tr>
-                    <tr>
-                        <td>小李</td>
-                        <td>男</td>
-                        <td>1990/01/01</td>
-                        <td>1990/01/01</td>
-                        <td>子時</td>
-                        <td>100 台北市中正區中正路100號1樓</td>
-                    </tr>
-                    <tr>
-                        <td>小李</td>
-                        <td>男</td>
-                        <td>1990/01/01</td>
-                        <td>1990/01/01</td>
-                        <td>子時</td>
-                        <td>100 台北市中正區中正路100號1樓</td>
-                    </tr>
-                </table>
+                            <td class="tttd">| &ensp;1990/01/01</td>
+                        </tr>
+                        <tr>
+                            <th>性別</th>
+                            <td class="tttd">| &ensp;女</td>
+                        </tr>
+                        <tr>
+                            <th>密碼</th>
+                            <td class="tttd postre ">| &ensp;********</td>
+
+                        </tr>
+                        <tr>
+                            <th>地址</th>
+                            <td class="tttd overtext maxwidth300">|&ensp; 100 台北市中正區中正路100號1樓1111</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <!-- page_1 親友資料 -->
+                <div class="member_centre_page_1_down_relative maxwidth1400 marginauto">
+                    <!-- page_1 親友資料標題 -->
+                    <div class="member_centre_page_1_down_relative_title d-flex aic">
+                        <h4 class="postre margin0 padright10">親友資料</h4>
+                        <button class="butstyle ">
+                            <p>修改</p>
+                        </button>
+                    </div>
+                    <!-- 親友資料表 -->
+                    <div class="member_centre_page_1_down_information">
+                        <table class="member_centre_page_1_down_information_text margin0auto col-lg-11">
+                            <tr class="member_tablehead">
+                                <th>姓名</th>
+                                <th>性別</th>
+                                <th>生日(國曆)</th>
+                                <th>生日(農曆)</th>
+                                <th>生辰</th>
+                                <th class="width40">地址</th>
+                            </tr>
+
+                            <tr class="">
+                                <td>小李</td>
+                                <td>男</td>
+                                <td>1990/01/01</td>
+                                <td>1990/01/01</td>
+                                <td>子時</td>
+                                <td class="width40">100 台北市中正區中正路100號1樓</td>
+                            </tr>
+                            <tr class="">
+                                <td>小李</td>
+                                <td>男</td>
+                                <td>1990/01/01</td>
+                                <td>1990/01/01</td>
+                                <td>子時</td>
+                                <td class="width40">100 台北市中正區中正路100號1樓</td>
+                            </tr>
+                            <tr class="textpd">
+                                <td>小李</td>
+                                <td>男</td>
+                                <td>1990/01/01</td>
+                                <td>1990/01/01</td>
+                                <td>子時</td>
+                                <td class="width40">100 台北市中正區中正路100號1樓</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </div>
