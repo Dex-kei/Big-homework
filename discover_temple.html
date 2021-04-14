@@ -74,7 +74,13 @@
             color: #cc543a;
         }
 
+        .posrel {
+            position: relative;
+        }
 
+        .posab {
+            position: absolute;
+        }
 
         .phidden {
             visibility: hidden;
@@ -97,10 +103,6 @@
             padding-right: 15px;
         }
 
-
-
-
-
         .midmargin_left50 {
             margin: 0 0 0 50px;
         }
@@ -109,20 +111,13 @@
             margin: 0 50px 0 0;
         }
 
-
-
         .padtop {
             padding-top: 20px;
         }
 
-
-
         .padbottom150 {
             padding-bottom: 100px;
         }
-
-
-
 
 
         /* page_1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -152,7 +147,7 @@
         .discover_temple_page_box {
             width: 100%;
             /* height: 75vh; */
-            background-color: rgba(255, 0, 0, 0.267);
+            /* background-color: rgba(255, 0, 0, 0.267); */
         }
 
         .discover_temple_page_box1 {
@@ -269,22 +264,6 @@
             width: 1586px;
         }
 
-        .page3box1pd {
-            padding: 0 40px 0 0;
-        }
-
-        .page3box2pd {
-            padding: 0 40px 0 0;
-        }
-
-        .page3box3pd {
-            padding: 0 0 0 40px;
-        }
-
-        .discover_temple_page_3_right_img {
-            width: 300px;
-        }
-
         .discover_temple_page_3_right_img img {
             width: 100%;
         }
@@ -298,17 +277,7 @@
             position: relative;
         }
 
-        .discover_temple_page_3_right_img_potabu {
-            position: absolute;
-            top: 20%;
-            right: 35%;
-        }
 
-        .discover_temple_page_3_right_text_potabu {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-        }
 
         .discover_temple_page_3_mid_img img {
             width: 100%;
@@ -317,7 +286,7 @@
 
         /* 待維修中 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
         .discover_temple_page_3 {
-            display: none;
+            /* display: none; */
         }
 
 
@@ -360,7 +329,7 @@
 
             .boxgraycolor {
                 width: 100%;
-                background-color: #d6d6d6;
+                background-image: url(./img/deco/bcc2.png);
             }
 
             .padbt70 {
@@ -388,6 +357,54 @@
                 padding-left: 10px;
             }
 
+            .boxpostab {
+                width: 50%;
+                height: 80%;
+                background-image: url(./img/deco/bcc.png);
+                top: 5%;
+                left: 15%;
+            }
+
+            .padtp40 {
+                padding-top: 40px;
+            }
+
+            /* page_3 */
+            .discover_temple_page_3_right_img {
+                width: 300px;
+            }
+
+            .page3box1pd {
+                padding: 0 40px 0 0;
+            }
+
+            .page3box2pd {
+                padding: 0 40px 0 0;
+            }
+
+            .page3box3pd {
+                padding: 0 0 0 40px;
+            }
+
+            .discover_temple_page_3_right_img_potabu {
+                position: absolute;
+                top: 20%;
+
+            }
+
+            .discover_temple_page_3_right_text_potabu {
+                position: absolute;
+                right: 0;
+                bottom: 20%;
+            }
+
+            .pad600 {
+                padding: 60px 0px 0 60px;
+            }
+
+            .pad60040 {
+                padding: 60px 0 0 40px;
+            }
         }
 
         /* min-width 501  max-width 1399 平板 兩個尺寸中間值 */
@@ -419,7 +436,7 @@
 
             .boxgraycolor {
                 width: 100%;
-                background-color: #d6d6d6;
+                background-image: url(./img/deco/bcc2.png);
             }
 
             .padleft10 {
@@ -435,6 +452,14 @@
 
             .padtp {
                 padding-top: 50px;
+            }
+
+            .boxpostab {
+                width: 50%;
+                height: 80%;
+                background-image: url(./img/deco/bcc.png);
+                top: 5%;
+                left: 25%;
             }
         }
 
@@ -483,6 +508,18 @@
                 padding: 20px 0 0 0;
             }
 
+            .padtb20_md {
+                padding-bottom: 20px;
+            }
+
+            /* page_3 */
+            .discover_temple_page_3_right_img {
+                width: 200px;
+            }
+
+            .pad200_md {
+                padding: 20px 0 0 0;
+            }
         }
     </style>
 </head>
@@ -516,7 +553,7 @@
 
 
         <!-- page_1 -->
-        <div class="discover_temple_page_1">
+        <div class="discover_temple_page_1 padtb20_md">
             <div class="discover_temple_page_1_width maxwidth80 padbt70">
                 <!-- page_1_up -->
                 <div class="discover_temple_page_1_up   ">
@@ -642,10 +679,14 @@
 
 
         <!-- page_2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="discover_temple_page_2">
+        <div class="discover_temple_page_2 padtb20_md">
             <div class="discover_temple_page_2_set  dflex dflex1 flex-wrap  padtop_page2all maxwidth80 padbt70">
                 <!-- page_2左邊 -->
-                <div class="discover_temple_page_2_left row no-gutters col p-0">
+                <div class="discover_temple_page_2_left row no-gutters col p-0 posrel">
+
+                    <!-- page_2左邊_漂浮色塊 -->
+                    <div class="boxpostab posab"></div>
+
 
                     <!-- page_2左邊_集合 -->
                     <div class="discover_temple_page_box dflex dflex1">
@@ -689,6 +730,7 @@
 
                     </div>
 
+
                 </div>
 
                 <!-- page_2中間 -->
@@ -709,10 +751,10 @@
                         </div>
 
                         <!-- page_2右邊_下面文字 -->
-                        <div class="discover_temple_page_1_box_textup padtp40_md">
-                            <h5 class="font-weight-bold redcolorh5">architecture | 建築</h5>
+                        <div class="discover_temple_page_1_box_textup padtp40_md padtp40">
+                            <h5 class="font-weight-bold redcolorh5 ">architecture | 建築</h5>
                             <div class="page_2_rigth_down_p col-lg-8 
-                             margin000auto padtp020">
+                             margin000auto padtp020 padtp20">
 
 
                                 <p>行天宮台北本宮屬於閩南燕尾翹脊式的建築，
@@ -746,9 +788,9 @@
 
         <div class="discover_temple_page_3 ">
             <div class="discover_temple_page_3_set  mixwidth1586 padtop_page2all maxwidth80">
-                <div class="col p-0 d-flex jcsb">
+                <div class="col p-0 dflex jcsb">
                     <!-- page_3左邊 -->
-                    <div class="discover_temple_page_3_left col-3 page3box1pd">
+                    <div class="discover_temple_page_3_left col-lg-3 page3box1pd pad0_md">
                         <!-- page_3左邊_標題 -->
                         <div class="discover_temple_page_3_left_title redcolorh5">
                             <h5>GOD | 神明</h5>
@@ -774,13 +816,13 @@
                     </div>
                     <!-- page_3中間 -->
 
-                    <div class="discover_temple_page_3_mid col-4 p-0 ">
+                    <div class="discover_temple_page_3_mid col-lg-4 pad600 pad200_md">
                         <!-- page_3中間_上圖片 -->
                         <div class="discover_temple_page_3_mid_img">
                             <img src="./img/deco/god_Guan_Sheng.png">
                         </div>
                         <!-- page_3中間_下文字 -->
-                        <div class="discover_temple_page_3_mid_p">
+                        <div class="discover_temple_page_3_mid_p pad200_md">
                             <p>孚佑帝君：中國八仙之一，人稱「呂祖」、「呂仙翁」，道教尊稱孚佑帝君，又奉為五文昌之一，尊稱「呂恩主」。
                                 <br>司命真君：灶神，又稱張真君，能夠紀錄一家善惡，稟告天庭。尊稱「張恩主」。
                                 <br>隆恩真君：道教重要的護法神、火神，又稱豁落靈官，尊稱「王恩主」。
@@ -791,14 +833,14 @@
 
                     <!-- page_3右邊 -->
 
-                    <div class="discover_temple_page_3_right col-5 page3box3pd potre p-0">
+                    <div class="discover_temple_page_3_right col-lg-5 page3box3pd potre  padtp40_md pad60040">
                         <!-- page_3右邊相對定位圖片 -->
-                        <div class="discover_temple_page_3_right_img discover_temple_page_3_right_img_potabu">
+                        <div class="discover_temple_page_3_right_img discover_temple_page_3_right_img_potabu dnone740">
                             <img src="img/deco/red_circleeeeee.svg">
                         </div>
                         <!-- page_3右邊_文字 -->
                         <div
-                            class="discover_temple_page_3_right_text col-6 p-0 discover_temple_page_3_right_text_mg discover_temple_page_3_right_text_potabu">
+                            class="discover_temple_page_3_right_text col-lg-7 p-0 discover_temple_page_3_right_text_mg discover_temple_page_3_right_text_potabu">
                             <!-- page_3右邊_文字_標題 -->
                             <div class="discover_temple_page_3_right_title redcolorh5">
                                 <h5>TRAFFIC | 交通</h5>
@@ -806,17 +848,20 @@
                             <!-- page_3右邊_文字_p -->
                             <div class="discover_temple_page_3_right_p ">
                                 <br>
-                                <p>台北本宮 -> 開放時間 04:00至22:00
+                                <p>台北本宮 >
+                                    <br>開放時間 04:00至22:00
                                     <br>臺北市中山區行政里民權東路2段109號
-                                    <br>連絡電話 -> (02)25027924
+                                    <br>連絡電話 (02)25027924
                                     <br><br>
-                                    三峽分宮 -> 開放時間04:00至20:00
+                                    三峽分宮 >
+                                    <br>開放時間04:00至20:00
                                     <br>新北市三峽區嘉添里白鷄巷155號
-                                    <br>連絡電話 -> (02)2671-1476
+                                    <br>連絡電話 (02)2671-1476
                                     <br><br>
-                                    北投分宮 -> 開放時間 04:00至19:00
+                                    北投分宮 >
+                                    <br>開放時間 04:00至19:00
                                     <br>臺北市北投區中央北路四段18巷50號
-                                    <br>連絡電話 -> (02)2891-2731
+                                    <br>連絡電話 (02)2891-2731
                                 </p>
                             </div>
                         </div>
