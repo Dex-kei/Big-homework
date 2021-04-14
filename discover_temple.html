@@ -44,10 +44,49 @@
 
         /* 共用設定 微調 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
         .maxwidth80 {
-            max-width: 1500px;
+
             padding-left: 0;
             padding-right: 0;
             margin: auto;
+        }
+
+        .vishid {
+            visibility: hidden;
+        }
+
+        .aic {
+            align-items: center;
+        }
+
+        .jcsb {
+            justify-content: space-between;
+        }
+
+        .jcc {
+            justify-content: center;
+        }
+
+        .marginauto {
+            margin: auto;
+        }
+
+        .redcolorh5 {
+            color: #cc543a;
+        }
+
+
+
+        .phidden {
+            visibility: hidden;
+        }
+
+        .font-weight-bold {
+            font-weight: bold;
+        }
+
+        .hrline {
+            width: 30%;
+            background-color: rgb(184, 184, 184);
         }
 
         .textleftpd15 {
@@ -58,21 +97,9 @@
             padding-right: 15px;
         }
 
-        .borderline_text {
-            justify-content: flex-end;
-        }
 
-        .phidden {
-            visibility: hidden;
-        }
 
-        .font-weight-bold {
-            font-weight: bold;
-        }
 
-        .leftpad {
-            padding: 0 0 0 50px;
-        }
 
         .midmargin_left50 {
             margin: 0 0 0 50px;
@@ -82,34 +109,21 @@
             margin: 0 50px 0 0;
         }
 
-        .left_pagepd {
-            padding: 40px;
-        }
+
 
         .padtop {
             padding-top: 20px;
         }
 
-        .padtop_page2all {
-            padding-top: 150px;
 
-        }
-
-        .jcsb {
-            justify-content: space-between;
-        }
 
         .padbottom150 {
             padding-bottom: 100px;
         }
 
-        .marginauto {
-            margin: auto;
-        }
 
-        .redcolorh5 {
-            color: #cc543a;
-        }
+
+
 
         /* page_1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
         .discover_temple_page_1 {
@@ -155,12 +169,10 @@
 
         .discover_temple_page_1_box_img img {
             width: 100%;
-            height: 100%;
+
         }
 
-        .discover_temple_page_1_box_img {
-            height: 500px;
-        }
+
 
         .font-weight-bold h1 {
             font-weight: bold;
@@ -196,10 +208,7 @@
             object-fit: cover;
         }
 
-        .discover_temple_page_1_boxgraycolor {
-            width: 100%;
-            background-color: #d6d6d6;
-        }
+
 
         /* page_2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
         .discover_temple_page_2 {
@@ -227,8 +236,8 @@
         }
 
         .page2boximg2 {
-            width: 33.3%;
-            height: 400px;
+            width: 100%;
+            height: 350px;
         }
 
         .page2boximg2 img {
@@ -243,6 +252,11 @@
 
         .margin000auto {
             margin: 0 0 0 auto;
+
+        }
+
+        .objfc {
+            object-fit: cover;
         }
 
         /* page_3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -300,14 +314,175 @@
             width: 100%;
         }
 
-        /* page_4~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-        iframe {
-            width: 100%;
-            height: 100%;
+
+        /* 待維修中 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+        .discover_temple_page_3 {
+            display: none;
         }
 
-        .discover_temple_page_4_map_height {
-            height: 650px;
+
+
+
+
+        /* 手機在這邊~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        /* min-width 桌面板 */
+        @media (min-width:1400px) {
+
+            /* 共用設定 */
+            .maxwidth80 {
+                width: 80%;
+            }
+
+            .marginatuo0 {
+                margin: auto 0 auto auto;
+            }
+
+            .brspace {
+                width: 20px;
+            }
+
+            /* page_1 */
+            .dflex {
+                display: flex;
+            }
+
+            .borderline_text {
+                justify-content: flex-end;
+            }
+
+            .leftpad {
+                padding: 0 0 0 50px;
+            }
+
+            .left_pagepd {
+                padding: 40px;
+            }
+
+            .boxgraycolor {
+                width: 100%;
+                background-color: #d6d6d6;
+            }
+
+            .padbt70 {
+                padding-bottom: 70px;
+            }
+
+            /* page_2 */
+            .vishid {
+                visibility: hidden;
+            }
+
+            .padtop_page2all {
+                padding-top: 70px;
+            }
+
+            .padtp {
+                padding-top: 50px;
+            }
+
+            .padtp20 {
+                padding-top: 20px;
+            }
+
+            .padleft10 {
+                padding-left: 10px;
+            }
+
+        }
+
+        /* min-width 501  max-width 1399 平板 兩個尺寸中間值 */
+        @media (min-width:741px) and (max-width:1399px) {
+
+            /* 共用設定 */
+            .maxwidth80 {
+                width: 85%;
+            }
+
+            /* page_1 */
+
+
+            .dflex1 {
+                display: flex;
+            }
+
+            .borderline_text {
+                justify-content: flex-end;
+            }
+
+            .leftpad {
+                padding: 0 0 0 50px;
+            }
+
+            .left_pagepd {
+                padding: 40px;
+            }
+
+            .boxgraycolor {
+                width: 100%;
+                background-color: #d6d6d6;
+            }
+
+            .padleft10 {
+                padding-left: 10px;
+            }
+
+            /* page_2 */
+
+
+            .padtop_page2all {
+                padding-top: 150px;
+            }
+
+            .padtp {
+                padding-top: 50px;
+            }
+        }
+
+
+
+        /* max-width 手機板 */
+        @media (max-width:740px) {
+
+            /* 共用設定 */
+            .maxwidth80 {
+                width: 85%;
+            }
+
+            .dnone740 {
+                display: none;
+            }
+
+            .padtp_md {
+                padding-top: 20px;
+            }
+
+            .padtp40_md {
+                padding-top: 40px;
+            }
+
+            .pad0_md {
+                padding: 0;
+            }
+
+            /* page_1 */
+            .jucc_md {
+                justify-content: center;
+            }
+
+            .leftpad {
+                padding: 50px 0 0 0;
+
+            }
+
+            /* page_2 */
+            .padtp30_md {
+                padding-top: 30px;
+            }
+
+            .padtp020 {
+                padding: 20px 0 0 0;
+            }
+
         }
     </style>
 </head>
@@ -342,7 +517,7 @@
 
         <!-- page_1 -->
         <div class="discover_temple_page_1">
-            <div class="discover_temple_page_1_width maxwidth80">
+            <div class="discover_temple_page_1_width maxwidth80 padbt70">
                 <!-- page_1_up -->
                 <div class="discover_temple_page_1_up   ">
                     <div class="page_1_up">
@@ -358,30 +533,32 @@
 
                 <!-- page_1_down -->
                 <div class="discover_temple_page_1_down ">
-                    <div class=" d-flex flex-wrap discover_temple_page_1_down_pb">
-                        <!-- 左邊 -->
+                    <div class="   discover_temple_page_1_down_pb dflex">
+                        <!-- page_1左邊 -->
                         <div class="row no-gutters col p-0   ">
-                            <div class="discover_temple_page_box midmargin_right50">
+                            <div class="discover_temple_page_box ">
+                                <!-- page_1左邊up廟宇介紹標題 -->
                                 <div class="discover_temple_page_1_title font-weight-bold">
                                     <h1>廟宇介紹</h1>
                                 </div>
-
-                                <div class="discover_temple_page_1_box d-flex">
-                                    <div class="discover_temple_page_1_box_small col-6 p-0">
+                                <!-- page_1左邊down set -->
+                                <div class="discover_temple_page_1_box dflex dflex1">
+                                    <div class="discover_temple_page_1_box_small col-lg-6 col-md-6 p-0">
                                         <div class="discover_temple_page_1_box_img">
                                             <img src="./img/photo/geraldine-ng-qIACfEYEIEc-unsplash (1).jpg">
                                         </div>
-                                        <div class="discover_te_page_1empl_box_h3">
-                                            <div class="borderline_name d-flex">
 
+                                        <!-- page_1左邊down 文字集合 -->
+                                        <div class="discover_te_page_1empl_box_h3 padtp_md padtp20">
+                                            <!-- 行天宮 -->
+                                            <div class="borderline_h3 d-flex aic jucc_md">
+                                                <hr class="hrline dnone740 marginatuo0">
 
-                                                <div class="borderline_h3 d-flex">
-                                                    <hr class="navline">
-                                                    <h3>行天宮</h3>
-                                                </div>
+                                                <h3 class="padleft10">行天宮</h3>
                                             </div>
-                                            <div class="borderline_text d-flex">
-                                                <p class="phidden">00000</p>
+                                            <!-- 道教 -->
+                                            <div class="borderline_text borderline_text1 d-flex jucc_md">
+
                                                 <p>道教</p>
 
                                             </div>
@@ -404,7 +581,8 @@
                                         <div class="discover_temple_page_1_box_textdown">
                                             <h5 class="font-weight-bold redcolorh5">HISTORY | 歷史</h5>
                                             <br>
-                                            <p>1943年，空真子師父（郭得進居士）及師兄弟，於台北市永樂町（今迪化街）一處民宅三樓設立「行天堂」，恭奉關聖帝君。當年，黃玄空師父（本名黃欉，法號「玄空」，1911年－1970年；行天宮方面敬稱其為「玄空師父」）得三兄黃新火居士引介，遂與「行天堂」關聖帝君結緣。
+                                            <p>1943年，空真子師父（郭得進居士）及師兄弟，於台北市永樂町（今迪化街）一處民宅三樓設立「行天堂」，恭奉關
+                                                <!-- 這裡要斷句給手機板用 -->
                                             </p>
                                             <br>
                                             <p>
@@ -418,30 +596,30 @@
 
                             </div>
                         </div>
-                        <!-- 中間 -->
-                        <!-- <div class="row no-gutters col-1 p-0  flex-grow-1">
-                    <div class="discover_temple_page_box1"></div>
-                </div> -->
+                        <!-- page_1中間 -->
+                        <div class="row no-gutters col-1 p-0 vishid ">
+                            <div class="discover_temple_page_box1"></div>
+                        </div>
 
-                        <!-- 右邊 -->
+                        <!-- page_1右邊 -->
                         <div class="row no-gutters col p-0   midpad_left">
-                            <div
-                                class="discover_temple_page_box midmargin_left50 left_pagepd discover_temple_page_1_boxgraycolor">
+                            <!-- page_1右邊 桌機padding -->
+                            <div class="discover_temple_page_box  left_pagepd boxgraycolor">
                                 <div class="discover_temple_page_1_rightpage">
-                                    <div class="discover_temple_page_1_rightpage_text d-flex">
-                                        <div class="discover_temple_page_1_rightpage_left col">
+                                    <div class="discover_temple_page_1_rightpage_text dflex ">
+                                        <div class="discover_temple_page_1_rightpage_left col pad0_md">
                                             <p> 1945年，三峽「白雞」「海山」二坑煤礦附近瘧疾肆虐，居住於臺北縣樹林的基隆煤礦業主黃欉（玄空師父）為地方請命，遂得關聖帝君聖允，於辦公室闢一靜室，創設「行修堂」。不久，疫情趨緩，遠近信眾無不叩恩感謝。
                                                 <br>
                                                 <br>
-                                                1949年，因「行天堂」場地不夠理想，黃玄空在臺北市九臺街（今林森北路、民權東路交叉口一帶）購入原為宮前町的小型民間信仰簡易齋教鸞堂及附設土地公廟。不久，該鸞堂即吸引不少香客前往參訪，並形成多達
+                                                1949年，因「行天堂」場地不夠理想，黃玄空在臺北市九臺街（今林森北路、民權東路交叉口一帶
+                                                <!-- page_1 右邊字數剛好 -->
                                             </p>
                                         </div>
-                                        <div class="discover_temple_page_1_rightpage_right col">
+                                        <div class="discover_temple_page_1_rightpage_right col pad0_md">
                                             <p>250戶住家的違章建築[來源請求]。
                                                 <br><br>1956年，黃玄空著手於北投（平埔族嗄嘮別社舊址）、三峽兩地整建以祭祀關公為主的民間信仰廟宇，即北投忠義廟與三峽行修宮。行天宮落成後，由黃欉所主導興建的三座廟宇合稱為「行天三宮」——新建於臺北市中心的行天宮稱為本宮，其餘兩間為行天宮分宮。
                                                 <br>
-                                                <br>
-                                                1960年代初，黃玄空原本已有將齋教鸞堂原地擴建為廟宇的計畫，不過，該片佔地2,000坪的私人用地，
+                                                <!-- page_1 右邊字數剛好 -->
 
 
                                                 <!-- 
@@ -465,29 +643,26 @@
 
         <!-- page_2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="discover_temple_page_2">
-            <div class="discover_temple_page_2_set  d-flex flex-wrap  padtop_page2all maxwidth80">
+            <div class="discover_temple_page_2_set  dflex dflex1 flex-wrap  padtop_page2all maxwidth80 padbt70">
                 <!-- page_2左邊 -->
                 <div class="discover_temple_page_2_left row no-gutters col p-0">
 
                     <!-- page_2左邊_集合 -->
-                    <div class="discover_temple_page_box midmargin_right50 d-flex">
+                    <div class="discover_temple_page_box dflex dflex1">
 
                         <!-- page_2左邊_左邊文字 -->
-                        <div class="discover_temple_page_1_box col-5  p-0">
+                        <div class="discover_temple_page_1_box col-lg-5 col-md-5 p-0">
 
 
 
                             <div class="discover_temple_page_1_box_small  ">
-                                <div class="discover_temple_page_1_box_textup ">
-                                    <br><br>
+                                <div class="discover_temple_page_1_box_textup padtp padtp30_md ">
+
 
                                     <p>在教育部開始推動九年國民教育後，被改劃為國民中學預定用地（現為臺北市立新興國民中學）。
                                         <br><br>經交涉後，臺北市政府採取「以地易地」的方式，讓原地主黃欉以九臺街（今林森北路、民權東路交叉口一帶）的私有地交換當時仍為瑠公圳末梢支流、沼澤的公有地。<br><br>在取得位於西新庄子，現今民權東路、松江路口東北角的建廟用地後，黃欉商請已有興建多處廟宇經驗的造廟匠師廖石成設計、施工，並於1968年順利完成臺北本宮。
                                     </p>
-                                    <br>
 
-                                    <br>
-                                    <br>
                                 </div>
 
                             </div>
@@ -496,13 +671,13 @@
 
                         <!-- page_2左邊_右邊照片 -->
                         <div class="discover_temple_page_1_box_small col  leftpad ">
-                            <div class="discover_temple_page_2_box_img page2boximg3 imgpad">
+                            <div class="discover_temple_page_2_box_img page2boximg3 imgpad dnone740 vishid">
                                 <img src="./img/photo/geraldine-ng-qIACfEYEIEc-unsplash (1).jpg">
                             </div>
                             <div class="discover_temple_page_2_box_img page2boximg3 imgpad">
                                 <img src="./img/photo/145339854_2867480686911322_1265099753961658071_n.jpg">
                             </div>
-                            <div class="discover_temple_page_2_box_img  page2boximg3_3">
+                            <div class="discover_temple_page_2_box_img  page2boximg3_3 dnone740">
                                 <img src="./img/photo/1280px-Hsing_Tian_Kong_20121003b.jpg">
                             </div>
 
@@ -515,28 +690,31 @@
                     </div>
 
                 </div>
+
+                <!-- page_2中間 -->
+                <div class="row no-gutters col-1 p-0  dnone740 vishid">
+                    <div class="discover_temple_page_box1"></div>
+                </div>
+
+
                 <!-- page_2右邊 -->
                 <div class="discover_temple_page_2_right row no-gutters col p-0 ">
-                    <div class="discover_temple_page_2_right_set midmargin_left50">
+                    <div class="discover_temple_page_2_right_set ">
                         <!-- page_2右邊_上面照片 -->
                         <div class="discover_temple_page_2_right_img_set d-flex ">
                             <div class="discover_temple_page_2_right_img_set_img page2boximg2">
-                                <img src="./img/photo/img789.png">
+                                <img class="objfc" src="./img/photo/2.1024x768.jpg">
                             </div>
-                            <div class="discover_temple_page_2_right_img_set_img page2boximg2">
-                                <img src="./img/photo/img123.png">
-                            </div>
-                            <div class="discover_temple_page_2_right_img_set_img page2boximg2">
-                                <img src="./img/photo/img981.png">
-                            </div>
+
                         </div>
 
                         <!-- page_2右邊_下面文字 -->
-                        <div class="discover_temple_page_1_box_textup padtop">
+                        <div class="discover_temple_page_1_box_textup padtp40_md">
                             <h5 class="font-weight-bold redcolorh5">architecture | 建築</h5>
-                            <div class="page_2_rigth_down_p col-8 p-0 margin000auto">
-                                <br>
-                                <br>
+                            <div class="page_2_rigth_down_p col-lg-8 
+                             margin000auto padtp020">
+
+
                                 <p>行天宮台北本宮屬於閩南燕尾翹脊式的建築，
                                     其特色在於採用鋼筋混凝土，創造出類似傳統孝廟木造建築的品味。在學界，被公認為台灣光復後所建的廟宇中，傑出的作品之一。
                                 </p>
@@ -566,7 +744,7 @@
 
         <!-- page_3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-        <div class="discover_temple_page_3">
+        <div class="discover_temple_page_3 ">
             <div class="discover_temple_page_3_set  mixwidth1586 padtop_page2all maxwidth80">
                 <div class="col p-0 d-flex jcsb">
                     <!-- page_3左邊 -->

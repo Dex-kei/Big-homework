@@ -51,7 +51,7 @@ nav {
 }
 
 .navline {
-    width: 80%;
+    /* width: 80%; */
     /* height: 0.5px; */
     background-color: rgb(184, 184, 184);
     margin: 0 auto;
@@ -117,6 +117,10 @@ footer {
     .navbar .ham {
         display: none;
     }
+    .navline {
+        width: 80%;
+       
+    }
 }
 
 
@@ -135,5 +139,9 @@ footer {
     .navbar .fa-bars {
         color: #4b4b4b;
         font-size: 30px;
+    }
+    .navline {
+        width: 85%;
+       
     }
 }

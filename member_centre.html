@@ -113,6 +113,10 @@
             justify-content: center;
         }
 
+        .jucse {
+            justify-content: space-evenly;
+        }
+
         .aic {
             align-items: center;
 
@@ -159,6 +163,7 @@
             margin: 0;
         }
 
+
         /* .overtext {
             overflow: hidden;
             text-overflow: ellipsis;
@@ -178,12 +183,24 @@
             padding-left: 20px;
         }
 
+        .padtp100 {
+            padding-top: 100px;
+        }
+
+        .padtp50 {
+            padding-top: 50px;
+        }
+
         .padright10 {
             padding-right: 10px;
         }
 
         .padleft50 {
             padding-left: 50px;
+        }
+
+        .padbot100 {
+            padding-bottom: 100px;
         }
 
         th,
@@ -219,6 +236,26 @@
 
         .borderline {
             border-bottom: 1px solid #000;
+        }
+
+        .width40 {
+            width: 35%;
+        }
+
+        .width10 {
+            width: 10%;
+        }
+
+        .width15 {
+            width: 15%;
+        }
+
+        .marginauto0 {
+            margin: auto 0 auto auto;
+        }
+
+        .member_centre_page_1 {
+            background-image: url(./img/deco/bcc.png);
         }
     </style>
 </head>
@@ -346,9 +383,9 @@
 
 
             <!-- page_1底部 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-            <div class="member_centre_page_1_down">
+            <div class="member_centre_page_1_down padtp50">
                 <!-- page_1底部照片+個人資料 -->
-                <div class="member_centre_page_1_down_imgtext d-flex jucc aic maxwidth">
+                <div class="member_centre_page_1_down_imgtext d-flex jucse aic maxwidth">
                     <!-- page_1底部照片頭像 -->
                     <div class="member_centre_page_1_down_img col-5">
                         <img src="./img/photo/my.png">
@@ -394,17 +431,17 @@
 
 
                 <!-- page_1 親友資料 -->
-                <div class="member_centre_page_1_down_relative maxwidth1400 marginauto">
+                <div class="member_centre_page_1_down_relative maxwidth1400 marginauto padtp100 ">
                     <!-- page_1 親友資料標題 -->
-                    <div class="member_centre_page_1_down_relative_title d-flex aic">
+                    <div class="member_centre_page_1_down_relative_title d-flex aic col-lg-11 marginauto p-0">
                         <h4 class="postre margin0 padright10">親友資料</h4>
                         <button class="butstyle ">
                             <p>修改</p>
                         </button>
                     </div>
                     <!-- 親友資料表 -->
-                    <div class="member_centre_page_1_down_information">
-                        <table class="member_centre_page_1_down_information_text margin0auto col-lg-11">
+                    <div class="member_centre_page_1_down_information padbot100">
+                        <table class="member_centre_page_1_down_information_text margin0auto col-lg-11 marginauto0">
                             <tr class="member_tablehead">
                                 <th>姓名</th>
                                 <th>性別</th>
@@ -415,12 +452,12 @@
                             </tr>
 
                             <tr class="">
-                                <td>小李</td>
-                                <td>男</td>
-                                <td>1990/01/01</td>
-                                <td>1990/01/01</td>
-                                <td>子時</td>
-                                <td class="width40">100 台北市中正區中正路100號1樓</td>
+                                <td class="width10">小李</td>
+                                <td class="width10">男</td>
+                                <td class="width15">1990/01/01</td>
+                                <td class="width15">1990/01/01</td>
+                                <td class="width10">子時</td>
+                                <td class="width35">100 台北市中正區中正路100號1樓</td>
                             </tr>
                             <tr class="">
                                 <td>小李</td>
@@ -428,7 +465,7 @@
                                 <td>1990/01/01</td>
                                 <td>1990/01/01</td>
                                 <td>子時</td>
-                                <td class="width40">100 台北市中正區中正路100號1樓</td>
+                                <td class="width40">100 台北市中正區中正路100號1樓1111111111111111111號</td>
                             </tr>
                             <tr class="textpd">
                                 <td>小李</td>
