@@ -116,6 +116,42 @@
         .redcolor {
             color: #cc543a;
         }
+
+        .backgroundimg_light img {
+            width: 100%;
+        }
+
+        /* 手機在這邊~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        /* min-width 桌面板 */
+        @media (min-width:1400px) {
+            .displayno {
+                display: none;
+            }
+        }
+
+
+
+
+
+        /* max-width 手機板 */
+        @media (max-width:740px) {
+            .backgroundimg_lantern {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                opacity: 0.2;
+            }
+            .backgroundimg_light {
+                width: 100%;
+                position: absolute;
+                bottom: 13%;
+                opacity: 0.2;
+            }
+
+            .displayno_md {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -161,52 +197,76 @@
                 </div>
 
             </div>
+
+            
+  <!-- 我是手機板 燈籠圖 -->
+  <div class="light_Description_page_1_backgroundimg displayno backgroundimg_lantern">
+    <img src="./img/deco/lantern04.png">
+</div>
+
+
             <!-- page_1內文 祈福燈種 -->
             <div class="light_Description_page_1_h5p padding_bottom_rem ">
                 <h5 class="redcolor">祈福燈種:</h5>
-                <p>祈福燈種包括 (1)安太歲、(2)光明燈、(3)文昌燈、(4)拜斗燈、(5)月老姻緣簿、(6)闔家平安斗。</p>
+                <br>
+                <p>祈福燈種包括 (1)安太歲、(2)光明燈、(3)文昌燈、(4)發財燈、(5)姻緣燈、(6)平安燈。</p>
             </div>
             <!-- page_1內文 安奉費用 -->
             <div class="light_Description_page_1_h5p padding_bottom_rem ">
                 <h5 class="redcolor">安奉費用:</h5>
-                <p>除闔家平安斗為每組3,600元，其餘燈種每盞燈安奉費用為600元，各項服務特色請參考本網站相關說明。</p>
+                <br>
+                <p>安太歲為每盞800元，其餘燈種每盞燈安奉費用為600元，各項服務特色請參考本網站相關說明。</p>
             </div>
             <!-- page_1內文 付費方式 -->
             <div class="light_Description_page_1_h5p padding_bottom_rem ">
                 <h5 class="redcolor">付費方式:</h5>
-                <p>(1) 線上刷卡(信用卡、銀聯卡、美國運通卡)、(2) 7-ELEVEN門市 ibon代碼繳費、(3) 中國信託紅利兌換、(4) 新光銀行線上轉帳、(5) 全家 FamiPort代碼繳費、(6)
-                    橘子支付。</p>
+                <br>
+                <p>(1) 線上刷卡(VISA信用卡、銀聯卡、美國運通卡)
+                    <br>(2) 7-ELEVEN門市 ibon代碼繳費
+                    <br>(3) 中國信託紅利兌換
+                    <br>(4) 新光銀行線上轉帳
+                    <br>(5) 全家 FamiPort代碼繳費
+                </p>
                 <p> ※ 依活動內容不同可選用付費方式將有變動。</p>
             </div>
             <!-- page_1內文 申請流程 -->
             <div class="light_Description_page_1_h5p padding_bottom_rem ">
                 <h5 class="redcolor">申請流程:</h5>
-                <p>依步驟填寫相關資料以供廟方進行資料確認及安奉作業。
+                <br>
+                <p>(1)依步驟填寫相關資料以供廟方進行資料確認及安奉作業。
                     <br>
-                    完成申請作業後，系統即提供一組訂單編號，供信眾查詢用。
+                    (2)完成申請作業後，系統即提供一組訂單編號，供信眾查詢用。
                     <br>
-                    廟方將於收到申請資料後15天內完成安奉作業並以平信寄送通知函與贈品予民眾。
+                    (3)廟方將於收到申請資料後15天內完成安奉作業並以平信寄送通知函與贈品予民眾。
                     <br>
-                    欲寄送國外者請填寫英文地址，並將依寄送區域酌收寄送郵資。
+                    (4)欲寄送國外者請填寫英文地址，並將依寄送區域酌收寄送郵資。
                 </p>
 
             </div>
+
+            <!-- 我是手機板 光明燈圖 -->
+            <div class="light_Description_page_1_backgroundimg displayno backgroundimg_light">
+                <img src="./img/deco/light_light.png">
+            </div>
+
+
             <!-- page_1內文 其他須知 -->
             <div class="light_Description_page_1_h5p padding_bottom_rem ">
                 <h5 class="redcolor">其他須知:</h5>
-                <p>填寫國曆生辰者將由廟方轉為農曆生辰進行安奉。
+                <br>
+                <p>(1)填寫國曆生辰者將由廟方轉為農曆生辰進行安奉。
                     <br>
-                    本年度線上點燈之贈品為平安符，感謝狀及贈品將依申請人所填寫之寄送地址寄送。
+                    (2)本年度線上點燈之贈品為平安符，感謝狀及贈品將依申請人所填寫之寄送地址寄送。
                     <br>
-                    若因申請人未提供正確寄送地址而無法送達物品，廟方將不負責查詢地址、重新寄發或其他相關事務。
+                    (3)若因申請人未提供正確寄送地址而無法送達物品，廟方將不負責查詢地址、重新寄發或其他相關事務。
                     <br>
-                    農曆年前之訂單，需至該年度農曆正月15日前，由廟方擇良辰吉日完成該年度第一次安奉作業。
+                    (4)農曆年前之訂單，需至該年度農曆正月15日前，由廟方擇良辰吉日完成該年度第一次安奉作業。
                     <br>
-                    本年度申請之各燈種請將統一於農曆12月24日送神後拆除。
+                    (5)本年度申請之各燈種請將統一於農曆12月24日送神後拆除。
                     <br>
-                    透過線上點燈之民眾不得要求將本年度之贈品折換現金、兌換券或其他物品。
+                    (6)透過線上點燈之民眾不得要求將本年度之贈品折換現金、兌換券或其他物品。
                     <br>
-                    本服務說明與贈品得由天后宮於各年度視情況而調整。
+                    (7)本服務說明與贈品得由天后宮於各年度視情況而調整。
                 </p>
             </div>
             <!-- page_1內文 底部 -->
@@ -236,9 +296,13 @@
 
         </div>
         <!-- 我是背景佛像 -->
-        <div class="light_Description_page_1_backgroundimg backgroundimg_god">
+        <div class="light_Description_page_1_backgroundimg backgroundimg_god displayno_md">
             <img src="./img/deco/god_Pharmacist.png">
         </div>
+
+
+
+
     </div>
 
 
