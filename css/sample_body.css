@@ -1,5 +1,6 @@
 body {
     font-family: 'Faustina', serif !important;
+    /* font-family: 'Noto Sans TC', serif !important; */
     background-image: url(../img/logo/logo-002.svg);
 }
 
@@ -31,6 +32,7 @@ p {
     margin: 0;
     letter-spacing:4px;
     font-family: 'Faustina', serif;
+    /* font-family: 'Noto Sans TC', serif !important; */
     /* 追加修正 */
     text-align: justify;
 }
