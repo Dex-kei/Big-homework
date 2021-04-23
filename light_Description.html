@@ -117,7 +117,16 @@
             color: #cc543a;
         }
 
-        .backgroundimg_light img {
+        .overflowhid {
+            overflow: hidden;
+        }
+
+        .backgroundimg_amulet img {
+            width: 100%;
+
+        }
+
+        .backgroundimg_lantern img {
             width: 100%;
         }
 
@@ -127,6 +136,22 @@
             .displayno {
                 display: none;
             }
+
+            .backgroundimg_amulet {
+                width: 25%;
+                position: absolute;
+                bottom: 20%;
+                opacity: 0.2;
+            }
+
+            .backgroundimg_lantern {
+                width: 50%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                opacity: 0.2;
+            }
+
         }
 
 
@@ -142,8 +167,8 @@
                 opacity: 0.2;
             }
 
-            .backgroundimg_light {
-                width: 100%;
+            .backgroundimg_amulet {
+                width: 90%;
                 position: absolute;
                 bottom: 13%;
                 opacity: 0.2;
@@ -182,8 +207,17 @@
 
 
     <!-- page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="light_Description_page_1 position_relative padtop150">
+
+    <div class="light_Description_page_1 position_relative padtop150 overflowhid">
+        <!-- 我是 燈籠圖 -->
+        <div class="light_Description_page_1_backgroundimg  backgroundimg_lantern">
+            <img src="./img/deco/lantern04.png">
+        </div>
+
+
         <div class="light_Description_page_1_set container  ">
+
+
             <!-- page_1文字集合 -->
             <div class="light_Description_page_1_textset">
                 <!-- page_1上面大標題+敘述 -->
@@ -200,10 +234,7 @@
             </div>
 
 
-            <!-- 我是手機板 燈籠圖 -->
-            <div class="light_Description_page_1_backgroundimg displayno backgroundimg_lantern">
-                <img src="./img/deco/lantern04.png">
-            </div>
+
 
 
             <!-- page_1內文 祈福燈種 -->
@@ -245,9 +276,9 @@
 
             </div>
 
-            <!-- 我是手機板 光明燈圖 -->
-            <div class="light_Description_page_1_backgroundimg displayno backgroundimg_light">
-                <img src="./img/deco/light_light.png">
+            <!-- 我是 護身符圖 -->
+            <div class="light_Description_page_1_backgroundimg  backgroundimg_amulet ">
+                <img src="./img/deco/amulet_01.png">
             </div>
 
 
@@ -296,10 +327,7 @@
             </div>
 
         </div>
-        <!-- 我是背景佛像 -->
-        <div class="light_Description_page_1_backgroundimg backgroundimg_god displayno_md">
-            <img src="./img/deco/god_Pharmacist.png">
-        </div>
+
 
 
 
