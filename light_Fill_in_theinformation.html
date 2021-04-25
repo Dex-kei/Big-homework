@@ -33,6 +33,10 @@
             transition: .5s;
         }
 
+        .graycolor {
+            background-color: #c0c0c0;
+        }
+
         /* navbar墊底 */
         .navbar_test_bottom {
             width: 100%;
@@ -134,9 +138,7 @@
             background-color: #d1d1d1;
         }
 
-        .padtop100 {
-            padding-top: 100px;
-        }
+
 
         .light_Fill_in_theinformation_page_1 {
             background-image: url(./img/deco/bcc.png);
@@ -170,6 +172,7 @@
 
         .butmaxwid {
             max-width: 600px;
+            justify-content: center;
         }
 
         .light_Fill_in_theinformation_page_1_card_icon {
@@ -212,7 +215,13 @@
                 padding-bottom: 40px;
             }
 
+            .padtop100 {
+                padding-top: 100px;
+            }
 
+            .padbut {
+                left: 55%;
+            }
         }
 
 
@@ -220,14 +229,14 @@
 
 
         /* max-width 手機板 */
-        @media (max-width:740px) {
+        @media (max-width:1399px) {
 
             .displayno_md {
                 display: none;
             }
 
             .paddingbottom40 {
-                padding: 0 0 25px 0;
+                padding: 0 0 20px 0;
             }
 
             .paddingbottom30 {
@@ -239,6 +248,17 @@
                 padding-bottom: 40px;
             }
 
+            .padtop100 {
+                padding-top: 10%;
+            }
+
+            .padbut {
+                left: 68%;
+            }
+            .padddingbottom150{
+                padding-bottom: 10%;
+            }
+           
         }
     </style>
 </head>
@@ -558,7 +578,7 @@
                     </div>
                     <!-- page_1 內容_標題 -->
                     <div class="light_Fill_in_theinformation_page_1_title paddingbottom40 postre">
-                        <h3>祈福者
+                        <h3 class="postre">祈福者
                             <!-- page_1 內容_標題_刪除按鈕 -->
                             <button class="graycolor postab padbut dipay">
                                 <p>刪除</p>
@@ -1030,15 +1050,26 @@
                             <!-- <img src=""> -->
                             <p class="redcolorh5">*為必填資料</p>
                         </div>
-                        <!-- page_1 內容 小提示 同會員資料 -->
-                        <div class="light_Fill_in_theinformation_page_1_text_star_right    alignitems d-flex">
-                            <input type="checkbox" id="exampleCheck1">
-                            <p class="form-check-label padleft10" for="exampleCheck1">同會員資料</p>
+
+
+                        <!-- boostarp 下拉選單 -->
+                        <div class=" d-flex alignitems p-0">
+                            <div class="col p-0">
+                                <select class="form-control " id="exampleInputTime">
+                                    <option value="">同親友資料</option>
+                                    <option value="">鎧煌</option>
+                                </select>
+                            </div>
                         </div>
+
+
+
+
+
                     </div>
-                    <!-- page_1 內容_標題 -->
+                    <!-- page_1 2內容_標題 -->
                     <div class="light_Fill_in_theinformation_page_1_title paddingbottom40 postre">
-                        <h3>祈福者
+                        <h3 class="postre">祈福者
                             <!-- page_1 內容_標題_刪除按鈕 -->
                             <button class="graycolor postab padbut">
                                 <p>刪除</p>
@@ -1482,7 +1513,7 @@
 
                         </div>
                         <!-- page_1 手機用 內容_按鈕_新增廟宇 -->
-                        <div class="button_add_set d-flex juscsb  marginauto paddingbottom40 col">
+                        <div class="button_add_set d-flex juscsb  marginauto paddingbottom40 col butmaxwid">
                             <div class="button_add ">
                                 <button class="graycolor butomcolor">
                                     <p>+ 新增燈種與廟宇</p>
@@ -1507,12 +1538,12 @@
                 <div
                     class="light_Fill_in_theinformation_page_1_button buttonstyle padddingtop40 padddingbottom150 butflexmargin  ">
                     <div class="btntest">
-                        <button class="graycolor">
+                        <button class="">
                             <p>新增祈福者</p>
                         </button>
                     </div>
                     <button>
-                        <p>下一步</p>
+                        <p>加入購物車</p>
                     </button>
                 </div>
 
