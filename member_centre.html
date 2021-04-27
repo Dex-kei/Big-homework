@@ -123,7 +123,6 @@
 
         .aic {
             align-items: center;
-
         }
 
         .tac {
@@ -180,7 +179,7 @@
         /* page_1 down~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-        .member_centre_page_1_down_img img {
+        .member_centre_down_img img {
             width: 100%;
             border-radius: 50%;
         }
@@ -230,6 +229,19 @@
             background-color: #c0c0c0;
         }
 
+        .butgray {
+
+            background-color: #c0c0c0;
+        }
+
+        .boxlineno {
+            border: 0;
+        }
+
+        .padlock {
+            padding: .375rem 0;
+        }
+
         .maxwidth300 {
             max-width: 320px;
 
@@ -263,6 +275,15 @@
             border-bottom: 1px solid #000;
         }
 
+        .paddingtop2 {
+            padding-top: 2%;
+        }
+
+        .paddingbot2 {
+            padding-bottom: 2%;
+        }
+
+
         /* 手機在這邊~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
         /* min-width 桌面板 */
         @media (min-width:1400px) {
@@ -274,7 +295,7 @@
                 display: flex;
             }
 
-            .member_centre_page_1_down_img {
+            .member_centre_down_img {
                 width: 30%;
             }
 
@@ -314,6 +335,22 @@
             .padbot100 {
                 padding-bottom: 100px;
             }
+
+            .maxwidth40 {
+                max-width: 40%;
+            }
+
+            .textstlyepass {
+
+                font-size: 16px;
+                font-weight: normal;
+
+                margin: 0;
+                letter-spacing: 4px;
+                font-family: 'Faustina', serif;
+
+                text-align: justify;
+            }
         }
 
 
@@ -334,7 +371,7 @@
                 display: none;
             }
 
-            .member_centre_page_1_down_img {
+            .member_centre_down_img {
                 width: 100%;
             }
 
@@ -346,7 +383,7 @@
             }
 
             .revise_icon {
-                width: 4%;
+                width: 7%;
             }
 
             .revise_icon img {
@@ -404,9 +441,9 @@
     <!-- page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="member_centre_page_1">
         <!-- page_1 集合 -->
-        <div class="member_centre_page_1_set">
+        <div class="member_centre_set">
             <!-- page_1 上半部共用head~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <div class="member_centre_page_1_up">
+            <div class="member_centre_up">
 
                 <section class="head container-fluid">
                     <h4 class="root">會員中心>訂單列表</h4>
@@ -500,36 +537,157 @@
 
 
             <!-- page_1底部 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-            <div class="member_centre_page_1_down padtp50">
+            <div class="member_centre_down padtp50">
 
                 <!-- page_1底部照片+個人資料 -->
-                <div class="member_centre_page_1_down_imgtext displayflex jucse aic maxwidth displayno_md">
+                <div class="member_centre_down_imgtext displayflex jucse aic maxwidth displayno_md">
                     <!-- page_1底部照片頭像 -->
-                    <div class="member_centre_page_1_down_img col-lg-5 col-10 marginauto">
+                    <div class="member_centre_down_img col-lg-5 col-10 marginauto">
                         <img src="./img/photo/my.png">
                     </div>
 
 
-                    <div class="member_centre_page_1_information">
+                    <div class="member_centre_information">
 
                         <!-- page_1 會員資料_標題 桌基板-->
-                        <div class="member_centre_page_1_information_title displayflex_md pad00150 displayflex aic">
+                        <div class="member_centre_information_title displayflex_md pad00150 displayflex aic">
                             <h3>會員資料</h3>
-                            <p class="padleft15">
-                                <button class="butstyle  d-flex aic">
+                            <div class="padleft15">
+
+
+                                <!-- 會員資料 彈跳修改 Button trigger modal -->
+                                <button type="button" class="butstyle  d-flex aic" data-toggle="modal"
+                                    data-target="#exampleModalCenter_1">
                                     <div class="revise_icon ">
                                         <img src="./img/icon/pen-solid.svg">
                                     </div>
                                     <p class="padleft5">修改</p>
                                 </button>
-                            </p>
+
+                                <!-- 會員資料 彈跳修改 Modal -->
+                                <div class="modal fade" id="exampleModalCenter_1" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered maxwidth40" role="document">
+                                        <div class="modal-content boxlineno">
+                                            <div class="modal-header boxlineno">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">會員資料修改</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+
+                                            <!-- 會員資料 修改內容 input -->
+                                            <div class="modal-body">
+                                                <!-- page_1 修改內容_input集合-->
+                                                <div class="member_centre_theinformation_inputset borderbottom ">
+                                                    <!-- page_1 修改內容_input_1 姓名-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *修改姓名 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>姓名</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text" class="form-control col-8"
+                                                            placeholder="請輸入姓名" aria-label="請輸入姓名"
+                                                            aria-describedby="addon-wrapping">
+
+                                                    </div>
+
+
+                                                    <!-- page_1 修改內容_input_1 連絡電話-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *修改連絡電話 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>連絡電話</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text" class="form-control col-8"
+                                                            placeholder="請輸入連絡電話" aria-label="請輸入連絡電話"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+
+
+                                                    <!-- page_1 修改內容_input_1 地址-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *修改地址 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>地址</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text" class="form-control col-8"
+                                                            placeholder="請輸入地址" aria-label="請輸入地址"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+
+                                                    <!-- page_1 修改內容_input_1 密碼-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *密碼修改地址 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>密碼</p>
+                                                        </div>
+
+                                                        <div
+                                                            class="member_centre_theinformation_password textstlyepass col-8 p-0">
+                                                            *******123</div>
+
+                                                    </div>
+
+                                                    <!-- page_1 修改內容_input_1 修改密碼 忘記密碼-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *修改密碼 忘記密碼 -->
+                                                        <div class="member_centre_theinformation_input_text col ">
+                                                        </div>
+
+                                                        <div
+                                                            class="member_centre_theinformation_password textstlyepass col-8 d-flex p-0 jcsb">
+                                                            <p>修改密碼</p>
+                                                            <p>忘記密碼</p>
+                                                        </div>
+
+
+
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer boxlineno">
+                                                <button type="button" class="butgray aic"
+                                                    data-dismiss="modal">返回</button>
+                                                <button type="button" class="   aic">儲存</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                                <!-- 會員資料 彈跳修改密碼 jquery控制換 Modal -->
+
+
+
+                            </div>
 
                         </div>
 
                         <!--  page_1 會員資料_內文集合 -->
-                        <div class="member_centre_page_1_information_textset col-11 marginauto p-0">
+                        <div class="member_centre_information_textset col-11 marginauto p-0">
                             <!--  page_1 會員資料_內文組 -->
-                            <div class="member_centre_page_1_information_text displayflex_md pad00150 displayflex">
+                            <div class="member_centre_information_text displayflex_md pad00150 displayflex">
                                 <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
                                     <p class="">姓名</p>
                                     <p class="">|</p>
@@ -538,42 +696,42 @@
                             </div>
 
 
-                            <div class="member_centre_page_1_information_text displayflex_md pad00150 displayflex">
+                            <div class="member_centre_information_text displayflex_md pad00150 displayflex">
                                 <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
                                     <p class="">生日</p>
                                     <p class="">|</p>
                                 </div>
                                 <P class="col">1990/01/01</P>
                             </div>
-                            <div class="member_centre_page_1_information_text displayflex_md pad00150 displayflex">
+                            <div class="member_centre_information_text displayflex_md pad00150 displayflex">
                                 <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
                                     <p class="">性別</p>
                                     <p class="">|</p>
                                 </div>
                                 <P class="col">男</P>
                             </div>
-                            <div class="member_centre_page_1_information_text displayflex_md pad00150 displayflex">
+                            <div class="member_centre_information_text displayflex_md pad00150 displayflex">
                                 <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
                                     <p class="">密碼</p>
                                     <p class="">|</p>
                                 </div>
                                 <P class="col">********</P>
                             </div>
-                            <div class="member_centre_page_1_information_text displayflex_md pad00150 displayflex">
+                            <div class="member_centre_information_text displayflex_md pad00150 displayflex">
                                 <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
                                     <p class="">連絡電話</p>
                                     <p class="">|</p>
                                 </div>
                                 <P class="col">0987654321</P>
                             </div>
-                            <div class="member_centre_page_1_information_text displayflex_md pad00150 displayflex">
+                            <div class="member_centre_information_text displayflex_md pad00150 displayflex">
                                 <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
                                     <p class="">電子信箱</p>
                                     <p class="">|</p>
                                 </div>
                                 <P class="col">abc@gmail.com</P>
                             </div>
-                            <div class="member_centre_page_1_information_text displayflex_md pad00150 displayflex">
+                            <div class="member_centre_information_text displayflex_md pad00150 displayflex">
                                 <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
                                     <p class="">地址</p>
                                     <p class="">|</p>
@@ -588,40 +746,6 @@
 
 
 
-                        <!-- <table class="member_centre_page_1_information ">
-                            <tr>
-                                <th class="">姓名</th>
-                                <td class="tttd postre"> |&ensp; redsleeve<button class="butstyle postab right0">
-                                        <p>修改</p>
-                                    </button></td>
-                            </tr>
-                            <tr>
-                                <th>電話</th>
-                                <td class="tttd"> |&ensp; 0987654321</td>
-                            </tr>
-                            <tr>
-                                <th>電子信箱</th>
-                                <td class="tttd">|&ensp; abc@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <th>生日</th>
-
-                                <td class="tttd">| &ensp;1990/01/01</td>
-                            </tr>
-                            <tr>
-                                <th>性別</th>
-                                <td class="tttd">| &ensp;女</td>
-                            </tr>
-                            <tr>
-                                <th>密碼</th>
-                                <td class="tttd postre ">| &ensp;********</td>
-
-                            </tr>
-                            <tr>
-                                <th>地址</th>
-                                <td class="tttd overtext maxwidth300">|&ensp; 100 台北市中正區中正路100號1樓1111</td>
-                            </tr>
-                        </table> -->
                     </div>
                 </div>
 
@@ -630,26 +754,26 @@
 
 
                 <!-- 手機用 page_1底部照片+個人資料 -->
-                <div class="member_centre_page_1_down_imgtext_set displayno">
-                    <div class="member_centre_page_1_down_imgtext displayflex jucse aic maxwidth ">
+                <div class="member_centre_down_imgtext_set displayno">
+                    <div class="member_centre_down_imgtext displayflex jucse aic maxwidth ">
                         <!-- 手機用 page_1底部照片頭像 -->
-                        <div class="member_centre_page_1_down_img col-lg-5 col-10 marginauto">
+                        <div class="member_centre_down_img col-lg-5 col-10 marginauto">
                             <img src="./img/photo/my.png">
                         </div>
                         <!-- 手機用 page_1 會員資料 -->
-                        <div class="member_centre_page_1_information padtp10_md">
-                            <div class="member_centre_page_1_information_set col-11 p-0 marginauto ">
+                        <div class="member_centre_information padtp10_md">
+                            <div class="member_centre_information_set col-11 p-0 marginauto ">
                                 <!-- 手機用 page_1 會員資料_標題 -->
-                                <div class="member_centre_page_1_information_title displayflex_md pad00150">
+                                <div class="member_centre_information_title displayflex_md pad00150">
                                     <h5>會員資料</h5>
                                     <div class="revise_icon displayflex_md">
                                         <img src="./img/icon/pen-solid.svg">
                                     </div>
                                 </div>
                                 <!-- 手機用 page_1 會員資料_內文集合 -->
-                                <div class="member_centre_page_1_information_textset col-11 marginauto p-0">
+                                <div class="member_centre_information_textset col-11 marginauto p-0">
                                     <!-- 手機用 page_1 會員資料_內文組 -->
-                                    <div class="member_centre_page_1_information_text displayflex_md pad00150 ">
+                                    <div class="member_centre_information_text displayflex_md pad00150 ">
                                         <div class="text_p displayflex_md jcsb col-4 p-0">
                                             <p class="">姓名</p>
                                             <p class="">|</p>
@@ -658,42 +782,42 @@
                                     </div>
 
 
-                                    <div class="member_centre_page_1_information_text displayflex_md pad00150 ">
+                                    <div class="member_centre_information_text displayflex_md pad00150 ">
                                         <div class="text_p displayflex_md jcsb col-4 p-0">
                                             <p class="">生日</p>
                                             <p class="">|</p>
                                         </div>
                                         <P class="col">1990/01/01</P>
                                     </div>
-                                    <div class="member_centre_page_1_information_text displayflex_md pad00150 ">
+                                    <div class="member_centre_information_text displayflex_md pad00150 ">
                                         <div class="text_p displayflex_md jcsb col-4 p-0">
                                             <p class="">性別</p>
                                             <p class="">|</p>
                                         </div>
                                         <P class="col">男</P>
                                     </div>
-                                    <div class="member_centre_page_1_information_text displayflex_md pad00150 ">
+                                    <div class="member_centre_information_text displayflex_md pad00150 ">
                                         <div class="text_p displayflex_md jcsb col-4 p-0">
                                             <p class="">密碼</p>
                                             <p class="">|</p>
                                         </div>
                                         <P class="col">********</P>
                                     </div>
-                                    <div class="member_centre_page_1_information_text displayflex_md pad00150 ">
+                                    <div class="member_centre_information_text displayflex_md pad00150 ">
                                         <div class="text_p displayflex_md jcsb col-4 p-0">
                                             <p class="">連絡電話</p>
                                             <p class="">|</p>
                                         </div>
                                         <P class="col">0987654321</P>
                                     </div>
-                                    <div class="member_centre_page_1_information_text displayflex_md pad00150 ">
+                                    <div class="member_centre_information_text displayflex_md pad00150 ">
                                         <div class="text_p displayflex_md jcsb col-4 p-0">
                                             <p class="">電子信箱</p>
                                             <p class="">|</p>
                                         </div>
                                         <P class="col">abc@gmail.com</P>
                                     </div>
-                                    <div class="member_centre_page_1_information_text displayflex_md pad00150 ">
+                                    <div class="member_centre_information_text displayflex_md pad00150 ">
                                         <div class="text_p displayflex_md jcsb col-4 p-0">
                                             <p class="">地址</p>
                                             <p class="">|</p>
@@ -715,42 +839,6 @@
 
 
 
-                            <!-- <table class="member_centre_page_1_information col-11 marginauto">
-
-                            <tr>
-                                <th class="">姓名</th>
-                                <td class="tttd postre"> |&ensp; redsleeve<button class="butstyle postab right0">
-                                        <p>修改</p>
-                                    </button></td>
-                            </tr>
-                            <tr>
-                                <th scope="col">電話 &ensp;&ensp;&ensp;&ensp;&ensp;|</th>
-                                <td class="tttd"> 0987654321</td>
-                            </tr>
-                            <tr>
-                                <td class="">電子信箱&ensp;|</td>
-
-                                <td class="tttd">abc@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <th class="">生日</th>
-
-                                <td class="tttd">| &ensp;1990/01/01</td>
-                            </tr>
-                            <tr>
-                                <th class="">性別</th>
-                                <td class="tttd">| &ensp;女</td>
-                            </tr>
-                            <tr>
-                                <th class="">密碼</th>
-                                <td class="tttd postre ">| &ensp;********</td>
-
-                            </tr>
-                            <tr>
-                                <th class="">地址</th>
-                                <td class="tttd overtext maxwidth300">|&ensp; 100 台北市中正區中正路100號1樓1111</td>
-                            </tr>
-                        </table> -->
 
                         </div>
                     </div>
@@ -773,43 +861,151 @@
 
 
                 <!-- page_1 親友資料 -->
-                <div class="member_centre_page_1_down_relative maxwidth1400 marginauto padtp100  displayno_md">
+                <div class="member_centre_down_relative maxwidth1400 marginauto padtp100  displayno_md">
                     <!-- page_1 親友資料標題 -->
 
                     <div
-                        class="member_centre_page_1_information_title displayflex_md pad00150 displayflex aic col-11 marginauto">
+                        class="member_centre_information_title displayflex_md pad00150 displayflex aic col-11 marginauto">
                         <h3>親友資料</h3>
-                        <p class="padleft15">
-                            <button class="butstyle  d-flex aic">
+                        <div class="padleft15">
+
+
+
+                            <!-- 親友資料 彈跳修改 Button trigger modal -->
+                            <button type="button" class="butstyle  d-flex aic" data-toggle="modal"
+                                data-target="#exampleModalCenter_2">
                                 <div class="revise_icon ">
                                     <img src="./img/icon/pen-solid.svg">
                                 </div>
                                 <p class="padleft5">修改</p>
                             </button>
-                        </p>
+
+                            <!-- 親友資料 彈跳修改 Modal -->
+                            <div class="modal fade" id="exampleModalCenter_2" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered maxwidth40" role="document">
+                                    <div class="modal-content boxlineno">
+                                        <div class="modal-header boxlineno">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">親友資料修改</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <!-- 親友資料 修改內容 input -->
+                                        <div class="modal-body">
+                                            <!-- page_1 親友修改內容_input集合-->
+                                            <div class="member_centre_theinformation_inputset borderbottom ">
+                                                <!-- page_1 親友修改內容_input_1 姓名-->
+                                                <div
+                                                    class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                    <!-- *親友姓名不給改 -->
+                                                    <div class="member_centre_theinformation_input_text col d-flex">
+                                                        <p class="redcolorh5">*</p>
+                                                        <p class="">姓名</p>
+                                                    </div>
+                                                    <!-- 親友姓名不改 -->
+                                                    <div class="member_centre_theinformation_name col-8 padlock">
+                                                        <p>封封封封</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- page_1 親友修改內容_input_1 生日-->
+                                                <div
+                                                    class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                    <!-- *親友生日不給改 -->
+                                                    <div class="member_centre_theinformation_input_text col d-flex">
+                                                        <p class="redcolorh5">*</p>
+                                                        <p>生日(國歷)</p>
+                                                    </div>
+                                                    <!-- 親友生日不改 -->
+                                                    <div class="member_centre_theinformation_name col-8 padlock">
+                                                        <p class="">1990/01/01</p>
+                                                    </div>
+
+                                                </div>
+
+
+
+
+
+                                                <!-- page_1 親友修改內容_input_1 連絡電話-->
+                                                <div
+                                                    class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                    <!-- *親友修改連絡電話 -->
+                                                    <div class="member_centre_theinformation_input_text col d-flex">
+                                                        <p class="redcolorh5">*</p>
+                                                        <p>連絡電話</p>
+                                                    </div>
+                                                    <!-- boostarp input -->
+                                                    <input type="text" class="form-control col-8" placeholder="請輸入連絡電話"
+                                                        aria-label="請輸入連絡電話" aria-describedby="addon-wrapping">
+                                                </div>
+
+
+                                                <!-- page_1 親友修改內容_input_1 地址-->
+                                                <div
+                                                    class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                    <!-- *親友修改地址 -->
+                                                    <div class="member_centre_theinformation_input_text col d-flex">
+                                                        <p class="redcolorh5">*</p>
+                                                        <p>地址</p>
+                                                    </div>
+                                                    <!-- boostarp input -->
+                                                    <input type="text" class="form-control col-8" placeholder="請輸入地址"
+                                                        aria-label="請輸入地址" aria-describedby="addon-wrapping">
+                                                </div>
+                                                <!-- 親友資料 單筆刪除按鈕 -->
+                                                <div
+                                                    class="member_centre_theinformationfirdelete paddingtop2 paddingbot2 d-flex jucc marginauto col-8 borderline">
+                                                    <button type="button" class="butgray aic"
+                                                        data-dismiss="modal">刪除</button>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- 親友修改 返回 儲存按鈕 -->
+                                        <div class="modal-footer boxlineno">
+                                            <button type="button" class="butgray aic" data-dismiss="modal">返回</button>
+                                            <button type="button" class="   aic">儲存</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
 
                     </div>
 
 
 
                     <!-- 親友資料表 -->
-                    <div class="member_centre_page_1_down_information padbot100 displayno_md">
+                    <div class="member_centre_down_information padbot100 displayno_md">
 
                         <div class="member_tablehead d-flex col-11 marginauto pad00200 borderbtline">
                             <p class="col-1">姓名</p>
                             <p class="col-1">性別</p>
                             <p class="col-2">生日(國曆)</p>
                             <p class="col-2">生日(農曆)</p>
-                            <p class="col-1">生辰</p>
+
                             <p class="col">地址</p>
 
                         </div>
                         <div class="member_tablehead d-flex col-11 marginauto pad200">
-                            <p class="col-1">小李</p>
+                            <p class="col-1">封封封封</p>
                             <p class="col-1">男</p>
                             <p class="col-2">1990/01/01</p>
                             <p class="col-2">1990/01/01</p>
-                            <p class="col-1">子時</p>
+
                             <p class="col">100 台北市中正區中正路100號1樓</p>
 
                         </div>
@@ -818,7 +1014,7 @@
                             <p class="col-1">男</p>
                             <p class="col-2">1990/01/01</p>
                             <p class="col-2">1990/01/01</p>
-                            <p class="col-1">子時</p>
+
                             <p class="col">100 台北市中正區中正路100號11111111111111111111樓</p>
                         </div>
                         <div class="member_tablehead d-flex col-11 marginauto pad00200">
@@ -826,45 +1022,11 @@
                             <p class="col-1">男</p>
                             <p class="col-2">1990/01/01</p>
                             <p class="col-2">1990/01/01</p>
-                            <p class="col-1">子時</p>
+
                             <p class="col">100 台北市中正區中正路100號111111111111111111111111樓</p>
                         </div>
 
-                        <!-- <table class="member_centre_page_1_down_information_text margin0auto col-lg-11 marginauto0">
-                            <tr class="member_tablehead">
-                                <th>姓名</th>
-                                <th>性別</th>
-                                <th>生日(國曆)</th>
-                                <th>生日(農曆)</th>
-                                <th>生辰</th>
-                                <th class="width40 ">地址</th>
-                            </tr>
 
-                            <tr class="">
-                                <td class="width10">小李</td>
-                                <td class="width10">男</td>
-                                <td class="width15">1990/01/01</td>
-                                <td class="width15">1990/01/01</td>
-                                <td class="width10">子時</td>
-                                <td class="width35 ">100 台北市中正區中正路100號1樓</td>
-                            </tr>
-                            <tr class="">
-                                <td>小李</td>
-                                <td>男</td>
-                                <td>1990/01/01</td>
-                                <td>1990/01/01</td>
-                                <td class="">子時</td>
-                                <td class="width40 ">100 台北市中正區中正路100號1樓1111111111111111111號</td>
-                            </tr>
-                            <tr class="textpd">
-                                <td>小李</td>
-                                <td>男</td>
-                                <td>1990/01/01</td>
-                                <td>1990/01/01</td>
-                                <td>子時</td>
-                                <td class="width40 ">100 台北市中正區中正路100號1樓</td>
-                            </tr>
-                        </table> -->
                     </div>
                 </div>
 
@@ -884,16 +1046,16 @@
 
 
                 <!-- 手機用 page_1 親友資料 -->
-                <div class="member_centre_page_1_down_relative maxwidth1400 marginauto padtp100 displayno col-11">
+                <div class="member_centre_down_relative maxwidth1400 marginauto padtp100 displayno col-11">
                     <!-- 手機用 page_1 親友資料標題 -->
-                    <div class="member_centre_page_1_information_title displayflex_md pad00150">
+                    <div class="member_centre_information_title displayflex_md pad00150">
                         <h5>親友資料</h5>
                         <div class="revise_icon displayflex_md">
                             <img src="./img/icon/pen-solid.svg">
                         </div>
                     </div>
                     <!-- 手機用 親友資料表 -->
-                    <div class="member_centre_page_1_down_information padbot100 marginauto">
+                    <div class="member_centre_down_information padbot100 marginauto">
 
 
                         <div class="member_tablehead d-flex col-11 marginauto pad00200 borderbtline">
@@ -958,41 +1120,7 @@
 
 
 
-                        <!-- <table class="member_centre_page_1_down_information_text  col-lg-11 col-11 marginauto">
-                            <tr class="member_tablehead">
-                                <th>姓名</th>
-                                <th>性別</th>
-                                <th class="displayno_md">生日(國曆)</th>
-                                <th>生日(農曆)</th>
-                                <th class="displayno_md">生辰</th>
-                                <th class="width40 displayno_md">地址</th>
-                            </tr>
 
-                            <tr class="">
-                                <td class="width10">小李</td>
-                                <td class="width10">男</td>
-                                <td class="width15 displayno_md">1990/01/01</td>
-                                <td class="width15">1990/01/01</td>
-                                <td class="width10 displayno_md">子時</td>
-                                <td class="width35 displayno_md">100 台北市中正區中正路100號1樓</td>
-                            </tr>
-                            <tr class="">
-                                <td>小李</td>
-                                <td>男</td>
-                                <td class="displayno_md">1990/01/01</td>
-                                <td>1990/01/01</td>
-                                <td class="displayno_md">子時</td>
-                                <td class="width40 displayno_md">100 台北市中正區中正路100號1樓1號</td>
-                            </tr>
-                            <tr class="textpd">
-                                <td>小李</td>
-                                <td>男</td>
-                                <td class="displayno_md">1990/01/01</td>
-                                <td>1990/01/01</td>
-                                <td class="displayno_md">子時</td>
-                                <td class="width40 displayno_md">100 台北市中正區中正路100號1樓</td>
-                            </tr>
-                        </table> -->
                     </div>
                 </div>
 
