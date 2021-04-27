@@ -105,7 +105,6 @@
             top: -15px;
             left: var(--myVar);
             transition: 0.5s;
-
         }
 
         /* 共用~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -283,6 +282,11 @@
             padding-bottom: 2%;
         }
 
+        .modal-body_box {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 500px;
+        }
 
         /* 手機在這邊~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
         /* min-width 桌面板 */
@@ -892,80 +896,162 @@
                                             </button>
                                         </div>
 
-                                        <!-- 親友資料 修改內容 input -->
+                                        <!-- 親友資料 修改內容 整體 -->
                                         <div class="modal-body">
-                                            <!-- page_1 親友修改內容_input集合-->
-                                            <div class="member_centre_theinformation_inputset borderbottom ">
-                                                <!-- page_1 親友修改內容_input_1 姓名-->
-                                                <div
-                                                    class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
-                                                    <!-- *親友姓名不給改 -->
-                                                    <div class="member_centre_theinformation_input_text col d-flex">
-                                                        <p class="redcolorh5">*</p>
-                                                        <p class="">姓名</p>
+
+                                            <div class="modal-body_box">
+
+
+                                                <!-- page_1 親友修改內容_ 單人input集合-->
+                                                <div class="member_centre_theinformation_inputset borderbottom ">
+                                                    <!-- page_1 親友修改內容_input_1 姓名-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *親友姓名不給改 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p class="">姓名</p>
+                                                        </div>
+                                                        <!-- 親友姓名不改 -->
+                                                        <div class="member_centre_theinformation_name col-8 padlock">
+                                                            <p>封封封封</p>
+                                                        </div>
+
                                                     </div>
-                                                    <!-- 親友姓名不改 -->
-                                                    <div class="member_centre_theinformation_name col-8 padlock">
-                                                        <p>封封封封</p>
+
+                                                    <!-- page_1 親友修改內容_input_1 生日-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *親友生日不給改 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>生日(國歷)</p>
+                                                        </div>
+                                                        <!-- 親友生日不改 -->
+                                                        <div class="member_centre_theinformation_name col-8 padlock">
+                                                            <p class="">1990/01/01</p>
+                                                        </div>
+
                                                     </div>
+
+
+
+
+
+                                                    <!-- page_1 親友修改內容_input_1 連絡電話-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *親友修改連絡電話 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>連絡電話</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text" class="form-control col-8"
+                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+
+
+                                                    <!-- page_1 親友修改內容_input_1 地址-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *親友修改地址 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>地址</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text" class="form-control col-8"
+                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+                                                    <!-- 親友資料 單筆刪除按鈕 -->
+                                                    <div
+                                                        class="member_centre_theinformationfirdelete paddingtop2 paddingbot2 d-flex jucc marginauto col-8 borderline">
+                                                        <button type="button" class="butgray aic"
+                                                            data-dismiss="modal">刪除</button>
+                                                    </div>
+
 
                                                 </div>
 
-                                                <!-- page_1 親友修改內容_input_1 生日-->
-                                                <div
-                                                    class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
-                                                    <!-- *親友生日不給改 -->
-                                                    <div class="member_centre_theinformation_input_text col d-flex">
-                                                        <p class="redcolorh5">*</p>
-                                                        <p>生日(國歷)</p>
+
+                                                <!-- page_1 親友修改內容_ 單人1 input集合-->
+                                                <div class="member_centre_theinformation_inputset borderbottom ">
+                                                    <!-- page_1 親友1 修改內容_input_1 姓名-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *親友1 姓名不給改 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p class="">姓名</p>
+                                                        </div>
+                                                        <!-- 親友1 姓名不改 -->
+                                                        <div class="member_centre_theinformation_name col-8 padlock">
+                                                            <p>風風風</p>
+                                                        </div>
+
                                                     </div>
-                                                    <!-- 親友生日不改 -->
-                                                    <div class="member_centre_theinformation_name col-8 padlock">
-                                                        <p class="">1990/01/01</p>
+
+                                                    <!-- page_1 親友1 修改內容_input_1 生日-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *親友1 生日不給改 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>生日(國歷)</p>
+                                                        </div>
+                                                        <!-- 親友1 生日不改 -->
+                                                        <div class="member_centre_theinformation_name col-8 padlock">
+                                                            <p class="">1990/01/01</p>
+                                                        </div>
+
                                                     </div>
+
+
+
+
+
+                                                    <!-- page_1 親友1 修改內容_input_1 連絡電話-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *親友1 修改連絡電話 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>連絡電話</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text" class="form-control col-8"
+                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+
+
+                                                    <!-- page_1 親友1 修改內容_input_1 地址-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        <!-- *親友1 修改地址 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>地址</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text" class="form-control col-8"
+                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+                                                    <!-- 親友1 資料 單筆刪除按鈕 -->
+                                                    <div
+                                                        class="member_centre_theinformationfirdelete paddingtop2 paddingbot2 d-flex jucc marginauto col-8 borderline">
+                                                        <button type="button" class="butgray aic"
+                                                            data-dismiss="modal">刪除</button>
+                                                    </div>
+
 
                                                 </div>
-
-
-
-
-
-                                                <!-- page_1 親友修改內容_input_1 連絡電話-->
-                                                <div
-                                                    class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
-                                                    <!-- *親友修改連絡電話 -->
-                                                    <div class="member_centre_theinformation_input_text col d-flex">
-                                                        <p class="redcolorh5">*</p>
-                                                        <p>連絡電話</p>
-                                                    </div>
-                                                    <!-- boostarp input -->
-                                                    <input type="text" class="form-control col-8" placeholder="請輸入連絡電話"
-                                                        aria-label="請輸入連絡電話" aria-describedby="addon-wrapping">
-                                                </div>
-
-
-                                                <!-- page_1 親友修改內容_input_1 地址-->
-                                                <div
-                                                    class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
-                                                    <!-- *親友修改地址 -->
-                                                    <div class="member_centre_theinformation_input_text col d-flex">
-                                                        <p class="redcolorh5">*</p>
-                                                        <p>地址</p>
-                                                    </div>
-                                                    <!-- boostarp input -->
-                                                    <input type="text" class="form-control col-8" placeholder="請輸入地址"
-                                                        aria-label="請輸入地址" aria-describedby="addon-wrapping">
-                                                </div>
-                                                <!-- 親友資料 單筆刪除按鈕 -->
-                                                <div
-                                                    class="member_centre_theinformationfirdelete paddingtop2 paddingbot2 d-flex jucc marginauto col-8 borderline">
-                                                    <button type="button" class="butgray aic"
-                                                        data-dismiss="modal">刪除</button>
-                                                </div>
-
 
                                             </div>
-
                                         </div>
 
                                         <!-- 親友修改 返回 儲存按鈕 -->
