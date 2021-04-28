@@ -69,12 +69,12 @@ nav img {
 }
 
 button {
-    padding: 12px 18px;
+    padding: 5px 35px;
     background-color: #cc543a;
     color: white;
     border-radius: 30px;
     border: none;
-    font-family: 'Sitka Display', NSimSun, 'sans-serif';
+    /* font-family: 'Sitka Display', NSimSun, 'sans-serif'; */
 
 }
 

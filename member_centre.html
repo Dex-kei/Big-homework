@@ -108,6 +108,14 @@
         }
 
         /* 共用~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        .backgroundimg_1 {
+            background-image: url(./img/deco/bcc.png);
+        }
+
+        .backgroundimg_2 {
+            background-image: url(./img/deco/bcc2.png);
+        }
+
         .jucc {
             justify-content: center;
         }
@@ -130,6 +138,18 @@
 
         .flexwrap {
             flex-wrap: wrap;
+        }
+
+        .displaybor {
+            display: block;
+        }
+
+        .displaynone {
+            display: none;
+        }
+
+        .padding5 {
+            padding: 5%;
         }
 
         .maxwidth {
@@ -266,9 +286,7 @@
             margin: auto 0 auto auto;
         }
 
-        .member_centre_page_1 {
-            background-image: url(./img/deco/bcc.png);
-        }
+
 
         .borderbtline {
             border-bottom: 1px solid #000;
@@ -286,6 +304,15 @@
             overflow-y: scroll;
             overflow-x: hidden;
             height: 500px;
+
+        }
+
+        .radius0 {
+            border-radius: 0;
+        }
+
+        .radius20 {
+            border-radius: 20px;
         }
 
         /* 手機在這邊~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -443,7 +470,7 @@
 
 
     <!-- page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="member_centre_page_1">
+    <div class="member_centre_page_1 backgroundimg_1">
         <!-- page_1 集合 -->
         <div class="member_centre_set">
             <!-- page_1 上半部共用head~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -572,29 +599,33 @@
                                 <div class="modal fade" id="exampleModalCenter_1" tabindex="-1" role="dialog"
                                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered maxwidth40" role="document">
-                                        <div class="modal-content boxlineno">
-                                            <div class="modal-header boxlineno">
-                                                <h5 class="modal-title" id="exampleModalCenterTitle">會員資料修改</h5>
+                                        <!-- 我是彈跳背景 -->
+                                        <div class="modal-content boxlineno radius20 backgroundimg_2 padding5">
+                                            <div class="modal-header boxlineno displaybor tac">
+
+                                                <!-- 改bootstrap buttom套件 先button 後面排 h5  -->
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">會員資料修改</h5>
                                             </div>
 
                                             <!-- 會員資料 修改內容 input -->
                                             <div class="modal-body">
                                                 <!-- page_1 修改內容_input集合-->
-                                                <div class="member_centre_theinformation_inputset borderbottom ">
+                                                <div class="member_centre_theinformation_inputset  ">
                                                     <!-- page_1 修改內容_input_1 姓名-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *修改姓名 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
                                                             <p>姓名</p>
                                                         </div>
                                                         <!-- boostarp input -->
-                                                        <input type="text" class="form-control col-8"
+                                                        <input type="text"
+                                                            class="form-control backgroundimg_1 col-8 radius0"
                                                             placeholder="請輸入姓名" aria-label="請輸入姓名"
                                                             aria-describedby="addon-wrapping">
 
@@ -603,14 +634,15 @@
 
                                                     <!-- page_1 修改內容_input_1 連絡電話-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *修改連絡電話 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
                                                             <p>連絡電話</p>
                                                         </div>
                                                         <!-- boostarp input -->
-                                                        <input type="text" class="form-control col-8"
+                                                        <input type="text"
+                                                            class="form-control backgroundimg_1 col-8 radius0"
                                                             placeholder="請輸入連絡電話" aria-label="請輸入連絡電話"
                                                             aria-describedby="addon-wrapping">
                                                     </div>
@@ -618,21 +650,22 @@
 
                                                     <!-- page_1 修改內容_input_1 地址-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *修改地址 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
                                                             <p>地址</p>
                                                         </div>
                                                         <!-- boostarp input -->
-                                                        <input type="text" class="form-control col-8"
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 radius0"
                                                             placeholder="請輸入地址" aria-label="請輸入地址"
                                                             aria-describedby="addon-wrapping">
                                                     </div>
 
                                                     <!-- page_1 修改內容_input_1 密碼-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *密碼修改地址 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
@@ -647,15 +680,15 @@
 
                                                     <!-- page_1 修改內容_input_1 修改密碼 忘記密碼-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *修改密碼 忘記密碼 -->
                                                         <div class="member_centre_theinformation_input_text col ">
                                                         </div>
 
                                                         <div
                                                             class="member_centre_theinformation_password textstlyepass col-8 d-flex p-0 jcsb">
-                                                            <p>修改密碼</p>
-                                                            <p>忘記密碼</p>
+                                                            <div class="" data-target="#exampleModalCenter_3">修改密碼</div>
+
                                                         </div>
 
 
@@ -666,7 +699,7 @@
                                                 </div>
 
                                             </div>
-                                            <div class="modal-footer boxlineno">
+                                            <div class="modal-footer boxlineno marginauto col-9 jucse ">
                                                 <button type="button" class="butgray aic"
                                                     data-dismiss="modal">返回</button>
                                                 <button type="button" class="   aic">儲存</button>
@@ -682,6 +715,86 @@
 
                                 <!-- 會員資料 彈跳修改密碼 jquery控制換 Modal -->
 
+                                <div class="modal fade" id="exampleModalCenter_3" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered maxwidth40" role="document">
+                                        <div class="modal-content boxlineno padding5 backgroundimg_2 radius20">
+                                            <div class="modal-header boxlineno displaybor tac">
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">會員密碼修改</h5>
+                                            </div>
+
+                                            <!-- 會員資料 彈跳修改密碼 input -->
+                                            <div class="modal-body">
+                                                <!-- page_1 修改內容_input集合-->
+                                                <div class="member_centre_theinformation_inputset  ">
+                                                    <!-- page_1 修改內容_input_1 舊密碼-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                                        <!-- *舊密碼 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>舊密碼</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 radius0"
+                                                            placeholder="請輸入舊密碼" aria-label="請輸入舊密碼"
+                                                            aria-describedby="addon-wrapping">
+
+                                                    </div>
+
+
+                                                    <!-- page_1 修改內容_input_1 新密碼-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                                        <!-- *新密碼 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>新密碼</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 radius0"
+                                                            placeholder="請輸入新密碼" aria-label="請輸入新密碼"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+
+
+                                                    <!-- page_1 修改內容_input_1 輸入新密碼-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                                        <!-- *輸入新密碼 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>輸入新密碼</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 radius0"
+                                                            placeholder="請再次輸入新密碼" aria-label="請再次輸入新密碼"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+
+
+
+
+
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer boxlineno marginauto col-9 jucse">
+                                                <button type="button" class="butgray aic"
+                                                    data-dismiss="modal">返回</button>
+                                                <button type="button" class="   aic">儲存</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
 
                             </div>
@@ -795,6 +908,13 @@
                                     </div>
                                     <div class="member_centre_information_text displayflex_md pad00150 ">
                                         <div class="text_p displayflex_md jcsb col-4 p-0">
+                                            <p class="">生辰</p>
+                                            <p class="">|</p>
+                                        </div>
+                                        <P class="col">吉時</P>
+                                    </div>
+                                    <div class="member_centre_information_text displayflex_md pad00150 ">
+                                        <div class="text_p displayflex_md jcsb col-4 p-0">
                                             <p class="">性別</p>
                                             <p class="">|</p>
                                         </div>
@@ -888,12 +1008,13 @@
                             <div class="modal fade" id="exampleModalCenter_2" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered maxwidth40" role="document">
-                                    <div class="modal-content boxlineno">
-                                        <div class="modal-header boxlineno">
-                                            <h5 class="modal-title" id="exampleModalCenterTitle">親友資料修改</h5>
+                                    <div class="modal-content boxlineno radius20 backgroundimg_2 padding5">
+                                        <div class="modal-header boxlineno displaybor tac">
+
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">親友資料修改</h5>
                                         </div>
 
                                         <!-- 親友資料 修改內容 整體 -->
@@ -903,10 +1024,11 @@
 
 
                                                 <!-- page_1 親友修改內容_ 單人input集合-->
-                                                <div class="member_centre_theinformation_inputset borderbottom ">
+                                                <div id="member_centre_theinformation_inputset"
+                                                    class="member_centre_theinformation_inputset ">
                                                     <!-- page_1 親友修改內容_input_1 姓名-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *親友姓名不給改 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
@@ -921,7 +1043,7 @@
 
                                                     <!-- page_1 親友修改內容_input_1 生日-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *親友生日不給改 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
@@ -929,7 +1051,7 @@
                                                         </div>
                                                         <!-- 親友生日不改 -->
                                                         <div class="member_centre_theinformation_name col-8 padlock">
-                                                            <p class="">1990/01/01</p>
+                                                            <p class="">1999/09/09</p>
                                                         </div>
 
                                                     </div>
@@ -940,14 +1062,15 @@
 
                                                     <!-- page_1 親友修改內容_input_1 連絡電話-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *親友修改連絡電話 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
                                                             <p>連絡電話</p>
                                                         </div>
                                                         <!-- boostarp input -->
-                                                        <input type="text" class="form-control col-8"
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 radius0"
                                                             placeholder="需要匯入資料" aria-label="需要匯入資料"
                                                             aria-describedby="addon-wrapping">
                                                     </div>
@@ -955,14 +1078,15 @@
 
                                                     <!-- page_1 親友修改內容_input_1 地址-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *親友修改地址 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
                                                             <p>地址</p>
                                                         </div>
                                                         <!-- boostarp input -->
-                                                        <input type="text" class="form-control col-8"
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 radius0"
                                                             placeholder="需要匯入資料" aria-label="需要匯入資料"
                                                             aria-describedby="addon-wrapping">
                                                     </div>
@@ -978,10 +1102,10 @@
 
 
                                                 <!-- page_1 親友修改內容_ 單人1 input集合-->
-                                                <div class="member_centre_theinformation_inputset borderbottom ">
+                                                <div class="member_centre_theinformation_inputset">
                                                     <!-- page_1 親友1 修改內容_input_1 姓名-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *親友1 姓名不給改 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
@@ -996,7 +1120,7 @@
 
                                                     <!-- page_1 親友1 修改內容_input_1 生日-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *親友1 生日不給改 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
@@ -1015,14 +1139,15 @@
 
                                                     <!-- page_1 親友1 修改內容_input_1 連絡電話-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *親友1 修改連絡電話 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
                                                             <p>連絡電話</p>
                                                         </div>
                                                         <!-- boostarp input -->
-                                                        <input type="text" class="form-control col-8"
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 radius0"
                                                             placeholder="需要匯入資料" aria-label="需要匯入資料"
                                                             aria-describedby="addon-wrapping">
                                                     </div>
@@ -1030,14 +1155,15 @@
 
                                                     <!-- page_1 親友1 修改內容_input_1 地址-->
                                                     <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingtop2">
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
                                                         <!-- *親友1 修改地址 -->
                                                         <div class="member_centre_theinformation_input_text col d-flex">
                                                             <p class="redcolorh5">*</p>
                                                             <p>地址</p>
                                                         </div>
                                                         <!-- boostarp input -->
-                                                        <input type="text" class="form-control col-8"
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 jusbt radius0"
                                                             placeholder="需要匯入資料" aria-label="需要匯入資料"
                                                             aria-describedby="addon-wrapping">
                                                     </div>
@@ -1051,13 +1177,95 @@
 
                                                 </div>
 
+
+
+                                                <!-- page_1 親友修改內容_ 單人空白新增用 input集合-->
+                                                <div id="boxwhiteadd" class="boxwhiteadd displaynone  ">
+
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p class="">姓名</p>
+                                                        </div>
+
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1  radius0"
+                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                            aria-describedby="addon-wrapping">
+
+                                                    </div>
+
+
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>生日(國歷)</p>
+                                                        </div>
+
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1  radius0"
+                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                            aria-describedby="addon-wrapping">
+
+                                                    </div>
+
+
+
+
+
+
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>連絡電話</p>
+                                                        </div>
+
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 radius0"
+                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+
+
+
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>地址</p>
+                                                        </div>
+
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1  radius0"
+                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+
+                                                    <div
+                                                        class="member_centre_theinformationfirdelete paddingtop2 paddingbot2 d-flex jucc marginauto col-8 borderline">
+                                                        <button type="button" class="butgray aic"
+                                                            data-dismiss="modal">刪除</button>
+                                                    </div>
+                                                </div>
+
+
+
+
                                             </div>
                                         </div>
 
                                         <!-- 親友修改 返回 儲存按鈕 -->
-                                        <div class="modal-footer boxlineno">
-                                            <button type="button" class="butgray aic" data-dismiss="modal">返回</button>
-                                            <button type="button" class="   aic">儲存</button>
+                                        <div class="modal-footer boxlineno marginauto col-9 jucse">
+                                            <button type="button" id="member_add" class="aic"
+                                                data-dismiss="">新增</button>
+                                            <button type="button" id="member_save" class="aic">儲存</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1248,9 +1456,8 @@
 
 
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
@@ -1305,8 +1512,16 @@
         })
 
 
+        let addFamily = document.querySelector("#boxwhiteadd").innerHTML;
+        $('#member_add').click(function () {
+            console.log('click', addFamily)
+            $('.modal-body_box').append(addFamily);
+        })
+
 
     </script>
+
+
 
 
 
