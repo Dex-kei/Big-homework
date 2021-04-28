@@ -587,7 +587,7 @@
 
 
                                 <!-- 會員資料 彈跳修改 Button trigger modal -->
-                                <button type="button" class="butstyle  d-flex aic" data-toggle="modal"
+                                <button type="button" class="butstyle  d-flex aic editbtn" data-toggle="modal"
                                     data-target="#exampleModalCenter_1">
                                     <div class="revise_icon ">
                                         <img src="./img/icon/pen-solid.svg">
@@ -598,9 +598,87 @@
                                 <!-- 會員資料 彈跳修改 Modal -->
                                 <div class="modal fade" id="exampleModalCenter_1" tabindex="-1" role="dialog"
                                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered maxwidth40" role="document">
+                                    <div class="modal-dialog modal-dialog-centered maxwidth40" style="position:relative"
+                                        role="document">
+                                        <div class="pop_edit_pw modal-content boxlineno padding5 backgroundimg_2 radius20 displaynone"
+                                            style="position:absolute">
+                                            <div class="modal-header boxlineno displaybor tac">
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">會員密碼修改</h5>
+                                            </div>
+
+                                            <!-- 會員資料 彈跳修改密碼 input -->
+                                            <div class="modal-body">
+                                                <!-- page_1 修改內容_input集合-->
+                                                <div class="member_centre_theinformation_inputset  ">
+                                                    <!-- page_1 修改內容_input_1 舊密碼-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                                        <!-- *舊密碼 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>舊密碼</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 radius0"
+                                                            placeholder="請輸入舊密碼" aria-label="請輸入舊密碼"
+                                                            aria-describedby="addon-wrapping">
+
+                                                    </div>
+
+
+                                                    <!-- page_1 修改內容_input_1 新密碼-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                                        <!-- *新密碼 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>新密碼</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 radius0"
+                                                            placeholder="請輸入新密碼" aria-label="請輸入新密碼"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+
+
+                                                    <!-- page_1 修改內容_input_1 輸入新密碼-->
+                                                    <div
+                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                                        <!-- *輸入新密碼 -->
+                                                        <div class="member_centre_theinformation_input_text col d-flex">
+                                                            <p class="redcolorh5">*</p>
+                                                            <p>輸入新密碼</p>
+                                                        </div>
+                                                        <!-- boostarp input -->
+                                                        <input type="text"
+                                                            class="form-control col-8 backgroundimg_1 radius0"
+                                                            placeholder="請再次輸入新密碼" aria-label="請再次輸入新密碼"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
+
+
+
+
+
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer boxlineno marginauto col-9 jucse">
+                                                <button type="button" class="butgray aic"
+                                                    data-dismiss="modal">返回</button>
+                                                <button type="button" class="   aic">儲存</button>
+                                            </div>
+                                        </div>
                                         <!-- 我是彈跳背景 -->
-                                        <div class="modal-content boxlineno radius20 backgroundimg_2 padding5">
+                                        <div class="pop_edit modal-content boxlineno radius20 backgroundimg_2 padding5"
+                                            style="position:absolute">
                                             <div class="modal-header boxlineno displaybor tac">
 
                                                 <!-- 改bootstrap buttom套件 先button 後面排 h5  -->
@@ -626,7 +704,7 @@
                                                         <!-- boostarp input -->
                                                         <input type="text"
                                                             class="form-control backgroundimg_1 col-8 radius0"
-                                                            placeholder="請輸入姓名" aria-label="請輸入姓名"
+                                                            placeholder="需要匯入原資料" aria-label="需要匯入原資料"
                                                             aria-describedby="addon-wrapping">
 
                                                     </div>
@@ -643,7 +721,7 @@
                                                         <!-- boostarp input -->
                                                         <input type="text"
                                                             class="form-control backgroundimg_1 col-8 radius0"
-                                                            placeholder="請輸入連絡電話" aria-label="請輸入連絡電話"
+                                                            placeholder="需要匯入原資料" aria-label="需要匯入原資料"
                                                             aria-describedby="addon-wrapping">
                                                     </div>
 
@@ -659,7 +737,7 @@
                                                         <!-- boostarp input -->
                                                         <input type="text"
                                                             class="form-control col-8 backgroundimg_1 radius0"
-                                                            placeholder="請輸入地址" aria-label="請輸入地址"
+                                                            placeholder="需要匯入原資料" aria-label="需要匯入原資料"
                                                             aria-describedby="addon-wrapping">
                                                     </div>
 
@@ -687,7 +765,7 @@
 
                                                         <div
                                                             class="member_centre_theinformation_password textstlyepass col-8 d-flex p-0 jcsb">
-                                                            <div class="" data-target="#exampleModalCenter_3">修改密碼</div>
+                                                            <p id="revisepassword">修改密碼</p>
 
                                                         </div>
 
@@ -705,6 +783,7 @@
                                                 <button type="button" class="   aic">儲存</button>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
 
@@ -1023,6 +1102,10 @@
                                             <div class="modal-body_box">
 
 
+
+
+
+
                                                 <!-- page_1 親友修改內容_ 單人input集合-->
                                                 <div id="member_centre_theinformation_inputset"
                                                     class="member_centre_theinformation_inputset ">
@@ -1055,10 +1138,6 @@
                                                         </div>
 
                                                     </div>
-
-
-
-
 
                                                     <!-- page_1 親友修改內容_input_1 連絡電話-->
                                                     <div
@@ -1093,8 +1172,8 @@
                                                     <!-- 親友資料 單筆刪除按鈕 -->
                                                     <div
                                                         class="member_centre_theinformationfirdelete paddingtop2 paddingbot2 d-flex jucc marginauto col-8 borderline">
-                                                        <button type="button" class="butgray aic"
-                                                            data-dismiss="modal">刪除</button>
+                                                        <button type="button" class="butgray aic removebut"
+                                                            data-dismiss="">刪除</button>
                                                     </div>
 
 
@@ -1133,10 +1212,6 @@
 
                                                     </div>
 
-
-
-
-
                                                     <!-- page_1 親友1 修改內容_input_1 連絡電話-->
                                                     <div
                                                         class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
@@ -1170,8 +1245,8 @@
                                                     <!-- 親友1 資料 單筆刪除按鈕 -->
                                                     <div
                                                         class="member_centre_theinformationfirdelete paddingtop2 paddingbot2 d-flex jucc marginauto col-8 borderline">
-                                                        <button type="button" class="butgray aic"
-                                                            data-dismiss="modal">刪除</button>
+                                                        <button type="button" class="butgray aic removebut"
+                                                            data-dismiss="">刪除</button>
                                                     </div>
 
 
@@ -1180,85 +1255,80 @@
 
 
                                                 <!-- page_1 親友修改內容_ 單人空白新增用 input集合-->
-                                                <div id="boxwhiteadd" class="boxwhiteadd displaynone  ">
+                                                <div class="boxwhiteaddset displaynone" id="boxwhiteaddset">
+                                                    <div id="boxwhiteadd$" class="boxwhiteadd ">
 
-                                                    <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                                        <div
+                                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
 
-                                                        <div class="member_centre_theinformation_input_text col d-flex">
-                                                            <p class="redcolorh5">*</p>
-                                                            <p class="">姓名</p>
+                                                            <div
+                                                                class="member_centre_theinformation_input_text col d-flex">
+                                                                <p class="redcolorh5">*</p>
+                                                                <p class="">姓名</p>
+                                                            </div>
+
+                                                            <input type="text"
+                                                                class="form-control col-8 backgroundimg_1  radius0"
+                                                                placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                                aria-describedby="addon-wrapping">
+
+                                                        </div>
+                                                        <div
+                                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+
+                                                            <div
+                                                                class="member_centre_theinformation_input_text col d-flex">
+                                                                <p class="redcolorh5">*</p>
+                                                                <p>生日(國歷)</p>
+                                                            </div>
+
+                                                            <input type="text"
+                                                                class="form-control col-8 backgroundimg_1  radius0"
+                                                                placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                                aria-describedby="addon-wrapping">
+
+                                                        </div>
+                                                        <div
+                                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+
+                                                            <div
+                                                                class="member_centre_theinformation_input_text col d-flex">
+                                                                <p class="redcolorh5">*</p>
+                                                                <p>連絡電話</p>
+                                                            </div>
+
+                                                            <input type="text"
+                                                                class="form-control col-8 backgroundimg_1 radius0"
+                                                                placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                                aria-describedby="addon-wrapping">
+                                                        </div>
+                                                        <div
+                                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+
+                                                            <div
+                                                                class="member_centre_theinformation_input_text col d-flex">
+                                                                <p class="redcolorh5">*</p>
+                                                                <p>地址</p>
+                                                            </div>
+
+                                                            <input type="text"
+                                                                class="form-control col-8 backgroundimg_1  radius0"
+                                                                placeholder="需要匯入資料" aria-label="需要匯入資料"
+                                                                aria-describedby="addon-wrapping">
                                                         </div>
 
-                                                        <input type="text"
-                                                            class="form-control col-8 backgroundimg_1  radius0"
-                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
-                                                            aria-describedby="addon-wrapping">
-
-                                                    </div>
-
-
-                                                    <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
-
-                                                        <div class="member_centre_theinformation_input_text col d-flex">
-                                                            <p class="redcolorh5">*</p>
-                                                            <p>生日(國歷)</p>
+                                                        <div
+                                                            class="member_centre_theinformationfirdelete paddingtop2 paddingbot2 d-flex jucc marginauto col-8 borderline">
+                                                            <button type="button" class="butgray aic removebut"
+                                                                data-dismiss="">刪除</button>
                                                         </div>
 
-                                                        <input type="text"
-                                                            class="form-control col-8 backgroundimg_1  radius0"
-                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
-                                                            aria-describedby="addon-wrapping">
 
-                                                    </div>
-
-
-
-
-
-
-                                                    <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
-
-                                                        <div class="member_centre_theinformation_input_text col d-flex">
-                                                            <p class="redcolorh5">*</p>
-                                                            <p>連絡電話</p>
-                                                        </div>
-
-                                                        <input type="text"
-                                                            class="form-control col-8 backgroundimg_1 radius0"
-                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
-                                                            aria-describedby="addon-wrapping">
-                                                    </div>
-
-
-
-                                                    <div
-                                                        class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
-
-                                                        <div class="member_centre_theinformation_input_text col d-flex">
-                                                            <p class="redcolorh5">*</p>
-                                                            <p>地址</p>
-                                                        </div>
-
-                                                        <input type="text"
-                                                            class="form-control col-8 backgroundimg_1  radius0"
-                                                            placeholder="需要匯入資料" aria-label="需要匯入資料"
-                                                            aria-describedby="addon-wrapping">
-                                                    </div>
-
-                                                    <div
-                                                        class="member_centre_theinformationfirdelete paddingtop2 paddingbot2 d-flex jucc marginauto col-8 borderline">
-                                                        <button type="button" class="butgray aic"
-                                                            data-dismiss="modal">刪除</button>
                                                     </div>
                                                 </div>
-
-
-
-
                                             </div>
+
+
                                         </div>
 
                                         <!-- 親友修改 返回 儲存按鈕 -->
@@ -1511,13 +1581,30 @@
             $('#Path_18').attr('fill', '#cc543a')
         })
 
-
-        let addFamily = document.querySelector("#boxwhiteadd").innerHTML;
+        // 親友修改 新增Buttom
+        let addFamily = document.querySelector("#boxwhiteaddset").innerHTML;
         $('#member_add').click(function () {
             console.log('click', addFamily)
             $('.modal-body_box').append(addFamily);
         })
 
+        // 親友修改 刪除Buttom
+        $(document).on('click', '.removebut', (function () {
+            console.log('click')
+            $(this).parentsUntil('.modal-body_box').remove();
+        }))
+
+
+        $('#revisepassword').click(function () {
+            console.log('click')
+            $('.pop_edit').addClass('displaynone');
+            $('.pop_edit_pw').removeClass('displaynone');
+
+        })
+        $('.editbtn').click(function () {
+            $('.pop_edit').removeClass('displaynone');
+            $('.pop_edit_pw').addClass('displaynone');
+        })
 
     </script>
 
