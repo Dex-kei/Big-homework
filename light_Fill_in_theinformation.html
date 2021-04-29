@@ -193,6 +193,16 @@
             display: none;
         }
 
+        .pad20 {
+            padding: 20px 0;
+        }
+
+        .lightcard {
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 15px 10px 0 0;
+        }
+
         /* 手機在這邊~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
         /* min-width 桌面板 */
         @media (min-width:1400px) {
@@ -223,6 +233,11 @@
             .textalign_center {
                 text-align: center;
             }
+
+            .paddingbottom35 {
+                padding-bottom: 35px;
+            }
+
         }
 
 
@@ -237,7 +252,7 @@
             }
 
             .paddingbottom40 {
-                padding: 0 0 20px 0;
+                padding: 0 0 15px 0;
             }
 
             .paddingbottom30 {
@@ -254,12 +269,13 @@
             }
 
             .padbut {
-                left: 68%;
+                left: 80%;
             }
 
             .padddingbottom150 {
                 padding-bottom: 10%;
             }
+
 
         }
     </style>
@@ -837,7 +853,6 @@
 
                         </div>
 
-
                         <div
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-lg-8 marginauto paddingbottom40">
                             <!-- 手機用*出生日期 -->
@@ -866,14 +881,6 @@
                             </div>
 
                         </div>
-
-
-
-
-
-
-
-
 
                         <!-- page_1 手機用 內容_祈福者input_1_時辰-->
                         <div
@@ -922,9 +929,6 @@
                             </div>
                         </div>
 
-
-
-
                         <!-- page_1 手機用 內容_祈福者input_1_電話-->
                         <div
                             class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col-lg-8 marginauto paddingbottom40">
@@ -951,8 +955,8 @@
                                 aria-describedby="addon-wrapping">
                         </div>
 
-                        <!-- 改 -->
-                        <div class="light_Fill_in_theinformation_page_1_input_set  col paddingbottom40 marginauto">
+                        <!-- 改 手機用 燈種+廟宇套裝-->
+                        <div class="light_Fill_in_theinformation_page_1_input_set  col marginauto lightcard">
                             <!-- page_1 手機用 內容_祈福者input_1_選擇燈種 -->
                             <div
                                 class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col marginauto paddingbottom40 ">
@@ -970,8 +974,6 @@
                                         </select>
                                     </div>
                                 </div>
-
-
                             </div>
 
                             <!-- page_1 手機用 內容_祈福者input_1_ 選擇廟宇-->
@@ -982,7 +984,7 @@
                                     <p class="redcolorh5">*</p>
                                     <p>選擇廟宇</p>
                                 </div>
-                                <!-- 手機用 boostarp 下拉選單 廟宇_地區-->
+                                <!-- 手機用 boostarp 下拉選單 廟宇_地區 資料匯入-->
                                 <div class="col-7 d-flex alignitems p-0">
                                     <div class="col p-0">
                                         <select class="form-control col-6" id="exampleInputTime">
@@ -993,7 +995,6 @@
                                 </div>
                             </div>
 
-
                             <div
                                 class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col marginauto paddingbottom40">
                                 <!--手機用 *廟宇 -->
@@ -1001,7 +1002,7 @@
                                     <p class="redcolorh5">*</p>
                                     <p>選擇廟宇</p>
                                 </div>
-                                <!-- 手機用 boostarp 下拉選單 廟宇_宮廟-->
+                                <!-- 手機用 boostarp 下拉選單 廟宇_宮廟 資料匯入-->
                                 <div class="col-7 d-flex alignitems p-0">
                                     <div class="col p-0">
                                         <select class="form-control col" id="exampleInputTime">
@@ -1012,29 +1013,15 @@
                                 </div>
                             </div>
 
-
-
-
-
-
-
-
-
-
-
                         </div>
                         <!-- page_1 手機用 內容_按鈕_新增廟宇 -->
-                        <div class="button_add_set d-flex juscsb  marginauto paddingbottom40 butmaxwid">
+                        <div class="button_add_set d-flex juscsb  marginauto paddingbottom35 butmaxwid pad20">
                             <div class="button_add ">
                                 <button class="graycolor butomcolor">
                                     <p>+ 新增燈種與廟宇</p>
                                 </button>
                             </div>
-                            <!-- <div class="button_add vishidden ">
-                                <button class="graycolor">
-                                    <p>+ 新增燈種與廟宇</p>
-                                </button>
-                            </div> -->
+
                         </div>
                     </div>
 
@@ -1442,8 +1429,8 @@
                                 aria-describedby="addon-wrapping">
                         </div>
 
-                        <!-- 改 -->
-                        <div class="light_Fill_in_theinformation_page_1_input_set  col paddingbottom40 marginauto">
+                        <!-- 改 手機用 燈種+廟宇套裝-->
+                        <div class="light_Fill_in_theinformation_page_1_input_set  col marginauto lightcard">
                             <!-- page_1 手機用 內容_祈福者input_1_選擇燈種 -->
                             <div
                                 class="light_Fill_in_theinformation_page_1_input_1 d-flex alignitems col marginauto paddingbottom40 ">
@@ -1515,7 +1502,7 @@
 
                         </div>
                         <!-- page_1 手機用 內容_按鈕_新增廟宇 -->
-                        <div class="button_add_set d-flex juscsb  marginauto paddingbottom40 col butmaxwid">
+                        <div class="button_add_set d-flex juscsb  marginauto paddingbottom35 butmaxwid pad20">
                             <div class="button_add ">
                                 <button class="graycolor butomcolor">
                                     <p>+ 新增燈種與廟宇</p>
@@ -1572,9 +1559,9 @@
 
     <!-- Js  相關設定~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!-- jquery3.5.1 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- bootstrap4.6.0 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"

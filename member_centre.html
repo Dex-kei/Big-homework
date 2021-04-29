@@ -345,6 +345,7 @@
             .revise_icon img {
                 width: 100%;
                 height: 100%;
+                /* cursor: pointer; */
             }
 
             .pad00150 {
@@ -1581,6 +1582,7 @@
             $('#Path_18').attr('fill', '#cc543a')
         })
 
+
         // 親友修改 新增Buttom
         let addFamily = document.querySelector("#boxwhiteaddset").innerHTML;
         $('#member_add').click(function () {
@@ -1595,16 +1597,17 @@
         }))
 
 
+        // 會員資料 密碼修改
         $('#revisepassword').click(function () {
             console.log('click')
             $('.pop_edit').addClass('displaynone');
             $('.pop_edit_pw').removeClass('displaynone');
-
         })
         $('.editbtn').click(function () {
             $('.pop_edit').removeClass('displaynone');
             $('.pop_edit_pw').addClass('displaynone');
         })
+
 
     </script>
 

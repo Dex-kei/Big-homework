@@ -43,6 +43,14 @@
         }
 
         /* 共用設定 微調 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+        .backgroundimg_1 {
+            background-image: url(./img/deco/bcc.png);
+        }
+
+        .backgroundimg_2 {
+            background-image: url(./img/deco/bcc2.png);
+        }
+
         .maxwidth80 {
 
             padding-left: 0;
@@ -90,6 +98,29 @@
             font-weight: bold;
         }
 
+
+        .astlyep {
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #707070;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        .breadcrumb_style_1 {
+            padding: 20px 0;
+            align-items: center;
+        }
+
+        .breadcrumb_style_1 img {
+            height: 10px;
+            width: 10px;
+            margin: 0 10px;
+        }
+
+
+
+
         .hrline {
             width: 30%;
             background-color: rgb(184, 184, 184);
@@ -121,27 +152,15 @@
 
 
         /* page_1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-        .discover_temple_page_1 {
-            /* background-color: rgb(216, 216, 216); */
-            background-image: url(./img/deco/bcc.png);
-        }
+
+
+
 
         /* page_1_up */
-        .discover_temple_page_1_up_pd {
-            padding: 20px 0;
-            align-items: center;
-        }
 
-        .discover_temple_page_1_up_pd p {
-            font-size: 14px;
-            letter-spacing: 3px;
-        }
 
-        .discover_temple_page_1_up img {
-            height: 14px;
-            width: 14px;
-            margin: 0 10px;
-        }
+
+
 
         /* page_1_down */
         .discover_temple_page_box {
@@ -206,9 +225,7 @@
 
 
         /* page_2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-        .discover_temple_page_2 {
-            background-image: url(./img/deco/bcc2.png);
-        }
+
 
         .page2boximg3 {
             height: 200px;
@@ -290,8 +307,11 @@
 
 
         /* 家慧修改 */
-        @media (min-width: 992px) {
-            .discover_temple {
+        /* @media (min-width: 992px) {
+
+            .discover_temple_page_1,
+            .discover_temple_page_2,
+            .discover_temple_page_3 {
                 width: 1586px;
                 margin: auto;
             }
@@ -302,7 +322,7 @@
                 width: 1400px;
                 margin: auto;
             }
-        }
+        } */
 
 
 
@@ -314,7 +334,7 @@
 
             /* 共用設定 */
             .maxwidth80 {
-                /* width: 80%; */
+                width: 80%;
             }
 
             .marginatuo0 {
@@ -381,7 +401,7 @@
             }
 
             .padtp40 {
-                padding-top: 40px;
+                padding-top: 30px;
             }
 
             /* page_3 */
@@ -403,14 +423,14 @@
 
             .discover_temple_page_3_right_img_potabu {
                 position: absolute;
-                top: 1%;
+                top: 7%;
 
             }
 
             .discover_temple_page_3_right_text_potabu {
                 position: absolute;
                 right: 0;
-                bottom: 20%;
+                bottom: 15%;
             }
 
             .pad600 {
@@ -514,7 +534,7 @@
             }
 
             .padtp40_md {
-                padding-top: 40px;
+                padding-top: 30px;
             }
 
             .pad0_md {
@@ -527,7 +547,7 @@
             }
 
             .leftpad {
-                padding: 50px 0 0 0;
+                padding: 30px 0 0 0;
 
             }
 
@@ -612,356 +632,359 @@
 
     <div class="discover_temple">
 
+        <!-- 我是麵包屑-->
+
+        <div class="breadcrumb_style   backgroundimg_1">
+            <div class="d-flex flex-wrap breadcrumb_style_1 ">
+                <a href="" class="astlyep">自己編輯路徑</a>
+                <!-- 共用雲端找箭頭icon-->
+                <img src="./img/icon/right_img.svg">
+                <a href="" class="astlyep">自己編輯路徑2</a>
+                <img src="./img/icon/right_img.svg">
+                <a href="" class="astlyep">自己編輯路徑3</a>
+            </div>
+        </div>
 
         <!-- page_1 -->
-        <div class="discover_temple_page_1 padtb20_md">
-            <div class="discover_temple_page_1_width maxwidth80 padbt70">
-                <!-- page_1_up -->
-                <div class="discover_temple_page_1_up   ">
-                    <div class="page_1_up">
-                        <div class="row discover_temple_page_1_up_pd no-gutters">
-                            <p>EXPLORE / 探索</p>
-                            <img src="./img/icon/right_img.svg">
-                            <p>廟宇介紹</p>
-                            <img src="./img/icon/right_img.svg">
-                            <p>行天宮</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="discover_temple_1 backgroundimg_1">
+            <div class="discover_temple_page_1 padtb20_md">
+                <div class="discover_temple_page_1_width maxwidth80 padbt70">
 
-                <!-- page_1_down -->
-                <div class="discover_temple_page_1_down ">
-                    <div class="   discover_temple_page_1_down_pb dflex">
-                        <!-- page_1左邊 -->
-                        <div class="row no-gutters col p-0   ">
-                            <div class="discover_temple_page_box ">
-                                <!-- page_1左邊up廟宇介紹標題 -->
-                                <div class="discover_temple_page_1_title font-weight-bold">
-                                    <h1>行天宮</h1>
+
+                    <!-- page_1_down -->
+                    <div class="discover_temple_page_1_down ">
+                        <div class="   discover_temple_page_1_down_pb dflex">
+                            <!-- page_1左邊 -->
+                            <div class="row no-gutters col p-0   ">
+                                <div class="discover_temple_page_box ">
+                                    <!-- page_1左邊up廟宇介紹標題 -->
+                                    <div class="discover_temple_page_1_title font-weight-bold">
+                                        <h1>行天宮</h1>
+                                    </div>
+                                    <!-- page_1左邊down set -->
+                                    <div class="discover_temple_page_1_box dflex dflex1">
+                                        <div class="discover_temple_page_1_box_small col-lg-6 col-md-6 p-0">
+
+                                            <div class="discover_temple_page_1_box_img">
+                                                <img src="./img/photo/geraldine-ng-qIACfEYEIEc-unsplash (1).jpg">
+                                            </div>
+
+                                            <!-- page_1左邊down 文字集合 -->
+                                            <div class="discover_te_page_1empl_box_h3 padtp_md padtp20">
+                                                <!-- 行天宮 -->
+                                                <div class="borderline_h3 d-flex aic jucc_md">
+                                                    <hr class="hrline dnone740 marginatuo0">
+
+                                                    <h3 class="padleft10">台北行天宮</h3>
+                                                </div>
+                                                <!-- 道教 -->
+                                                <div class="borderline_text borderline_text1 d-flex jucc_md pt-3">
+
+                                                    <p>道教</p>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <!-- page_1 手機 標題錨點 -->
+                                        <div class="discover_temple_page_1_modtitle dnoneimg padtp30_md">
+                                            <p class="redcolorh5">簡介</p>
+                                            <p class="">|</p>
+                                            <p class="redcolorh5">歷史</p>
+                                            <p class="">|</p>
+                                            <p class="redcolorh5">建築</p>
+                                            <p class="">|</p>
+                                            <p class="redcolorh5">神明</p>
+                                            <p class="">|</p>
+                                            <p class="redcolorh5">交通</p>
+                                        </div>
+
+                                        <!-- page_1 左邊_右邊 -->
+                                        <div class="discover_temple_page_1_box_small leftpad ">
+                                            <div class="discover_temple_page_1_box_textup ">
+                                                <h5 class="font-weight-bold redcolorh5">INTRODUCE | 簡介</h5>
+
+                                                <p class="padtexttp pt-3">
+                                                    行天宮，又稱恩主公廟，為主祀關公的臺灣民間信仰廟宇，是全臺知名的關帝廟，由信仰齋教的煤礦主黃玄空創辦。行天宮參訪香客眾多，本宮位於台北市市區，另有兩座分宮。其中，歷史最悠久的是北投分宮
+                                                    ，次之是三峽分紛紛紛紛恩分。
+                                                    <br><br>
+                                                    本宮位於臺灣臺北市中山區，為行天三宮最晚成立者，行天宮也成為大臺北地區關帝廟的代表，廟門設計上與文廟臺北市孔廟相同，大門均沒有門神圖樣，用欞星門108顆門釘代表108位神靈，即36天罡星、72地煞星。
+                                                </p>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <!-- page_1左邊down set -->
-                                <div class="discover_temple_page_1_box dflex dflex1">
-                                    <div class="discover_temple_page_1_box_small col-lg-6 col-md-6 p-0">
+                            </div>
+                            <!-- page_1中間 -->
+                            <div class="row no-gutters col-1 p-0 vishid ">
+                                <div class="discover_temple_page_box1"></div>
+                            </div>
 
-                                        <div class="discover_temple_page_1_box_img">
-                                            <img src="./img/photo/geraldine-ng-qIACfEYEIEc-unsplash (1).jpg">
-                                        </div>
-
-                                        <!-- page_1左邊down 文字集合 -->
-                                        <div class="discover_te_page_1empl_box_h3 padtp_md padtp20">
-                                            <!-- 行天宮 -->
-                                            <div class="borderline_h3 d-flex aic jucc_md">
-                                                <hr class="hrline dnone740 marginatuo0">
-
-                                                <h3 class="padleft10">行天宮</h3>
-                                            </div>
-                                            <!-- 道教 -->
-                                            <div class="borderline_text borderline_text1 d-flex jucc_md pt-3">
-
-                                                <p>道教</p>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
+                            <!-- page_1右邊 -->
+                            <div class="row no-gutters col p-0   midpad_left">
+                                <!-- page_1右邊 桌機padding -->
+                                <div class="discover_temple_page_box  left_pagepd boxgraycolor">
+                                    <div class="discover_temple_page_1_rightpage">
 
 
-                                    <!-- page_1 手機 標題錨點 -->
-                                    <div class="discover_temple_page_1_modtitle dnoneimg padtp30_md">
-                                        <p class="redcolorh5">簡介</p>
-                                        <p class="">|</p>
-                                        <p class="redcolorh5">歷史</p>
-                                        <p class="">|</p>
-                                        <p class="redcolorh5">建築</p>
-                                        <p class="">|</p>
-                                        <p class="redcolorh5">神明</p>
-                                        <p class="">|</p>
-                                        <p class="redcolorh5">交通</p>
-                                    </div>
+                                        <div class="discover_temple_page_1_box_textdown padtp40_md">
+                                            <h5 class="font-weight-bold redcolorh5 ">architecture | 建築</h5>
 
-                                    <!-- page_1 左邊_右邊 -->
-                                    <div class="discover_temple_page_1_box_small leftpad ">
-                                        <div class="discover_temple_page_1_box_textup ">
-                                            <h5 class="font-weight-bold redcolorh5">INTRODUCE | 簡介</h5>
-
-                                            <p class="padtexttp pt-3">
-                                                行天宮，又稱恩主公廟，為主祀關公的臺灣民間信仰廟宇，是全臺知名的關帝廟，由信仰齋教的煤礦主黃玄空創辦。行天宮參訪香客眾多，本宮位於台北市市區，另有兩座分宮。其中，歷史最悠久的是北投分宮
-                                                ，次之是三峽分紛紛紛紛恩分。
-                                                <br><br>
-                                                本宮位於臺灣臺北市中山區，為行天三宮最晚成立者，行天宮也成為大臺北地區關帝廟的代表，廟門設計上與文廟臺北市孔廟相同，大門均沒有門神圖樣，用欞星門108顆門釘代表108位神靈，即36天罡星、72地煞星。
+                                            <p class="discover_temple_page_1_rightpage_text  pcolumn pt-3">
+                                                行天宮台北本宮屬於閩南燕尾翹脊式的建築，其特色在於採用鋼筋混凝土，創造出類似傳統孝廟木造建築的品味關認為台灣光復後所建的廟宇中，傑出關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關的作品之一。
+                                                <br>
+                                                <br>
+                                                格局舒坦大方，比例均勻優美；特別是屋脊的旮線，弧度適中，在天際中漸次昂揚，透露著空靈的俊秀之氣，彰顯神聖空間氛圍。而結合文史、書法、繪畫、關關關關關關關關關關關雕刻之美的楹聯、碑誌、壁畫及彩畫，亦甚有可一步莊嚴道場，也展現出深刻的情境教化關關關關關。
+                                                <!-- 這裡要斷句給手機板用 -->
                                             </p>
 
                                         </div>
 
 
+
+
+
+
+
+
+
+
+                                        <div class="discover_temple_page_1_rightpage_img">
+                                            <!-- 照片 -->
+                                            <img src="./img/photo/148734164_2873410199651704_1518161076735561058_n.jpg">
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-                        <!-- page_1中間 -->
-                        <div class="row no-gutters col-1 p-0 vishid ">
-                            <div class="discover_temple_page_box1"></div>
-                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                        <!-- page_1右邊 -->
-                        <div class="row no-gutters col p-0   midpad_left">
-                            <!-- page_1右邊 桌機padding -->
-                            <div class="discover_temple_page_box  left_pagepd boxgraycolor">
-                                <div class="discover_temple_page_1_rightpage">
+        <!-- page_2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="discover_temple_2 backgroundimg_2">
+            <div class="discover_temple_page_2 padtb20_md">
+                <div class="discover_temple_page_2_set  dflex dflex1 flex-wrap  padtop_page2all maxwidth80 padbt70">
+                    <!-- page_2左邊 -->
+                    <div class="discover_temple_page_2_left row no-gutters col p-0 posrel">
+
+                        <!-- page_2左邊_漂浮色塊 -->
+                        <div class="boxpostab posab"></div>
 
 
-                                    <div class="discover_temple_page_1_box_textdown">
+                        <!-- page_2左邊_集合 -->
+                        <div class="discover_temple_page_box dflex dflex1">
+
+                            <!-- page_2左邊_左邊文字 -->
+                            <div class="discover_temple_page_1_box col-lg-5 col-md-5 p-0">
+
+
+
+                                <div class="discover_temple_page_1_box_small  ">
+                                    <div class="discover_temple_page_1_box_textup padtp padtp30_md ">
                                         <h5 class="font-weight-bold redcolorh5 ">HISTORY | 歷史</h5>
 
-                                        <p class="discover_temple_page_1_rightpage_text  pcolumn pt-3">
-                                            1943年，空真子師父（郭得進居士）及師兄弟，於台北市永樂町（今迪北北北北北北北北北北北北北北北北北北北市永樂町（今迪化街）一處民宅三樓設立「行天堂」，恭奉關關關關關關關
+                                        <p class="pt-3">
+                                            1943年，空真子師父（郭得進居士）及師兄弟，於台北市永樂町（今迪北北市永樂町（今迪化街）一處民宅三樓設立「行天堂」，恭奉
                                             250戶住家的違章建築[來源請求]。
                                             1956年，黃玄空著手於北投（平埔族嗄嘮別社舊址）、三峽兩地整建以祭祀關公為主的民間信仰廟宇。
-                                            即北投忠義廟與三峽行修宮。行天宮落成後，由黃欉所主導興建的三座廟宇合稱為「行天三關關關
-                                            關關關關關關關關關關關關關關關關關關關關宮」——新關關關關關關關關建於臺北市中心的行天宮稱為本宮，其餘兩間為行天宮分宮。
                                             <br>
-                                            <!-- 這裡要斷句給手機板用 -->
+                                            <br>
+                                            即北投忠義廟與三峽行修宮。行天宮落成後，由黃欉所主導興建的三座廟宇關關關關關關關關關宮」——新關建於臺北市中心的行天宮稱為本宮，其餘兩間為行天宮分宮。
+                                            在教育部開始推動九年國民教育後，被改劃為國民中學預定用地（臺北市立新興國民中學）。
                                         </p>
 
                                     </div>
 
-
-
-
-
-
-
-
-
-
-                                    <div class="discover_temple_page_1_rightpage_img">
-                                        <!-- 照片 -->
-                                        <img src="./img/photo/148734164_2873410199651704_1518161076735561058_n.jpg">
-                                    </div>
                                 </div>
                             </div>
+
+
+                            <!-- page_2左邊_右邊照片 -->
+                            <div class="discover_temple_page_1_box_small col  leftpad ">
+                                <div class="discover_temple_page_2_box_img page2boximg3 imgpad dnone740 vishid">
+                                    <img src="./img/photo/geraldine-ng-qIACfEYEIEc-unsplash (1).jpg">
+                                </div>
+                                <div class="discover_temple_page_2_box_img page2boximg3 imgpad">
+                                    <img src="./img/photo/145339854_2867480686911322_1265099753961658071_n.jpg">
+                                </div>
+                                <div class="discover_temple_page_2_box_img  page2boximg3_3 dnone740">
+                                    <img src="./img/photo/1280px-Hsing_Tian_Kong_20121003b.jpg">
+                                </div>
+
+                            </div>
+
+
+
+
+
                         </div>
+
+
                     </div>
-                </div>
-            </div>
-        </div>
+
+                    <!-- page_2中間 -->
+                    <div class="row no-gutters col-1 p-0  dnone740 vishid">
+                        <div class="discover_temple_page_box1"></div>
+                    </div>
 
 
-        <!-- page_2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="discover_temple_page_2 padtb20_md">
-            <div class="discover_temple_page_2_set  dflex dflex1 flex-wrap  padtop_page2all maxwidth80 padbt70">
-                <!-- page_2左邊 -->
-                <div class="discover_temple_page_2_left row no-gutters col p-0 posrel">
+                    <!-- page_2右邊 -->
+                    <div class="discover_temple_page_2_right row no-gutters col p-0 ">
+                        <div class="discover_temple_page_2_right_set ">
+                            <!-- page_2右邊_上面照片 -->
+                            <div class="discover_temple_page_2_right_img_set d-flex ">
+                                <div class="discover_temple_page_2_right_img_set_img page2boximg2">
+                                    <img class="objfc" src="./img/photo/2.1024x768.jpg">
+                                </div>
 
-                    <!-- page_2左邊_漂浮色塊 -->
-                    <div class="boxpostab posab"></div>
+                            </div>
 
+                            <!-- page_2右邊_下面文字 -->
+                            <div class="discover_temple_page_1_box_textup padtp40_md padtp40">
 
-                    <!-- page_2左邊_集合 -->
-                    <div class="discover_temple_page_box dflex dflex1">
-
-                        <!-- page_2左邊_左邊文字 -->
-                        <div class="discover_temple_page_1_box col-lg-5 col-md-5 p-0">
-
-
-
-                            <div class="discover_temple_page_1_box_small  ">
-                                <div class="discover_temple_page_1_box_textup padtp padtp30_md ">
+                                <div class="page_2_rigth_down_p col-lg-9 
+                             margin000auto p-0 ">
 
 
-                                    <p>在教育部開始推動九年國民教育後，被改劃為國民中學預定用地（現為關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關
+                                    <p class="pt-3">
 
-                                        關關關關關關關關關關關關關關關關關關關關關關臺北市立新興國民中學）。
-                                        <br><br>
                                         經交涉後，臺北市政府採取「以地易地」的方式，讓原地主黃欉以九臺街（今林森北路、民權東路交叉口一帶）的私有地交換當時仍為瑠公圳末梢支流、沼澤的公有地。
                                         <br><br>
                                         在取得位於西新庄子，現今民權東路、松江路口東北角的建廟用地後，黃欉商請已有興建多處廟宇經驗的造廟匠師廖石成設計、施工，並於196關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關8年順利完成臺北本宮。
                                     </p>
-
                                 </div>
 
                             </div>
                         </div>
 
 
-                        <!-- page_2左邊_右邊照片 -->
-                        <div class="discover_temple_page_1_box_small col  leftpad ">
-                            <div class="discover_temple_page_2_box_img page2boximg3 imgpad dnone740 vishid">
-                                <img src="./img/photo/geraldine-ng-qIACfEYEIEc-unsplash (1).jpg">
-                            </div>
-                            <div class="discover_temple_page_2_box_img page2boximg3 imgpad">
-                                <img src="./img/photo/145339854_2867480686911322_1265099753961658071_n.jpg">
-                            </div>
-                            <div class="discover_temple_page_2_box_img  page2boximg3_3 dnone740">
-                                <img src="./img/photo/1280px-Hsing_Tian_Kong_20121003b.jpg">
-                            </div>
 
-                        </div>
 
 
 
 
 
                     </div>
-
-
-                </div>
-
-                <!-- page_2中間 -->
-                <div class="row no-gutters col-1 p-0  dnone740 vishid">
-                    <div class="discover_temple_page_box1"></div>
-                </div>
-
-
-                <!-- page_2右邊 -->
-                <div class="discover_temple_page_2_right row no-gutters col p-0 ">
-                    <div class="discover_temple_page_2_right_set ">
-                        <!-- page_2右邊_上面照片 -->
-                        <div class="discover_temple_page_2_right_img_set d-flex ">
-                            <div class="discover_temple_page_2_right_img_set_img page2boximg2">
-                                <img class="objfc" src="./img/photo/2.1024x768.jpg">
-                            </div>
-
-                        </div>
-
-                        <!-- page_2右邊_下面文字 -->
-                        <div class="discover_temple_page_1_box_textup padtp40_md padtp40">
-                            <h5 class="font-weight-bold redcolorh5 ">architecture | 建築</h5>
-                            <div class="page_2_rigth_down_p col-lg-8 
-                             margin000auto padtp020 padtp20">
-
-
-                                <p>行天宮台北本宮屬於閩南燕尾翹脊式的建築，
-                                    其特色在於採用鋼筋混凝土，創造出類似傳統孝廟木造建築的品味關認為台灣光復後所建的廟宇中，傑出關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關的作品之一。
-                                </p>
-
-                                <br>
-
-                                <p>
-                                    格局舒坦大方，比例均勻優美；特別是屋脊的旮線，弧度適中，在天際中漸次昂揚，透露著空靈的俊秀之氣，彰顯神聖空間氛圍。而結合文史、書法、繪畫、關關關關關關關關關關關雕刻之美的楹聯、碑誌、壁畫及彩畫，亦甚有可一步莊嚴道場，也展現出深刻的情境教化關關關關關。
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-
-
-
 
 
                 </div>
 
 
             </div>
-
-
         </div>
-
         <!-- page_3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-        <div class="discover_temple_page_3 padtp40_md padbt20_md">
-            <div class="discover_temple_page_3_set  mixwidth1586 padtop_page2all maxwidth80 padbt70">
-                <div class="col p-0 dflex jcsb">
-                    <!-- page_3左邊 -->
-                    <div class="discover_temple_page_3_left col-lg-3 page3box1pd pad0_md">
-                        <!-- page_3左邊_標題 -->
-                        <div class="discover_temple_page_3_left_title redcolorh5">
-                            <h5>GOD | 神明</h5>
-                        </div>
-
-
-                        <!-- page_3 手機板專用_上圖片 -->
-                        <div class="discover_temple_page_3_mid_img dnoneimg padtp_md">
-                            <img src="./img/deco/god_Guan_Sheng.png">
-                        </div>
-
-
-                        <!-- page_3左邊_文字 -->
-                        <div class="discover_temple_page_3_left_p">
-                            <br>
-                            <p>1.陎對前殿持香敬拜 天公，並於天公爐恭敬插上清香1柱。
-                                <br>2.陎對正殿持香敬拜 五聖恩主，並於恩主爐恭敬插上清香1柱。
-                                <br>3.陎對左次間雙手合十敬拜 關聖太子。
-                                <br>4.陎對右次間雙手合十敬拜 周恩師。
-                            </p>
-                            <br>
-                            <p>行天宫奉祀五聖恩主，所謂的「恩主」就是扶鸞信仰的「救世主」，因為恩主公憐憫世人、救世濟民，所以信眾感恩如救世主。五位恩主，以關聖帝君為首，因此臺灣一般民眾亦稱關聖帝君為恩主公，也經常稱行天宫為恩主公廟。
-                                <br>
-                                <br>行天宮五恩主<br>
-                                關聖帝君：為三國時代之名將關羽，字雲長。關聖帝君備受三教推崇，佛教尊奉為伽藍菩薩；道教奉為協天大帝、翊漢大天尊；儒教則奉為南天文衡聖帝，亦奉為五文昌之一，又稱「山西夫子」（與「山東夫子」孔子並稱）；鸞堂稱為恩主公；一貫道奉為關法律主。1614年，明朝萬曆帝敕封關聖帝君為「三界伏魔大帝神威遠鎮天尊關聖帝君」，故又尊稱關聖帝君，尊稱「關恩主」。　
-                                <br>配祀神：關聖太子關平太子。
-
-
-                            </p>
-                        </div>
-                    </div>
-                    <!-- page_3中間 -->
-
-                    <div class="discover_temple_page_3_mid col-lg-4 pad600 pad200_md ">
-                        <!-- page_3中間_上圖片 -->
-                        <div class="discover_temple_page_3_mid_img dnone740">
-                            <img src="./img/deco/god_Guan_Sheng.png">
-                        </div>
-                        <!-- page_3 手機板專用中間_上圖片 -->
-                        <div class="discover_temple_page_3_mid_img height300_md dnoneimg">
-                            <img src="./img/deco/god_Guan Ping.png">
-                        </div>
-
-
-                        <!-- page_3中間_下文字 -->
-                        <div class="discover_temple_page_3_mid_p pad20020_md">
-                            <p>孚佑帝君：中國八仙之一，人稱「呂祖」、「呂仙翁」，道教尊稱孚佑帝君，又奉為五文昌之一，尊稱「呂恩主」。
-                                <br>司命真君：灶神，又稱張真君，能夠紀錄一家善惡，稟告天庭。尊稱「張恩主」。
-                                <br>隆恩真君：道教重要的護法神、火神，又稱豁落靈官，尊稱「王恩主」。
-                                <br>精忠武穆王：12世紀中國宋朝名將，即岳飛，尊稱「岳恩主」。
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- page_3右邊 -->
-
-                    <div class="discover_temple_page_3_right col-lg-5 page3box3pd potre   pad60040 pad20_md">
-                        <!-- page_3右邊相對定位圖片 -->
-                        <div class="discover_temple_page_3_right_img discover_temple_page_3_right_img_potabu dnone740">
-                            <img src="img/deco/red_circleeeeee.svg">
-                        </div>
-                        <!-- page_3右邊_文字 -->
-                        <div
-                            class="discover_temple_page_3_right_text col-lg-7 p-0 discover_temple_page_3_right_text_mg discover_temple_page_3_right_text_potabu">
-                            <!-- page_3右邊_文字_標題 -->
-                            <div class="discover_temple_page_3_right_title redcolorh5">
-                                <h5>TRAFFIC | 交通</h5>
+        <div class="discover_temple_3 backgroundimg_1">
+            <div class="discover_temple_page_3 padtp40_md padbt20_md">
+                <div class="discover_temple_page_3_set  mixwidth1586 padtop_page2all maxwidth80 padbt70">
+                    <div class="col p-0 dflex jcsb">
+                        <!-- page_3左邊 -->
+                        <div class="discover_temple_page_3_left col-lg-3 page3box1pd pad0_md">
+                            <!-- page_3左邊_標題 -->
+                            <div class="discover_temple_page_3_left_title redcolorh5">
+                                <h5>GOD | 神明</h5>
                             </div>
-                            <!-- page_3右邊_文字_p -->
-                            <div class="discover_temple_page_3_right_p ">
+
+
+                            <!-- page_3 手機板專用_上圖片 -->
+                            <div class="discover_temple_page_3_mid_img dnoneimg padtp_md">
+                                <img src="./img/deco/god_Guan_Sheng.png">
+                            </div>
+
+
+                            <!-- page_3左邊_文字 -->
+                            <div class="discover_temple_page_3_left_p">
                                 <br>
-                                <p>台北本宮 >
-                                    <br>開放時間 04:00至22:00
-                                    <br>臺北市中山區行政里民權東路2段109號
-                                    <br>連絡電話 (02)25027924
-                                    <br><br>
-                                    三峽分宮 >
-                                    <br>開放時間04:00至20:00
-                                    <br>新北市三峽區嘉添里白鷄巷155號
-                                    <br>連絡電話 (02)2671-1476
-                                    <br><br>
-                                    北投分宮 >
-                                    <br>開放時間 04:00至19:00
-                                    <br>臺北市北投區中央北路四段18巷50號
-                                    <br>連絡電話 (02)2891-2731
+                                <p>1.陎對前殿持香敬拜 天公，並於天公爐恭敬插上清香1柱。
+                                    <br>2.陎對正殿持香敬拜 五聖恩主，並於恩主爐恭敬插上清香1柱。
+                                    <br>3.陎對左次間雙手合十敬拜 關聖太子。
+                                    <br>4.陎對右次間雙手合十敬拜 周恩師。
+                                </p>
+                                <br>
+                                <p>行天宫奉祀五聖恩主，所謂的「恩主」就是扶鸞信仰的「救世主」，因為恩主公憐憫世人、救世濟民，所以信眾感恩如救世主。五位恩主，以關聖帝君為首，因此臺灣一般民眾亦稱關聖帝君為恩主公，也經常稱行天宫為恩主公廟。
+                                    <br>
+                                    <br>行天宮五恩主<br>
+                                    關聖帝君：為三國時代之名將關羽，字雲長。關聖帝君備受三教推崇，佛教尊奉為伽藍菩薩；道教奉為協天大帝、翊漢大天尊；儒教則奉為南天文衡聖帝，亦奉為五文昌之一，又稱「山西夫子」（與「山東夫子」孔子並稱）；鸞堂稱為恩主公；一貫道奉為關法律主。1614年，明朝萬曆帝敕封關聖帝君為　「三界伏魔大帝神威遠鎮天尊關聖
+
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <!-- page_3中間 -->
+
+                        <div class="discover_temple_page_3_mid col-lg-4 pad600 pad200_md ">
+                            <!-- page_3中間_上圖片 -->
+                            <div class="discover_temple_page_3_mid_img dnone740">
+                                <img src="./img/deco/god_Guan_Sheng.png">
+                            </div>
+                            <!-- page_3 手機板專用中間_上圖片 -->
+                            <div class="discover_temple_page_3_mid_img height300_md dnoneimg">
+                                <img src="./img/deco/god_Guan Ping.png">
+                            </div>
+
+
+                            <!-- page_3中間_下文字 -->
+                            <div class="discover_temple_page_3_mid_p pad20020_md">
+                                <p>帝君」，故又尊稱關聖帝君，尊稱「關恩主」。
+                                    <br>配祀神：關聖太子關平太子。
+                                    孚佑帝君：中國八仙之一，人稱「呂祖」、「呂仙翁」，道教尊稱孚佑帝君，又奉為五文昌之一，尊稱「呂恩主」。
+                                    <br>司命真君：灶神，又稱張真君，能夠紀錄一家善惡，稟告天庭。尊稱「張恩主」。
+                                    <br>隆恩真君：道教重要的護法神、火神，又稱豁落靈官，尊稱「王恩主」。
+                                    <br>精忠武穆王：12世紀中國宋朝名將，即岳飛，尊稱「岳恩主」。
                                 </p>
                             </div>
                         </div>
 
+                        <!-- page_3右邊 -->
+
+                        <div class="discover_temple_page_3_right col-lg-5 page3box3pd potre   pad60040 pad20_md">
+                            <!-- page_3右邊相對定位圖片 -->
+                            <div
+                                class="discover_temple_page_3_right_img discover_temple_page_3_right_img_potabu dnone740">
+                                <img src="img/deco/red_circleeeeee.svg">
+                            </div>
+                            <!-- page_3右邊_文字 -->
+                            <div
+                                class="discover_temple_page_3_right_text col-lg-7 p-0 discover_temple_page_3_right_text_mg discover_temple_page_3_right_text_potabu">
+                                <!-- page_3右邊_文字_標題 -->
+                                <div class="discover_temple_page_3_right_title redcolorh5">
+                                    <h5>TRAFFIC | 交通</h5>
+                                </div>
+                                <!-- page_3右邊_文字_p -->
+                                <div class="discover_temple_page_3_right_p ">
+                                    <br>
+                                    <p>台北本宮 >
+                                        <br>開放時間 04:00至22:00
+                                        <br>臺北市中山區行政里民權東路2段109號
+                                        <br>連絡電話 (02)25027924
+                                        <br><br>
+                                        三峽分宮 >
+                                        <br>開放時間04:00至20:00
+                                        <br>新北市三峽區嘉添里白鷄巷155號
+                                        <br>連絡電話 (02)2671-1476
+                                        <br><br>
+                                        北投分宮 >
+                                        <br>開放時間 04:00至19:00
+                                        <br>臺北市北投區中央北路四段18巷50號
+                                        <br>連絡電話 (02)2891-2731
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 
@@ -990,10 +1013,9 @@
 
 
     <!-- Js  相關設定~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- jquery3.5.1 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- bootstrap4.6.0 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
@@ -1012,6 +1034,22 @@
     </script>
 
     <!-- js jq 開始 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
