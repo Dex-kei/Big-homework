@@ -10,18 +10,25 @@
 
 
     <style>
-        .astlyep {
-            font-size: 14px;
-            letter-spacing: 2px;
-            color: #707070;
-            list-style-type: none;
-            text-decoration: none;
+        .breadcrumb_style {
+            background-image: url(./img/deco/bcc.png);
+            /* navbar多厚 就推多少paddding */
+            padding-top: 80px;
         }
 
         .breadcrumb_style_1 {
             padding: 20px 0;
             align-items: center;
             margin: auto;
+        }
+
+        .astlyep {
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #707070;
+            list-style-type: none;
+            text-decoration: none;
+
         }
 
         .breadcrumb_style_1 img {
@@ -39,6 +46,11 @@
 
         /* 手機用 */
         @media (max-width:1399px) {
+            .breadcrumb_style {
+                /* navbar多厚 就推多少paddding */
+                padding-top: 80px;
+            }
+
             .breadcrumb_style_1 {
                 /* 手機板寬 自行設定 */
                 width: 85%;
@@ -46,8 +58,8 @@
 
             .breadcrumb_style_1 {
                 /* contanier架構專用 padding 0 15px  */
-                padding: 20px 15px;
-                width: 100%;
+                /* padding: 20px 15px; */
+                /* width: 100%; */
             }
         }
     </style>
