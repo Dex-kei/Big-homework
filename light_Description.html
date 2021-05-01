@@ -49,7 +49,7 @@
 
         .light_Description_page_1 {
 
-            background-image: url(./img/deco/bcc.png);
+            background-image: url(./img/nav_background_1.png);
         }
 
         .textalign_center {
@@ -153,13 +153,13 @@
             .backgroundimg_lantern {
                 width: 50%;
                 position: absolute;
-                top: 0;
+                top: -4%;
                 right: 0;
                 opacity: 0.2;
             }
 
             .padtop150 {
-                padding-top: 150px;
+                padding-top: 100px;
             }
 
             .padding_bottom_rem {
@@ -213,10 +213,15 @@
 
         /* max-width 手機板 */
         @media (max-width:740px) {
+            .breadcrumb_style_1 {
+                /* contanier架構專用 padding 0 15px  */
+                padding: 20px 15px;
+                width: 100%;
+            }
             .backgroundimg_lantern {
                 width: 100%;
                 position: absolute;
-                top: 0;
+                top: -9%;
                 right: 0;
                 opacity: 0.2;
             }
@@ -249,7 +254,7 @@
             }
 
             .padtp13 {
-                padding-top: 13%;
+                padding-top: 2%;
             }
         }
     </style>
@@ -274,19 +279,27 @@
         <hr class="navline">
     </nav>
 
-    <div class="navbar_test_bottom">
-        <div class="navbar_test_bottom_1"></div>
-    </div>
 
+
+    <!-- 我是麵包屑-->
+    <div class="breadcrumb_style   backgroundimg_1">
+        <div class="d-flex flex-wrap breadcrumb_style_1 ">
+            <a href="" class="astlyep">點燈介紹</a>
+            <!-- 共用雲端找箭頭icon-->
+            <img src="./img/nav_arrow_right.svg">
+            <a href="" class="astlyep">服務說明</a>
+           
+        </div>
+    </div>
 
 
     <!-- page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-    <div class="light_Description_page_1 position_relative padtop150 overflowhid">
+    <div class="light_Description_page_1 position_relative padtop150 ">
 
         <!-- 我是 燈籠圖 -->
         <div class="light_Description_page_1_backgroundimg  backgroundimg_lantern">
-            <img src="./img/deco/lantern04.png">
+            <img src="./img/light_lantern_01.png">
         </div>
 
         <!-- page_1 桌機 內容集合 -->
@@ -353,7 +366,7 @@
 
             <!-- 我是 護身符圖 -->
             <div class="light_Description_page_1_backgroundimg  backgroundimg_amulet ">
-                <img src="./img/deco/amulet_01.png">
+                <img src="./img/light_amulet_01.png">
             </div>
 
 
