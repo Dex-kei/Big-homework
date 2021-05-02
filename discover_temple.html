@@ -28,8 +28,6 @@
 
 
     <style>
-        
-
         /* 共用設定 微調 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
         .backgroundimg_1 {
             background-image: url(./img/nav_background_1.png);
@@ -295,9 +293,135 @@
             }
         } */
 
+        /* 動畫用css */
+        .animat_3 {
+            opacity: 0;
 
+            transition: 1s;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
 
+        .animat_4 {
+            opacity: 0;
 
+            transition: 1s;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+
+        .animat_5 {
+            opacity: 0;
+
+            transition: 1s;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+
+        .animat_6 {
+            opacity: 0;
+
+            transition: 1s;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+
+        .animat_7 {
+            opacity: 0;
+
+            transition: 1s;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+
+        /* .animat_1{
+    transform: translateX(-200px);
+} */
+
+        /* 動畫? */
+        @keyframes image_1 {
+            from {
+                opacity: 0;
+                transform: translateX(-200px);
+            }
+
+            to {
+                opacity: 1;
+
+            }
+        }
+
+        @keyframes image_2 {
+            from {
+                opacity: 0;
+                transform: translateY(200px);
+            }
+
+            to {
+                opacity: 1;
+
+            }
+        }
+
+        @keyframes image_3 {
+            from {
+                opacity: 0;
+                transform: translateY(200px);
+            }
+
+            to {
+                opacity: 1;
+
+            }
+        }
+
+        @keyframes image_4 {
+            from {
+                opacity: 0;
+                transform: translateX(200px);
+            }
+
+            to {
+                opacity: 1;
+
+            }
+        }
+
+        @keyframes image_5 {
+            from {
+                opacity: 0;
+                transform: translateX(-200px);
+            }
+
+            to {
+                opacity: 1;
+
+            }
+        }
+
+        @keyframes image_6 {
+            from {
+                opacity: 0;
+                transform: translateY(200px);
+            }
+
+            to {
+                opacity: 1;
+
+            }
+        }
+
+        @keyframes image_7 {
+            from {
+                opacity: 0;
+                transform: translateX(200px);
+            }
+
+            to {
+                opacity: 1;
+
+            }
+        }
 
         /* 手機在這邊~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
         /* min-width 桌面板 */
@@ -578,40 +702,242 @@
 
 <body>
     <!-- navbar 是我 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <nav>
-        <div class="navbar">
-            <!-- 請依檔案位置修改logo路徑 -->
-            <img src='./img/logo/logo-color.svg'>
-            <ul>
-                <li>Explore / 探索</li>
-                <li>TRIP / 行旅</li>
-                <li>SERVICE / 線上服務</li>
-                <li>SHOP / 商店</li>
-                <li>CART / 購物車</li>
-                <li>MEMBER / 會員中心</li>
-            </ul>
-            <div class="ham"><i class="fas fa-bars"></i></div>
+
+    <div class="nav_burgurBar">
+        <div class="nav_burgurBar_img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20">
+                <g id="Group_135" data-name="Group 135" transform="translate(-341.5 -1313.5)">
+                    <line id="Line_50" data-name="Line 50" x2="23" transform="translate(342.5 1314.5)" fill="none"
+                        stroke="#707070" stroke-linecap="round" stroke-width="2" />
+                    <line id="Line_51" data-name="Line 51" x2="23" transform="translate(342.5 1323.5)" fill="none"
+                        stroke="#707070" stroke-linecap="round" stroke-width="2" />
+                    <line id="Line_52" data-name="Line 52" x2="23" transform="translate(342.5 1332.5)" fill="none"
+                        stroke="#707070" stroke-linecap="round" stroke-width="2" />
+                </g>
+            </svg>
         </div>
-        <hr class="navline">
+
+        <div class="nav_logo_mobile">
+            <img src="./img/nav_logo_mobile.svg" alt="">
+        </div>
+
+    </div>
+
+    <div class="nav_overlayNav">
+        <div class="nav_closeBtn mb-4">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20">
+                <title>close</title>
+                <path fill='#fff'
+                    d="M10 8.586l-7.071-7.071-1.414 1.414 7.071 7.071-7.071 7.071 1.414 1.414 7.071-7.071 7.071 7.071 1.414-1.414-7.071-7.071 7.071-7.071-1.414-1.414-7.071 7.071z">
+                </path>
+            </svg>
+        </div>
+        <div class="nav_overlayNavBox">
+            <ul>
+                <a href="">
+                    <li>最新消息</li>
+                </a>
+                <a href="">
+                    <li>探索灣廟</li>
+                </a>
+                <a href="">
+                    <li>線上服務</li>
+                </a>
+                <a href="">
+                    <li>聖地巡禮</li>
+                </a>
+                <a href="">
+                    <li>祈福商店</li>
+                </a>
+                <a href="">
+                    <li>購物車</li>
+                </a>
+                <a href="" data-toggle="modal" data-target="#loginCenter">
+                    <li>登入 | 註冊</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 電腦螢幕大小的navbar -->
+    <nav class="nav_navbar_com">
+        <div class="nav_navbar_com_container">
+            <!-- 請依檔案位置修改logo路徑 -->
+            <img src='./img/nav_logo.svg'>
+
+            <div class="nav_navbar">
+                <div class="nav_navbarBox">
+                    <ul class="nav_nav_left">
+                        <a href="">
+                            <li class="nav_news"></li>
+                        </a>
+                        <a href="">
+                            <li class="nav_explore"></li>
+                        </a>
+                        <a href="">
+                            <li class="nav_serv"></li>
+                        </a>
+                        <a href="">
+                            <li class="nav_trip"></li>
+                        </a>
+                        <a href="">
+                            <li class="nav_shop"></li>
+                        </a>
+                        <a href="">
+                            <li class="nav_cart"></li>
+                        </a>
+                    </ul>
+                    <ul class="nav_nav_right">
+                        <a href="" data-toggle="modal" data-target="#loginCenter">
+                            <li>登入</li>
+                        </a>
+                        <span>|</span>
+                        <a href="" data-toggle="modal" data-target="#registerCenter">
+                            <li>註冊</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="nav_navline">
     </nav>
 
-   
+    <!-- login -->
+    <div class="modal fade" id="loginCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-content-re">
+                <div class="modal-header modal-header-re">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title" id="exampleModalCenterTitle">登入 | LOGIN</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="mt-3">
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control form-control-re" id="password-text" placeholder="Password">
+                        </div>
+                        <input type="checkbox"> 記住帳號
+                    </form>
+                </div>
+                <div class="modal-footer modal-footer-re">
+                    <button type="button" class="btn btn-primary btn-primary-re">登入</button>
+                </div>
+                <div class="modal-footer2-re mt-3">
+                    <a class="mr-5" data-toggle="modal" data-target="#lostPassword" id="passwordbtn">忘記密碼</a>
+                    <a data-toggle="modal" data-target="#registerCenter" id="registerbtn">註冊帳號</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- lost password -->
+    <div class="modal fade" id="lostPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-content-re">
+                <div class="modal-header modal-header-re">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title" id="exampleModalCenterTitle">找回密碼</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="mt-3">
+                        <div class="form-group mb-3">
+                            <p>請輸入您註冊的電子郵件，您將會在電子郵件信箱中收到重設密碼的連結。</p>
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="Email">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer modal-footer-re">
+                    <button type="button" class="btn btn-primary btn-primary-re">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- register -->
+    <div class="modal fade" id="registerCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-content-re">
+                <div class="modal-header modal-header-re">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title" id="exampleModalCenterTitle">註冊 | REGISTER</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="mt-3">
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="User Name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control form-control-re" id="password-text" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control form-control-re" id="password-text"
+                                placeholder="Repeat Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer modal-footer-re">
+                    <button type="button" class="btn btn-primary btn-primary-re">註冊</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 我是麵包屑-->
+
+    <div class="breadcrumb_style   backgroundimg_1">
+        <div class="d-flex flex-wrap breadcrumb_style_1 ">
+            <a href="" class="astlyep">自己編輯路徑</a>
+            <!-- 共用雲端找箭頭icon-->
+            <img src="./img/nav_arrow_right.svg">
+            <a href="" class="astlyep">自己編輯路徑2</a>
+            <img src="./img/nav_arrow_right.svg">
+            <a href="" class="astlyep">自己編輯路徑3</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
 
 
     <div class="discover_temple">
 
-        <!-- 我是麵包屑-->
 
-        <div class="breadcrumb_style   backgroundimg_1">
-            <div class="d-flex flex-wrap breadcrumb_style_1 ">
-                <a href="" class="astlyep">自己編輯路徑</a>
-                <!-- 共用雲端找箭頭icon-->
-                <img src="./img/nav_arrow_right.svg">
-                <a href="" class="astlyep">自己編輯路徑2</a>
-                <img src="./img/nav_arrow_right.svg">
-                <a href="" class="astlyep">自己編輯路徑3</a>
-            </div>
-        </div>
 
         <!-- page_1 -->
         <div class="discover_temple_1 backgroundimg_1">
@@ -623,7 +949,7 @@
                     <div class="discover_temple_page_1_down ">
                         <div class="   discover_temple_page_1_down_pb dflex">
                             <!-- page_1左邊 -->
-                            <div class="row no-gutters col p-0   ">
+                            <div class="row no-gutters col p-0  animat_1 ">
                                 <div class="discover_temple_page_box ">
                                     <!-- page_1左邊up廟宇介紹標題 -->
                                     <div class="discover_temple_page_1_title font-weight-bold">
@@ -659,20 +985,21 @@
 
                                         <!-- page_1 手機 標題錨點 -->
                                         <div class="discover_temple_page_1_modtitle dnoneimg padtp30_md">
-                                            <p class="redcolorh5">簡介</p>
+                                            <p class="redcolorh5" id="discover_temple_title_01">簡介</p>
                                             <p class="">|</p>
-                                            <p class="redcolorh5">歷史</p>
+                                            <p class="redcolorh5" id="discover_temple_title_02">建築</p>
                                             <p class="">|</p>
-                                            <p class="redcolorh5">建築</p>
+                                            <p class="redcolorh5" id="discover_temple_title_03">歷史</p>
                                             <p class="">|</p>
-                                            <p class="redcolorh5">神明</p>
+                                            <p class="redcolorh5" id="discover_temple_title_04">神明</p>
                                             <p class="">|</p>
-                                            <p class="redcolorh5">交通</p>
+                                            <p class="redcolorh5" id="discover_temple_title_05">交通</p>
                                         </div>
 
                                         <!-- page_1 左邊_右邊 -->
                                         <div class="discover_temple_page_1_box_small leftpad ">
-                                            <div class="discover_temple_page_1_box_textup ">
+                                            <div class="discover_temple_page_1_box_textup "
+                                                id="discover_temple_move_01">
                                                 <h5 class="font-weight-bold redcolorh5">INTRODUCE | 簡介</h5>
 
                                                 <p class="padtexttp pt-3">
@@ -696,13 +1023,13 @@
                             </div>
 
                             <!-- page_1右邊 -->
-                            <div class="row no-gutters col p-0   midpad_left">
+                            <div class="row no-gutters col p-0   midpad_left animat_2">
                                 <!-- page_1右邊 桌機padding -->
                                 <div class="discover_temple_page_box  left_pagepd boxgraycolor">
                                     <div class="discover_temple_page_1_rightpage">
 
 
-                                        <div class="discover_temple_page_1_box_textdown padtp40_md">
+                                        <div class="discover_temple_page_1_box_textdown padtp40_md ">
                                             <h5 class="font-weight-bold redcolorh5 ">architecture | 建築</h5>
 
                                             <p class="discover_temple_page_1_rightpage_text  pcolumn pt-3">
@@ -724,7 +1051,7 @@
 
 
 
-                                        <div class="discover_temple_page_1_rightpage_img">
+                                        <div class="discover_temple_page_1_rightpage_img" id="discover_temple_move_02">
                                             <!-- 照片 -->
                                             <img src="./img/discover_temple_002.jpg">
                                         </div>
@@ -742,7 +1069,8 @@
             <div class="discover_temple_page_2 padtb20_md">
                 <div class="discover_temple_page_2_set  dflex dflex1 flex-wrap  padtop_page2all maxwidth80 padbt70">
                     <!-- page_2左邊 -->
-                    <div class="discover_temple_page_2_left row no-gutters col p-0 posrel">
+                    <div class="discover_temple_page_2_left row no-gutters col p-0 posrel animat_3 "
+                        id="discover_temple_move_03">
 
                         <!-- page_2左邊_漂浮色塊 -->
                         <div class="boxpostab posab"></div>
@@ -806,7 +1134,7 @@
 
 
                     <!-- page_2右邊 -->
-                    <div class="discover_temple_page_2_right row no-gutters col p-0 ">
+                    <div class="discover_temple_page_2_right row no-gutters col p-0  animat_4">
                         <div class="discover_temple_page_2_right_set ">
                             <!-- page_2右邊_上面照片 -->
                             <div class="discover_temple_page_2_right_img_set d-flex ">
@@ -851,11 +1179,12 @@
         </div>
         <!-- page_3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="discover_temple_3 backgroundimg_1">
-            <div class="discover_temple_page_3 padtp40_md padbt20_md">
-                <div class="discover_temple_page_3_set  mixwidth1586 padtop_page2all maxwidth80 padbt70">
+            <div class="discover_temple_page_3 padtp40_md padbt20_md" id="discover_temple_move_04">
+                <div class="discover_temple_page_3_set  mixwidth1586 padtop_page2all maxwidth80 padbt70"
+                    id="discover_temple_move_05">
                     <div class="col p-0 dflex jcsb">
                         <!-- page_3左邊 -->
-                        <div class="discover_temple_page_3_left col-lg-3 page3box1pd pad0_md">
+                        <div class="discover_temple_page_3_left col-lg-3 page3box1pd pad0_md animat_5">
                             <!-- page_3左邊_標題 -->
                             <div class="discover_temple_page_3_left_title redcolorh5">
                                 <h5>GOD | 神明</h5>
@@ -889,7 +1218,7 @@
                         </div>
                         <!-- page_3中間 -->
 
-                        <div class="discover_temple_page_3_mid col-lg-4 pad600 pad200_md ">
+                        <div class="discover_temple_page_3_mid col-lg-4 pad600 pad200_md animat_6">
                             <!-- page_3中間_上圖片 -->
                             <div class="discover_temple_page_3_mid_img dnone740">
                                 <img src="./img/discover_temple_god_Guan_Sheng.png">
@@ -914,7 +1243,8 @@
 
                         <!-- page_3右邊 -->
 
-                        <div class="discover_temple_page_3_right col-lg-5 page3box3pd potre   pad60040 pad20_md">
+                        <div
+                            class="discover_temple_page_3_right col-lg-5 page3box3pd potre   pad60040 pad20_md animat_7">
                             <!-- page_3右邊相對定位圖片 -->
                             <div
                                 class="discover_temple_page_3_right_img discover_temple_page_3_right_img_potabu dnone740">
@@ -1004,6 +1334,79 @@
     <!-- js jq 開始 -->
 
 
+    <script>
+        // navbar
+        // overlayNav進場
+        $('.nav_burgurBar_img').click(function () {
+
+            let navPosition = {
+                transform: 'translateY(0)'
+            }
+
+            $(".nav_overlayNav").css(navPosition);
+        })
+
+        // overlayNav退場
+        $('.nav_closeBtn').click(function () {
+
+            let navPosition = {
+                transform: 'translateY(-2500px)',
+                transition: '.7s'
+            }
+
+            $(".nav_overlayNav").css(navPosition);
+        })
+
+
+        //Login hide
+        $('#registerbtn').click(function () {
+            $('#loginCenter').modal('hide');
+        })
+
+        $('#passwordbtn').click(function () {
+            $('#loginCenter').modal('hide');
+        })
+
+
+
+
+
+
+
+        // 飛入動畫
+        let page = 0;
+        $('.animat_1').eq(page).css('animation', 'image_1 1.3s ease-in');
+        $('.animat_2').eq(page).css('animation', 'image_2 1.3s ease-in');
+
+
+        $(window).scroll(function () {
+            // 檢查及時高度
+            console.log('height', $(this).scrollTop())
+            let windowScrollTop = $(this).scrollTop()
+
+            if (windowScrollTop >= 400) {
+
+                // $('.animat_3').css('animation', 'image_3 2s ease-in');
+                $('.animat_3').addClass().css('opacity', '1');
+                $('.animat_3').css('animation', 'image_3 1.5s ease-in');
+                $('.animat_4').addClass().css('opacity', '1');
+                $('.animat_4').css('animation', 'image_4 1.5s ease-in');
+
+
+            }
+            if (windowScrollTop >= 1500) {
+                $('.animat_5').addClass().css('opacity', '1');
+                $('.animat_5').css('animation', 'image_5 1.5s ease-in');
+                $('.animat_6').addClass().css('opacity', '1');
+                $('.animat_6').css('animation', 'image_6 1.5s ease-in');
+                $('.animat_7').addClass().css('opacity', '1');
+                $('.animat_7').css('animation', 'image_7 1.5s ease-in');
+            }
+
+
+
+
+        })
 
 
 
@@ -1025,6 +1428,71 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // 手機點
+        let anchor_point_move_1 = document.getElementById('discover_temple_move_01').offsetTop
+        let anchor_point_move_2 = document.getElementById('discover_temple_move_02').offsetTop
+        let anchor_point_move_3 = document.getElementById('discover_temple_move_03').offsetTop
+        let anchor_point_move_4 = document.getElementById('discover_temple_move_04').offsetTop
+        let anchor_point_move_5 = document.getElementById('discover_temple_move_05').offsetTop
+        console.log('top', anchor_point_move_1);
+        console.log('top', anchor_point_move_2);
+        console.log('top', anchor_point_move_3);
+        console.log('top', anchor_point_move_4);
+        console.log('top', anchor_point_move_5);
+
+        $('#discover_temple_title_01').click(function () {
+            window.scrollTo({
+                top: (anchor_point_move_1),
+                behavior: 'smooth'
+            });
+        })
+
+        $('#discover_temple_title_02').click(function () {
+            window.scrollTo({
+                top: (anchor_point_move_2) + 750,
+                behavior: 'smooth'
+            });
+        })
+        $('#discover_temple_title_03').click(function () {
+            window.scrollTo({
+                top: (anchor_point_move_3) - 80,
+                behavior: 'smooth'
+            });
+        })
+        $('#discover_temple_title_04').click(function () {
+            window.scrollTo({
+                top: (anchor_point_move_4) - 80,
+                behavior: 'smooth'
+            });
+        })
+        $('#discover_temple_title_05').click(function () {
+            window.scrollTo({
+                top: (anchor_point_move_5) + 2500,
+                behavior: 'smooth'
+            });
+        })
+
+
+    </script>
 
 </body>
 
