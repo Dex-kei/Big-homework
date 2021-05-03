@@ -193,7 +193,7 @@ nav img {
     content: "SERVICE";
 }
 .nav_trip::before{
-    content: "聖地巡禮";
+    content: "聖地行旅";
 }
 .nav_trip:hover::before{
     content: "TRIP";
@@ -306,7 +306,9 @@ button:focus {
 i {
     padding: 0 8px;
 }
-
+a:hover{
+    text-decoration: none;
+}
 
 /* 麵包屑 */
 .breadcrumb_style {

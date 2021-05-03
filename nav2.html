@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-        
+
     <title>nav2</title>
 
     <style>
@@ -28,8 +28,8 @@
             /* background-image: url(./img/nav_bcc2.png); */
         }
 
- /* burgurBar */
-        .nav_burgurBar{
+        /* burgurBar */
+        .nav_burgurBar {
             background-image: url(./img/nav_bcc.png);
             position: sticky;
             top: 0;
@@ -39,16 +39,17 @@
 
             border-bottom: 1px solid rgba(203, 203, 203, .5);
         }
+
         .nav_burgurBar_img {
             margin: 0 20px;
         }
 
-        .nav_logo_mobile{
+        .nav_logo_mobile {
             margin: 0 10px;
         }
 
 
-/* overlayNav */
+        /* overlayNav */
         .nav_overlayNav {
             background-color: rgba(0, 0, 0, 0.9);
             width: 100%;
@@ -77,7 +78,7 @@
 
 
 
-/* navbar */
+        /* navbar */
         .nav_navbar_com {
             width: 100%;
             background-image: url(./img/nav_barBcc.jpg);
@@ -137,7 +138,7 @@
             bottom: 10px;
         }
 
-        .nav_nav_left li{
+        .nav_nav_left li {
             width: 77px;
         }
 
@@ -162,48 +163,59 @@
             width: 6%;
         }
 
-        .nav_news::before{
+        .nav_news::before {
             content: "最新消息";
         }
-        .nav_news:hover::before{
+
+        .nav_news:hover::before {
             content: "NEWS";
         }
-        .nav_explore::before{
+
+        .nav_explore::before {
             content: "探索灣廟";
         }
-        .nav_explore:hover::before{
+
+        .nav_explore:hover::before {
             content: "EXPLORE";
         }
-        .nav_serv::before{
+
+        .nav_serv::before {
             content: "線上服務";
         }
-        .nav_serv:hover::before{
+
+        .nav_serv:hover::before {
             content: "SERVICE";
         }
-        .nav_trip::before{
+
+        .nav_trip::before {
             content: "聖地巡禮";
         }
-        .nav_trip:hover::before{
+
+        .nav_trip:hover::before {
             content: "TRIP";
         }
-        .nav_shop::before{
+
+        .nav_shop::before {
             content: "祈福商店";
         }
-        .nav_shop:hover::before{
+
+        .nav_shop:hover::before {
             content: "SHOP";
         }
-        .nav_cart::before{
+
+        .nav_cart::before {
             content: "購物車";
         }
-        .nav_cart:hover::before{
+
+        .nav_cart:hover::before {
             content: "CART";
         }
 
 
 
 
-/* login */
-.modal-content-re {
+        /* login */
+        .modal-content-re {
             background-image: url(./img/nav_bcc2.png);
             border: 0;
             border-radius: 20px;
@@ -269,7 +281,7 @@
 
         @media (max-width: 770px) {
 
-        /* nav */
+            /* nav */
             .nav_burgurBar {
                 display: flex;
                 align-items: center;
@@ -306,7 +318,7 @@
                 </g>
             </svg>
         </div>
-        
+
         <div class="nav_logo_mobile">
             <img src="./img/nav_logo_mobile.svg" alt="">
         </div>
@@ -408,7 +420,8 @@
                 <div class="modal-body">
                     <form class="mt-3">
                         <div class="form-group mb-3">
-                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="Email">
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="Email">
                         </div>
                         <div class="form-group">
                             <input class="form-control form-control-re" id="password-text" placeholder="Password">
@@ -442,7 +455,8 @@
                     <form class="mt-3">
                         <div class="form-group mb-3">
                             <p>請輸入您註冊的電子郵件，您將會在電子郵件信箱中收到重設密碼的連結。</p>
-                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="Email">
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="Email">
                         </div>
                     </form>
                 </div>
@@ -467,16 +481,19 @@
                 <div class="modal-body">
                     <form class="mt-3">
                         <div class="form-group mb-3">
-                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="User Name">
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="User Name">
                         </div>
                         <div class="form-group mb-3">
-                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="Email">
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="Email">
                         </div>
                         <div class="form-group">
                             <input class="form-control form-control-re" id="password-text" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <input class="form-control form-control-re" id="password-text" placeholder="Repeat Password">
+                            <input class="form-control form-control-re" id="password-text"
+                                placeholder="Repeat Password">
                         </div>
                     </form>
                 </div>
@@ -510,26 +527,26 @@
         crossorigin="anonymous"></script>
 
     <script>
-
+        // navbar
         // overlayNav進場
         $('.nav_burgurBar_img').click(function () {
 
-        let navPosition = {
-            transform: 'translateY(0)'
-        }
+            let navPosition = {
+                transform: 'translateY(0)'
+            }
 
-        $(".nav_overlayNav").css(navPosition);
+            $(".nav_overlayNav").css(navPosition);
         })
 
         // overlayNav退場
         $('.nav_closeBtn').click(function () {
 
-        let navPosition = {
-            transform: 'translateY(-2500px)',
-            transition: '.7s'
-        }
+            let navPosition = {
+                transform: 'translateY(-2500px)',
+                transition: '.7s'
+            }
 
-        $(".nav_overlayNav").css(navPosition);
+            $(".nav_overlayNav").css(navPosition);
         })
 
 

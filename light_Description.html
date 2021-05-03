@@ -24,10 +24,6 @@
     <link rel="stylesheet" href="./css/sample_body.css">
 
     <style>
-        
-
-
-
         /* page_1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
         /* p 特別設定 */
@@ -122,7 +118,9 @@
             background-color: #c0c0c0;
         }
 
-
+        .whitecolor {
+            color: white;
+        }
 
         /* 手機在這邊~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
         /* min-width 桌面板 */
@@ -206,6 +204,7 @@
                 padding: 20px 15px;
                 width: 100%;
             }
+
             .backgroundimg_lantern {
                 width: 100%;
                 position: absolute;
@@ -263,7 +262,7 @@
                 </g>
             </svg>
         </div>
-        
+
         <div class="nav_logo_mobile">
             <img src="./img/nav_logo_mobile.svg" alt="">
         </div>
@@ -291,7 +290,7 @@
                     <li>線上服務</li>
                 </a>
                 <a href="">
-                    <li>聖地巡禮</li>
+                    <li>聖地行旅</li>
                 </a>
                 <a href="">
                     <li>祈福商店</li>
@@ -365,7 +364,8 @@
                 <div class="modal-body">
                     <form class="mt-3">
                         <div class="form-group mb-3">
-                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="Email">
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="Email">
                         </div>
                         <div class="form-group">
                             <input class="form-control form-control-re" id="password-text" placeholder="Password">
@@ -399,7 +399,8 @@
                     <form class="mt-3">
                         <div class="form-group mb-3">
                             <p>請輸入您註冊的電子郵件，您將會在電子郵件信箱中收到重設密碼的連結。</p>
-                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="Email">
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="Email">
                         </div>
                     </form>
                 </div>
@@ -424,16 +425,19 @@
                 <div class="modal-body">
                     <form class="mt-3">
                         <div class="form-group mb-3">
-                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="User Name">
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="User Name">
                         </div>
                         <div class="form-group mb-3">
-                            <input type="text" class="form-control form-control-re" id="account-name" placeholder="Email">
+                            <input type="text" class="form-control form-control-re" id="account-name"
+                                placeholder="Email">
                         </div>
                         <div class="form-group">
                             <input class="form-control form-control-re" id="password-text" placeholder="Password">
                         </div>
                         <div class="form-group">
-                            <input class="form-control form-control-re" id="password-text" placeholder="Repeat Password">
+                            <input class="form-control form-control-re" id="password-text"
+                                placeholder="Repeat Password">
                         </div>
                     </form>
                 </div>
@@ -448,11 +452,11 @@
     <!-- 我是麵包屑-->
     <div class="breadcrumb_style   backgroundimg_1">
         <div class="d-flex flex-wrap breadcrumb_style_1 ">
-            <a href="" class="astlyep">點燈介紹</a>
+            <a href="" class="astlyep">燈種介紹</a>
             <!-- 共用雲端找箭頭icon-->
             <img src="./img/nav_arrow_right.svg">
-            <a href="" class="astlyep">服務說明</a>
-           
+            <a href="./light_Description.html" class="astlyep">服務說明</a>
+
         </div>
     </div>
 
@@ -572,7 +576,9 @@
                 </button>
 
                 <button>
-                    <p>同意</p>
+                    <a href="./light_Fill_in_theinformation.html" class="whitecolor">
+                        <p>同意</p>
+                    </a>
                 </button>
 
 
@@ -698,7 +704,10 @@
                 </button>
 
                 <button>
-                    <p>同意</p>
+                    <a href="./light_Fill_in_theinformation.html" class="whitecolor">
+                        <p>同意</p>
+                    </a>
+
                 </button>
 
 
@@ -751,22 +760,22 @@
         // overlayNav進場
         $('.nav_burgurBar_img').click(function () {
 
-        let navPosition = {
-            transform: 'translateY(0)'
-        }
+            let navPosition = {
+                transform: 'translateY(0)'
+            }
 
-        $(".nav_overlayNav").css(navPosition);
+            $(".nav_overlayNav").css(navPosition);
         })
 
         // overlayNav退場
         $('.nav_closeBtn').click(function () {
 
-        let navPosition = {
-            transform: 'translateY(-2500px)',
-            transition: '.7s'
-        }
+            let navPosition = {
+                transform: 'translateY(-2500px)',
+                transition: '.7s'
+            }
 
-        $(".nav_overlayNav").css(navPosition);
+            $(".nav_overlayNav").css(navPosition);
         })
 
 
