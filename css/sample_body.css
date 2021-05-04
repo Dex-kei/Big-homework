@@ -4,7 +4,7 @@ body {
     font-family: 'Faustina', serif !important;
     /* font-family: 'Sitka Display', NSimSun, 'sans-serif'; */
     /* font-family: 'Noto Sans TC', serif !important; */
-    background-image: url(../img/logo/logo-002.svg);
+   
 }
 
 h2 {
@@ -171,7 +171,7 @@ p {
 }
 
 nav img {
-    width: 6%;
+    width: 82px;
 }
 
 .nav_news::before{

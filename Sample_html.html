@@ -23,7 +23,368 @@
     <link rel="stylesheet" href="./css/sample_body.css">
 
     <style>
+        .backgroundimg_1 {
+            background-image: url(./img/nav_background_1.png);
+        }
 
+        .backgroundimg_2 {
+            background-image: url(./img/nav_background_2.png);
+        }
+
+        .jucc {
+            justify-content: center;
+        }
+
+        .jcsb {
+            justify-content: space-between;
+        }
+
+        .jucse {
+            justify-content: space-evenly;
+        }
+
+        .aic {
+            align-items: center;
+        }
+
+        .tac {
+            text-align: center;
+        }
+
+        .flexwrap {
+            flex-wrap: wrap;
+        }
+
+        .displaybor {
+            display: block;
+        }
+
+        .displaynone {
+            display: none;
+        }
+
+        .padding5 {
+            padding: 5%;
+        }
+
+        .maxwidth {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .postre {
+            position: relative;
+        }
+
+        .postab {
+            position: absolute;
+        }
+
+        .right0 {
+            right: 0;
+        }
+
+        .margin0auto {
+            margin: 0 auto;
+        }
+
+        .maxwidth1100 {
+            max-width: 1100px;
+        }
+
+        .maxwidth1400 {
+            max-width: 1500px;
+        }
+
+        .marginauto {
+            margin: auto;
+        }
+
+        .margin0 {
+            margin: 0;
+        }
+
+
+        /* .overtext {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        } */
+
+        /*  down~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+        .member_img img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .member_upimg img {
+            width: 100%;
+        }
+
+        .tttd {
+            padding-left: 20px;
+        }
+
+        .padtp100 {
+            padding-top: 50px;
+        }
+
+        .padtp50 {
+            padding-top: 50px;
+        }
+
+        .padright10 {
+            padding-right: 10px;
+        }
+
+        .padleft50 {
+            padding-left: 50px;
+        }
+
+
+
+        .padleft15 {
+            padding-left: 15px;
+        }
+
+        .member_tablehead {
+            position: relative;
+        }
+
+        /* .member_tablehead::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: gold;
+            position: absolute;
+            left: -2%;
+            top: 3rem
+        } */
+
+        .butstyle {
+            padding: 5px 10px;
+            background-color: #c0c0c0;
+        }
+
+        .butgray {
+
+            background-color: #c0c0c0;
+        }
+
+        .boxlineno {
+            border: 0;
+        }
+
+        .padlock {
+            padding: .375rem 0;
+        }
+
+        .maxwidth300 {
+            max-width: 320px;
+
+        }
+
+        .borderline {
+            border-bottom: 1px solid #000;
+        }
+
+        .width40 {
+            width: 35%;
+        }
+
+        .width10 {
+            width: 10%;
+        }
+
+        .width15 {
+            width: 15%;
+        }
+
+        .marginauto0 {
+            margin: auto 0 auto auto;
+        }
+
+
+
+        .borderbtline {
+            border-bottom: 1px solid #000;
+        }
+
+        .paddingtop2 {
+            padding-top: 2%;
+        }
+
+        .paddingbot2 {
+            padding-bottom: 2%;
+        }
+
+        .modal-body_box {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 500px;
+
+        }
+
+        .radius0 {
+            border-radius: 0;
+        }
+
+        .radius20 {
+            border-radius: 20px;
+        }
+
+        .revisepassword {
+            cursor: pointer;
+        }
+
+
+
+
+
+        @media (min-width:1400px) {
+            .displayno {
+                display: none;
+            }
+
+            .displayflex {
+                display: flex;
+            }
+
+            .member_img {
+                width: 100%;
+            }
+
+            .member_upimg {
+                width: 30px;
+                margin: auto;
+                padding-top: 15px;
+                cursor: pointer;
+            }
+
+            th,
+            tr {
+                font-size: 18px;
+                line-height: 3rem;
+                letter-spacing: 2px;
+            }
+
+            .revise_icon {
+                width: 20px;
+
+            }
+
+            .revise_icon img {
+                width: 100%;
+                height: 100%;
+                /* cursor: pointer; */
+            }
+
+            .pad00150 {
+                padding: 0 0 30px 0;
+            }
+
+            .padleft5 {
+                padding-left: 5px;
+            }
+
+            .pad200 {
+                padding: 20px 0;
+            }
+
+            .pad00200 {
+                padding: 0 0 20px 0;
+            }
+
+            .padbot100 {
+                padding-bottom: 100px;
+            }
+
+            .maxwidth40 {
+                max-width: 40%;
+            }
+
+            .textstlyepass {
+
+                font-size: 16px;
+                font-weight: normal;
+
+                margin: 0;
+                letter-spacing: 4px;
+                font-family: 'Faustina', serif;
+
+                text-align: justify;
+            }
+        }
+
+
+
+
+        @media (max-width:740px) {
+            .displayflex_md {
+                display: flex;
+            }
+
+            .marginauto {
+                margin: auto;
+            }
+
+            .displayno_md {
+                display: none;
+            }
+
+
+            .member_img {
+                width: 100%;
+            }
+
+
+
+            .member_upimg {
+                width: 30px;
+                margin: auto;
+                padding-top: 15px;
+                cursor: pointer;
+            }
+
+
+
+            th,
+            tr {
+                /* font-size: 18px; */
+                line-height: 3rem;
+                letter-spacing: 2px;
+            }
+
+            .revise_icon {
+                width: 7%;
+            }
+
+            .revise_icon img {
+                width: 100%;
+            }
+
+            .pad00150 {
+                padding: 0 0 15px 0;
+
+            }
+
+            .pad200 {
+                padding: 10px 0;
+            }
+
+            .pad00200 {
+                padding: 0 0 10px 0;
+            }
+
+            .padtp10_md {
+                padding-top: 5%;
+            }
+
+            .padbot100 {
+                padding-bottom: 10%;
+            }
+        }
     </style>
 </head>
 
@@ -231,11 +592,381 @@
 
 
 
+    <!-- page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+    <!-- 底部照片+個人資料 -->
+    <div class="member_centre_down_imgtext displayflex jucse aic maxwidth displayno_md">
+        <!-- 底部照片頭像 -->
+        <div class="member_centre_down_img col-lg-5 col-10 marginauto">
+            <div class="member_img">
+                <img src="./img/member_my.png">
+            </div>
+            <div class="member_upimg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30"
+                    height="30" viewBox="0 0 30 30">
+                    <image id="upload" width="30" height="30"
+                        xlink:href="data:image/png;base64,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" />
+                </svg>
+
+            </div>
+        </div>
+
+
+        <div class="member_centre_information">
+
+            <!--  會員資料_標題 桌基板-->
+            <div class="member_centre_information_title displayflex_md pad00150 displayflex aic">
+                <h3>會員資料</h3>
+                <div class="padleft15">
+
+
+                    <!-- 會員資料 彈跳修改 Button trigger modal -->
+                    <button type="button" class="butstyle  d-flex aic editbtn" data-toggle="modal"
+                        data-target="#exampleModalCenter_1">
+                        <div class="revise_icon ">
+                            <img src="./img/member_pen_solid.svg">
+                        </div>
+                        <p class="padleft5">修改</p>
+                    </button>
+
+                    <!-- 會員資料 彈跳修改 Modal -->
+                    <div class="modal fade" id="exampleModalCenter_1" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered maxwidth40" style="position:relative"
+                            role="document">
+
+                            <!-- 我是 彈跳會員密碼修改 -->
+                            <div class="pop_edit_pw modal-content boxlineno padding5 backgroundimg_2 radius20 displaynone"
+                                style="position:absolute">
+                                <div class="modal-header boxlineno displaybor tac">
+
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">會員密碼修改</h5>
+                                </div>
+
+                                <!-- 會員資料 彈跳修改密碼 input -->
+                                <div class="modal-body">
+                                    <!--  修改內容_input集合-->
+                                    <div class="member_centre_theinformation_inputset  ">
+                                        <!--  修改內容_input_1 舊密碼-->
+                                        <div
+                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                            <!-- *舊密碼 -->
+                                            <div class="member_centre_theinformation_input_text col d-flex">
+                                                <p class="redcolorh5">*</p>
+                                                <p>舊密碼</p>
+                                            </div>
+                                            <!-- boostarp input -->
+                                            <input type="text" class="form-control col-8 backgroundimg_1 radius0"
+                                                placeholder="請輸入舊密碼" aria-label="請輸入舊密碼"
+                                                aria-describedby="addon-wrapping">
+
+                                        </div>
+
+
+                                        <!--  修改內容_input_1 新密碼-->
+                                        <div
+                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                            <!-- *新密碼 -->
+                                            <div class="member_centre_theinformation_input_text col d-flex">
+                                                <p class="redcolorh5">*</p>
+                                                <p>新密碼</p>
+                                            </div>
+                                            <!-- boostarp input -->
+                                            <input type="text" class="form-control col-8 backgroundimg_1 radius0"
+                                                placeholder="請輸入新密碼" aria-label="請輸入新密碼"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+
+
+                                        <!--  修改內容_input_1 輸入新密碼-->
+                                        <div
+                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                            <!-- *輸入新密碼 -->
+                                            <div class="member_centre_theinformation_input_text col d-flex">
+                                                <p class="redcolorh5">*</p>
+                                                <p>輸入新密碼</p>
+                                            </div>
+                                            <!-- boostarp input -->
+                                            <input type="text" class="form-control col-8 backgroundimg_1 radius0"
+                                                placeholder="請再次輸入新密碼" aria-label="請再次輸入新密碼"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
 
 
 
 
 
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer boxlineno marginauto col-9 jucse">
+                                    <button type="button" class="butgray aic" data-dismiss="modal">返回</button>
+                                    <button type="button" class="   aic">儲存</button>
+                                </div>
+                            </div>
+
+                            <!-- 我是彈跳背景 -->
+                            <div class="pop_edit modal-content boxlineno radius20 backgroundimg_2 padding5"
+                                style="position:absolute">
+                                <div class="modal-header boxlineno displaybor tac">
+
+                                    <!-- 改bootstrap buttom套件 先button 後面排 h5  -->
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">會員資料修改</h5>
+                                </div>
+
+                                <!-- 會員資料 修改內容 input -->
+                                <div class="modal-body">
+                                    <!--  修改內容_input集合-->
+                                    <div class="member_centre_theinformation_inputset  ">
+                                        <!--  修改內容_input_1 姓名-->
+                                        <div
+                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                            <!-- *修改姓名 -->
+                                            <div class="member_centre_theinformation_input_text col d-flex">
+                                                <p class="redcolorh5">*</p>
+                                                <p>姓名</p>
+                                            </div>
+                                            <!-- boostarp input -->
+                                            <input type="text" class="form-control backgroundimg_1 col-8 radius0"
+                                                placeholder="需要匯入原資料" aria-label="需要匯入原資料"
+                                                aria-describedby="addon-wrapping">
+
+                                        </div>
+
+
+                                        <!--  修改內容_input_1 連絡電話-->
+                                        <div
+                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                            <!-- *修改連絡電話 -->
+                                            <div class="member_centre_theinformation_input_text col d-flex">
+                                                <p class="redcolorh5">*</p>
+                                                <p>連絡電話</p>
+                                            </div>
+                                            <!-- boostarp input -->
+                                            <input type="text" class="form-control backgroundimg_1 col-8 radius0"
+                                                placeholder="需要匯入原資料" aria-label="需要匯入原資料"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+
+
+                                        <!--  修改內容_input_1 地址-->
+                                        <div
+                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                            <!-- *修改地址 -->
+                                            <div class="member_centre_theinformation_input_text col d-flex">
+                                                <p class="redcolorh5">*</p>
+                                                <p>地址</p>
+                                            </div>
+                                            <!-- boostarp input -->
+                                            <input type="text" class="form-control col-8 backgroundimg_1 radius0"
+                                                placeholder="需要匯入原資料" aria-label="需要匯入原資料"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+
+                                        <!--  修改內容_input_1 密碼-->
+                                        <div
+                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                            <!-- *密碼修改地址 -->
+                                            <div class="member_centre_theinformation_input_text col d-flex">
+                                                <p class="redcolorh5">*</p>
+                                                <p>密碼</p>
+                                            </div>
+
+                                            <div class="member_centre_theinformation_password textstlyepass col-8 p-0">
+                                                *******123</div>
+
+                                        </div>
+
+                                        <!--  修改內容_input_1 修改密碼 忘記密碼-->
+                                        <div
+                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                            <!-- *修改密碼 忘記密碼 -->
+                                            <div class="member_centre_theinformation_input_text col ">
+                                            </div>
+
+                                            <div
+                                                class="member_centre_theinformation_password textstlyepass col-8 d-flex p-0 jcsb">
+                                                <p class="revisepassword" id="revisepassword">修改密碼</p>
+
+                                            </div>
+
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer boxlineno marginauto col-9 jucse ">
+
+                                    <button type="button" class="butgray aic" data-dismiss="modal">返回</button>
+                                    <button type="button" class="   aic">儲存</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!-- 會員資料 彈跳修改密碼 jquery控制換 Modal -->
+
+                    <div class="modal fade" id="exampleModalCenter_3" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered maxwidth40" role="document">
+                            <div class="modal-content boxlineno padding5 backgroundimg_2 radius20">
+                                <div class="modal-header boxlineno displaybor tac">
+
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">會員密碼修改</h5>
+                                </div>
+
+                                <!-- 會員資料 彈跳修改密碼 input -->
+                                <div class="modal-body">
+                                    <!--  修改內容_input集合-->
+                                    <div class="member_centre_theinformation_inputset  ">
+                                        <!--  修改內容_input_1 舊密碼-->
+                                        <div
+                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                            <!-- *舊密碼 -->
+                                            <div class="member_centre_theinformation_input_text col d-flex">
+                                                <p class="redcolorh5">*</p>
+                                                <p>舊密碼</p>
+                                            </div>
+                                            <!-- boostarp input -->
+                                            <input type="text" class="form-control col-8 backgroundimg_1 radius0"
+                                                placeholder="請輸入舊密碼" aria-label="請輸入舊密碼"
+                                                aria-describedby="addon-wrapping">
+
+                                        </div>
+
+
+                                        <!--  修改內容_input_1 新密碼-->
+                                        <div
+                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                            <!-- *新密碼 -->
+                                            <div class="member_centre_theinformation_input_text col d-flex">
+                                                <p class="redcolorh5">*</p>
+                                                <p>新密碼</p>
+                                            </div>
+                                            <!-- boostarp input -->
+                                            <input type="text" class="form-control col-8 backgroundimg_1 radius0"
+                                                placeholder="請輸入新密碼" aria-label="請輸入新密碼"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+
+
+                                        <!--  修改內容_input_1 輸入新密碼-->
+                                        <div
+                                            class="member_centre_theinformation_input_1 d-flex aic col-lg-10 marginauto paddingtop2">
+                                            <!-- *輸入新密碼 -->
+                                            <div class="member_centre_theinformation_input_text col d-flex">
+                                                <p class="redcolorh5">*</p>
+                                                <p>輸入新密碼</p>
+                                            </div>
+                                            <!-- boostarp input -->
+                                            <input type="text" class="form-control col-8 backgroundimg_1 radius0"
+                                                placeholder="請再次輸入新密碼" aria-label="請再次輸入新密碼"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer boxlineno marginauto col-9 jucse">
+                                    <button type="button" class="butgray aic" data-dismiss="modal">返回</button>
+                                    <button type="button" class="   aic">儲存</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!--   會員資料_內文集合 -->
+            <div class="member_centre_information_textset col-11 marginauto p-0">
+                <!--   會員資料_內文組 -->
+                <div class="member_centre_information_text displayflex_md pad00150 displayflex">
+                    <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
+                        <p class="">姓名</p>
+                        <p class="">|</p>
+                    </div>
+                    <P class="col">峰峰峰峰峰</P>
+                </div>
+
+
+                <div class="member_centre_information_text displayflex_md pad00150 displayflex">
+                    <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
+                        <p class="">生日</p>
+                        <p class="">|</p>
+                    </div>
+                    <P class="col">1990/01/01</P>
+                </div>
+                <div class="member_centre_information_text displayflex_md pad00150 displayflex">
+                    <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
+                        <p class="">性別</p>
+                        <p class="">|</p>
+                    </div>
+                    <P class="col">男</P>
+                </div>
+                <div class="member_centre_information_text displayflex_md pad00150 displayflex">
+                    <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
+                        <p class="">密碼</p>
+                        <p class="">|</p>
+                    </div>
+                    <P class="col">********</P>
+                </div>
+                <div class="member_centre_information_text displayflex_md pad00150 displayflex">
+                    <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
+                        <p class="">連絡電話</p>
+                        <p class="">|</p>
+                    </div>
+                    <P class="col">0987654321</P>
+                </div>
+                <div class="member_centre_information_text displayflex_md pad00150 displayflex">
+                    <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
+                        <p class="">電子信箱</p>
+                        <p class="">|</p>
+                    </div>
+                    <P class="col">abc@gmail.com</P>
+                </div>
+                <div class="member_centre_information_text displayflex_md pad00150 displayflex">
+                    <div class="text_p displayflex_md jcsb col-4 p-0 displayflex">
+                        <p class="">地址</p>
+                        <p class="">|</p>
+                    </div>
+                    <P class="col">100 台北市中正區中正路100號1樓1111</P>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
 
 
 
@@ -297,6 +1028,79 @@
         $('#passwordbtn').click(function () {
             $('#loginCenter').modal('hide');
         })
+
+
+
+
+
+
+        //  up共用head
+        var detail = document.getElementsByClassName(".detail");
+
+        $(".info").click(function () {
+            $(this).next(detail).slideToggle();
+        });
+        $(".less").click(function () {
+            $(".detail").slideUp();
+        });
+
+        $('.profile').click(function () {
+            $('#pointer').css('--myVar', '25%');
+            $('#Ellipse_5').attr('fill', '#cc543a')
+            $('#Path_18').attr('fill', 'silver')
+            $('#gratipay-brands').attr('fill', 'silver')
+
+        })
+
+        $('.favorite').click(function () {
+            $('#pointer').css('--myVar', '50%');
+            $('#gratipay-brands').attr('fill', '#cc543a')
+            $('#Path_18').attr('fill', 'silver')
+            $('#Ellipse_5').attr('fill', 'silver')
+
+        })
+
+        $('.order').click(function () {
+            $('#pointer').css('--myVar', '75%');
+            $('#gratipay-brands').attr('fill', 'silver')
+            $('#Ellipse_5').attr('fill', 'silver')
+            $('#Path_18').attr('fill', '#cc543a')
+        })
+
+
+        // 親友修改 新增Buttom
+        let addFamily = document.querySelector("#boxwhiteaddset").innerHTML;
+        $('.member_add').click(function () {
+            console.log('click', addFamily)
+            $('.modal-body_box').append(addFamily);
+        })
+
+        // 親友修改 刪除Buttom
+        $(document).on('click', '.removebut', (function () {
+            console.log('click')
+            $(this).parentsUntil('.modal-body_box').remove();
+        }))
+
+
+        // 會員資料 密碼修改
+        $('#revisepassword').click(function () {
+            console.log('click')
+            $('.pop_edit').addClass('displaynone');
+            $('.pop_edit_pw').removeClass('displaynone');
+        })
+        $('.editbtn').click(function () {
+            $('.pop_edit').removeClass('displaynone');
+            $('.pop_edit_pw').addClass('displaynone');
+        })
+
+
+
+
+
+
+
+
+
     </script>
 
 
