@@ -20,6 +20,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <!-- body css -->
     <link rel="stylesheet" href="./css/sample_body.css">
 
@@ -85,7 +87,9 @@
         }
 
 
-
+        .fontstyletitle {
+            font-family: 'Noto Serif TC', serif;
+        }
 
 
 
@@ -952,7 +956,7 @@
                                 <div class="discover_temple_page_box ">
                                     <!-- page_1左邊up廟宇介紹標題 -->
                                     <div class="discover_temple_page_1_title font-weight-bold">
-                                        <h1>行天宮</h1>
+                                        <h1 class="fontstyletitle">行天宮</h1>
                                     </div>
                                     <!-- page_1左邊down set -->
                                     <div class="discover_temple_page_1_box dflex dflex1">
@@ -968,7 +972,7 @@
                                                 <div class="borderline_h3 d-flex aic jucc_md">
                                                     <hr class="hrline dnone740 marginatuo0">
 
-                                                    <h3 class="padleft10">台北行天宮</h3>
+                                                    <h3 class="padleft10 fontstyletitle">台北行天宮</h3>
                                                 </div>
                                                 <!-- 道教 -->
                                                 <div class="borderline_text borderline_text1 d-flex jucc_md pt-3">
@@ -999,7 +1003,8 @@
                                         <div class="discover_temple_page_1_box_small leftpad ">
                                             <div class="discover_temple_page_1_box_textup "
                                                 id="discover_temple_move_01">
-                                                <h5 class="font-weight-bold redcolorh5">INTRODUCE | 簡介</h5>
+                                                <h5 id="INTRODUCE" class="font-weight-bold redcolorh5">INTRODUCE | 簡介
+                                                </h5>
 
                                                 <p class="padtexttp pt-3">
                                                     行天宮，又稱恩主公廟，為主祀關公的臺灣民間信仰廟宇，是全臺知名的關帝廟，由信仰齋教的煤礦主黃玄空創辦。行天宮參訪香客眾多，本宮位於台北市市區，另有兩座分宮。其中，歷史最悠久的是北投分宮
@@ -1029,7 +1034,8 @@
 
 
                                         <div class="discover_temple_page_1_box_textdown padtp40_md ">
-                                            <h5 class="font-weight-bold redcolorh5 ">architecture | 建築</h5>
+                                            <h5 id="architecture" class="font-weight-bold redcolorh5 ">architecture | 建築
+                                            </h5>
 
                                             <p class="discover_temple_page_1_rightpage_text  pcolumn pt-3">
                                                 行天宮台北本宮屬於閩南燕尾翹脊式的建築，其特色在於採用鋼筋混凝土，創造出類似傳統孝廟木造建築的品味關認為台灣光復後所建的廟宇中，傑出關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關關的作品之一。
@@ -1085,7 +1091,7 @@
 
                                 <div class="discover_temple_page_1_box_small  ">
                                     <div class="discover_temple_page_1_box_textup padtp padtp30_md ">
-                                        <h5 class="font-weight-bold redcolorh5 ">HISTORY | 歷史</h5>
+                                        <h5 id="HISTORY" class="font-weight-bold redcolorh5 ">HISTORY | 歷史</h5>
 
                                         <p class="pt-3">
                                             1943年，空真子師父（郭得進居士）及師兄弟，於台北市永樂町（今迪北北市永樂町（今迪化街）一處民宅三樓設立「行天堂」，恭奉
@@ -1186,7 +1192,7 @@
                         <div class="discover_temple_page_3_left col-lg-3 page3box1pd pad0_md animat_5">
                             <!-- page_3左邊_標題 -->
                             <div class="discover_temple_page_3_left_title redcolorh5">
-                                <h5>GOD | 神明</h5>
+                                <h5 id="GOD">GOD | 神明</h5>
                             </div>
 
 
@@ -1254,7 +1260,7 @@
                                 class="discover_temple_page_3_right_text col-lg-7 p-0 discover_temple_page_3_right_text_mg discover_temple_page_3_right_text_potabu">
                                 <!-- page_3右邊_文字_標題 -->
                                 <div class="discover_temple_page_3_right_title redcolorh5">
-                                    <h5>TRAFFIC | 交通</h5>
+                                    <h5 id="TRAFFIC">TRAFFIC | 交通</h5>
                                 </div>
                                 <!-- page_3右邊_文字_p -->
                                 <div class="discover_temple_page_3_right_p ">
@@ -1411,81 +1417,70 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // 手機點
-        let anchor_point_move_1 = document.getElementById('discover_temple_move_01').offsetTop
-        let anchor_point_move_2 = document.getElementById('discover_temple_move_02').offsetTop
-        let anchor_point_move_3 = document.getElementById('discover_temple_move_03').offsetTop
-        let anchor_point_move_4 = document.getElementById('discover_temple_move_04').offsetTop
-        let anchor_point_move_5 = document.getElementById('discover_temple_move_05').offsetTop
-        console.log('top', anchor_point_move_1);
-        console.log('top', anchor_point_move_2);
-        console.log('top', anchor_point_move_3);
-        console.log('top', anchor_point_move_4);
-        console.log('top', anchor_point_move_5);
+        // let anchor_point_move_1 = document.getElementById('INTRODUCE').offsetTop
+        // let e = document.getElementById('architecture')
+        // let anchor_point_move_3 = document.getElementById('discover_temple_move_03').offsetTop
+        // let anchor_point_move_4 = document.getElementById('discover_temple_move_04').offsetTop
+        // let anchor_point_move_5 = document.getElementById('discover_temple_move_05').offsetTop
+        // console.log('top', anchor_point_move_1);
+        // console.log('top', anchor_point_move_2);
+        // console.log('top', anchor_point_move_3);
+        // console.log('top', anchor_point_move_4);
+        // console.log('top', anchor_point_move_5);
+
+        function getPosition(element) {
+            var x = 0;
+            var y = 0;
+            while (element) {
+                // x += element.offsetLeft - element.scrollLeft + element.clientLeft;
+                y += element.offsetTop - element.scrollTop + element.clientTop;
+                element = element.offsetParent;
+
+            }
+
+            return { x: x, y: y };
+        }
 
         $('#discover_temple_title_01').click(function () {
+            var elem = document.querySelector('#INTRODUCE');
+            var position = getPosition(elem);
             window.scrollTo({
-                top: (anchor_point_move_1),
+                top: (position.y) - 110,
                 behavior: 'smooth'
             });
         })
 
         $('#discover_temple_title_02').click(function () {
+            var elem = document.querySelector('#architecture');
+            var position = getPosition(elem);
+            // alert("座標: " + position.x + ", " + position.y);
             window.scrollTo({
-                top: (anchor_point_move_2) + 750,
+                top: (position.y) - 110,
                 behavior: 'smooth'
             });
         })
         $('#discover_temple_title_03').click(function () {
+            var elem = document.querySelector('#HISTORY');
+            var position = getPosition(elem);
             window.scrollTo({
-                top: (anchor_point_move_3) - 80,
+                top: (position.y) - 110,
                 behavior: 'smooth'
             });
         })
         $('#discover_temple_title_04').click(function () {
+            var elem = document.querySelector('#GOD');
+            var position = getPosition(elem);
             window.scrollTo({
-                top: (anchor_point_move_4) - 80,
+                top: (position.y) - 110,
                 behavior: 'smooth'
             });
         })
         $('#discover_temple_title_05').click(function () {
+            var elem = document.querySelector('#TRAFFIC');
+            var position = getPosition(elem);
             window.scrollTo({
-                top: (anchor_point_move_5) + 2500,
+                top: (position.y) - 110,
                 behavior: 'smooth'
             });
         })
