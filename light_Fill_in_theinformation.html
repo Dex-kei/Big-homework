@@ -928,6 +928,8 @@
 
                         <!-- 改 -->
                         <div class="light_add_set lightadd_this" id="lightadd_this">
+
+                            <!-- 三層篩選 救救我QQ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                             <div
                                 class="light_Fill_in_theinformation_input_set d-flex col-8 paddingbottom40 marginauto chained-selects">
                                 <!--  _祈福者input_1_選擇燈種 -->
@@ -982,9 +984,6 @@
                                     </div>
 
                                 </div>
-
-                                <!-- 我是垃圾桶 -->
-                                <i class="far fa-trash-alt marginauto removebut_far"></i>
 
                             </div>
                         </div>
@@ -1165,12 +1164,14 @@
                                     </div>
                                     <!--手機用 祈福者卡1 boostarp 下拉選單 -->
                                     <div class="col-7 d-flex alignitems p-0">
+
                                         <div class="col p-0">
                                             <select class="form-control col-6 radius0" id="exampleInputTime">
                                                 <option value="">光明燈</option>
                                                 <option value="">安太歲</option>
                                             </select>
                                         </div>
+                                        <i class="far fa-trash-alt marginauto removebut_far"></i>
                                     </div>
                                 </div>
 
@@ -1421,6 +1422,7 @@
                                                     <option value="">安太歲</option>
                                                 </select>
                                             </div>
+                                            <i class="far fa-trash-alt marginauto removebut_far"></i>
                                         </div>
                                     </div>
 
@@ -1474,7 +1476,7 @@
                 </div>
 
                 <!-- 手機 祈福者卡(none) 新增用 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <div class="memberadd_md displayno" id="memberadd_md">
+                <div class="memberadd_md dipay" id="memberadd_md">
                     <div class="light_Fill_in_theinformation_text_3 padddingtop40 ">
                         <!--  祈福者卡(none)  小提示 -->
                         <div class="light_Fill_in_theinformation_text_star d-flex juscsb paddingbottom40">
@@ -1679,6 +1681,7 @@
                                                     <option value="">安太歲</option>
                                                 </select>
                                             </div>
+
                                         </div>
 
 
@@ -1861,6 +1864,12 @@
             $(this).parentsUntil('.removeset').remove();
         }))
 
+        // 刪除燈種垃圾桶 on版本
+        $(document).on('click', '.removebut_far', (function () {
+            console.log('click')
+            $(this).parentsUntil('.light_add_set').remove();
+        }))
+
         // 桌機 祈福者增加
         // let addFamily = document.querySelector(".memberadd").innerHTML;
         // $('.member_add').click(function () {
@@ -1868,14 +1877,6 @@
         //     $('.removeset').append(addFamily);
         // })
 
-
-
-        // 手機 燈種增加 新增Buttom on版本
-        let addLight_md = document.querySelector(".lightadd_this_md").innerHTML;
-        $(document).on('click', '.light_add_md', function () {
-            console.log('click', addLight_md)
-            $('.light_add_set_md').append(addLight_md);
-        })
 
 
         // 手機 祈福者增加
@@ -1886,11 +1887,6 @@
         })
 
 
-        // 刪除燈種垃圾桶 on版本
-        $(document).on('click', '.removebut_far', (function () {
-            console.log('click')
-            $(this).parentsUntil('.light_add_set').remove();
-        }))
 
 
 
@@ -1901,7 +1897,7 @@
 
         let nowcard = 1;
         $(document).on('click', '.member_add', function () {
-            let newLiiii = '<div id="newbox' + nowcard + '">' + addCard_new + '</div>';
+            let newLiiii = '<div id="newdata_' + nowcard + '">' + addCard_new + '</div>';
 
             nowcard = nowcard + 1;
             console.log('click', newLiiii)
@@ -2090,6 +2086,16 @@
                         </div>
                     </div>`
 
+
+
+        // 桌機 燈種增加 新增Buttom on版本
+        // let addLight = document.querySelector(".lightadd_this").innerHTML;
+        // $(document).on('click', '.light_add', function () {
+        //     console.log('click', addLight_new)
+        //     $(this).parentsUntil(".lightadd_this").append(addLight);
+        //     $('.lightadd_this').append(addLight_new);
+        // })
+
         // 宣告nowItem為
         let nowItem = 1;
 
@@ -2101,22 +2107,13 @@
         // })
 
         $(document).on('click', '.light_add', function () {
-            let newLi = '<div id="item' + nowItem + '">' + addLight_new + '</div>';
+            let newLi = '<div id="newlighcard_' + nowItem + '">' + addLight_new + '</div>';
 
             nowItem = nowItem + 1;
             console.log(newLi);
 
             $(this).parents('.button_add_set').prev('.lightadd_this').append(newLi);
         })
-
-        // 桌機 燈種增加 新增Buttom on版本
-        // let addLight = document.querySelector(".lightadd_this").innerHTML;
-
-        // $(document).on('click', '.light_add', function () {
-        //     console.log('click', addLight_new)
-        //     $(this).parentsUntil(".lightadd_this").append(addLight);
-        //     $('.lightadd_this').append(addLight_new);
-        // })
 
         let addLight_new = `<div class="light_Fill_in_theinformation_input_set d-flex col-8 paddingbottom40 marginauto">
                                 <div
@@ -2176,6 +2173,12 @@
 
 
 
+        // 手機 燈種增加 新增Buttom on版本
+        let addLight_md = document.querySelector(".lightadd_this_md").innerHTML;
+        $(document).on('click', '.light_add_md', function () {
+            console.log('click', addLight_md)
+            $(this).parents('.button_add_set').prev('.lightadd_this_md').append(newLi);
+        })
 
 
 
@@ -2204,19 +2207,8 @@
 
 
 
+        // 三層篩選  救救我QQ  維修中~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-
-
-
-
-
-
-
-
-
-        // 三層篩選
 
 
         var options = generateOptions();
