@@ -7,10 +7,10 @@ $('.nav_burgurBar_img').click(function () {
     }
 
     $(".nav_overlayNav").css(navPosition);
-})
+    })
 
-// overlayNav退場
-$('.nav_closeBtn').click(function () {
+    // overlayNav退場
+    $('.nav_closeBtn').click(function () {
 
     let navPosition = {
         transform: 'translateY(-2500px)',
@@ -18,18 +18,26 @@ $('.nav_closeBtn').click(function () {
     }
 
     $(".nav_overlayNav").css(navPosition);
-})
+    })
 
 
-//Login hide
-$('#registerbtn').click(function () {
-    $('#loginCenter').modal('hide');
-})
+    //Login hide
+    $('#registerbtn').click(function () {
+        $('#loginCenter').modal('hide');
+    })
 
-$('#passwordbtn').click(function () {
-    $('#loginCenter').modal('hide');
-})
+    $('#passwordbtn').click(function () {
+        $('#loginCenter').modal('hide');
+    })
 
+    //overlay sub-menu
+    $(document).ready(function () {
+        $('.nav_ser_mobile').click(function () {
+
+            $('.nav_dropDownMenu_mobile').toggle('slow');
+
+        })
+    });
 // p1
 function required() {
     var god = document.getElementById("gods");
