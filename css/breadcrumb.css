@@ -27,11 +27,7 @@
 
 /* 桌機用 */
 @media (min-width:1400px) {
-    .breadcrumb_style {
-        /* navbar多厚 就推多少paddding */
-        /* 玳禎navbar桌機版 無填滿 這邊請填滿105px */
-        padding-top: 105px;
-    }
+   
     .breadcrumb_style_1 {
         width: 80%;
     }

@@ -110,8 +110,8 @@
 body {
     font-family: 'Faustina', serif;
     background-image: url(/img/nav_bcc.png);
-    height: 100vh;
     position: relative;
+    height: 100vh;
 }
 
 h2 {
@@ -615,13 +615,40 @@ option {
 .wishes .btn_09{
     display: none;
 }
+@media screen and (min-width: 1000px) {
 
+.lucky_contianer {
+    padding: 30px 0 0 80px;
+}
+#quest h4 {
+    margin-bottom: 30px;
+}
+.item-group01 {
+    margin-left: 70px;
+    width: 100px;
+}
+.lucky_God_speaks h5 {
+    padding-left: 50px;
+}
+select {
+    font-size: 22px;
+}
+.lucky_Commentary06 p{
+    line-height: 30px;
+    font-size: 18px;
+}
+.lucky_btn06 button{
+    font-size: 20px;
+}
+}
 /* ---------手機------ */
 @media screen and (max-width: 1000px) {
 h5{
     font-size: 18px;
 }
-
+.lucky_Sign_order{
+    margin-top: 20px;
+}
 .lucky_Request_signature h3,.lucky_Request_signature p{
     font-size: 16px;
 }
@@ -631,6 +658,7 @@ h5{
 .lucky_contianer{
     padding: 0;
 }
+
 .item-group01{
     margin: 0;
     width: 50px;
@@ -648,6 +676,11 @@ h5{
 .lucky_round{
     opacity: 0.7;
 }
+.lucky_Search_gods {
+    padding: 20px 0;
+    height: 50px;
+}
+
 .lucky_right {
     width: 95%;
     align-self: flex-start;
@@ -656,14 +689,26 @@ h5{
     font-size: 16px;
 }
 .lucky_button01 {
-    bottom: 7%;
+    bottom: 22%;
+}
+
+select{
+    font-size: 18px;
 
 }
+.lucky_p2{
+    padding: 0;
+}
 .lucky_button01 .lucky_p2{
-    min-width:140px;
-    transform: translate(20%,-150%);
-
-
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: translate(170%,-80%);
+    padding: 0;
+    /* background-image: url(/img/arrow-down-solid.svg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
 }
 .lucky_Swipe_page li{
     width: 10px;
@@ -673,7 +718,20 @@ h5{
 .lucky_content01 {
     justify-content: center;
 }
+#quest {
+    margin:0;
+}
 
+#quest h4{
+    font-size: 20px;
+    margin: 0;
+}
+
+#quest p{
+    line-height: unset;
+    margin: 0;
+
+}
 .wishes{
     width: 95%;
 }
@@ -695,6 +753,11 @@ h5{
 .wishes button{
     padding: 10px;
 }
+.lucky_text15 {
+    transform: translate(57px, 90px);
+    font-size: 15px;
+    color:white;
+}
 .lucky_p3,.lucky_p4 {
     height: 80%;
     padding-top: 0;
@@ -702,10 +765,12 @@ h5{
     transform: translateX(-10px);
 }
 .lucky_p4{
-    padding-top: 10vh;
+    padding-top: 3vh;
 }
-
-.lucky_p4 p, .lucky_result05_1{
+.lucky_p4 .lucky_result{
+    justify-content: center;
+}
+.lucky_p4 .lucky_result p, .lucky_result05_1{
     position: unset;
     text-align: center;
     transform: translateY(130%);
@@ -717,7 +782,13 @@ h5{
 .lucky_button01 .lucky_p3,
 .lucky_button01 .lucky_p4,
 .lucky_button01 .lucky_p5{
-    transform: translateY(-200%);
+    transform: translate(25%,-130%);
+}
+
+.lucky_p5 .extra{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 }
 
 .lucky_p6 {
@@ -725,6 +796,7 @@ h5{
     flex-direction: column;
     align-items: center;
     overflow: scroll;
+    padding-bottom: 100px;
 }
 
 .lucky_content06 {
@@ -738,6 +810,13 @@ h5{
     width: 100%;
     margin: 20px 0;
 }
+.lucky_btn06{
+    padding: 0;
+}
+.lucky_btn06 button{
+    padding: 10px 15px;
+}
+
 /* ------------求籤動畫-------- */
 .lucky_contianer05_1 {
     margin: 0;
@@ -762,16 +841,9 @@ h5{
 
 }
 
-.lucky_result05_1 {
-    position: relative;
-    width: 210px;
-    transform: translateY(120px);
-}
-
 .lucky_result05_1 p {
     right: 0;
     top: 130px;
-
 }
 
 .lucky_result05_1 h3 {
@@ -790,7 +862,105 @@ h5{
     font-size: 20px;
 
 }
+#YanCup {
+    animation-name: YanCup;
+    animation-duration: 0.8s;
+    width: 70px;
+    height: 60px;
+    animation-iteration-count: 1;
+    background: url("/img/cup-0.png") no-repeat;
+    animation-fill-mode: forwards;
+    transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 1);
+}
 
-/* ------------ */
-/* 求籤動畫 */
+#YanCup_1 {
+    animation-name: YanCup01;
+    animation-duration: 3s;
+    width: 100px;
+    height: 100px;
+    animation-iteration-count: 1;
+    background: url("/img/cup-2.png") no-repeat;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+#YanCup_2 {
+    animation-name: YanCup02;
+    animation-duration: 3s;
+    width: 100px;
+    height: 100px;
+    animation-iteration-count: 1;
+    background: url("/img/cup-1.png") no-repeat;
+    transform-origin: bottom right;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes YanCup {
+    0% {
+        transform: translate(-30%, -40%);
+    }
+
+    100% {
+        transform: translate(-30%, 180%);
+    }
+}
+
+@keyframes YanCup01 {
+    0% {
+        transform: translate(170%, 10%) rotate(-30deg);
+    }
+
+    25% {
+        transform: translate(170%, 60%) rotate(-30deg);
+    }
+
+    50% {
+        background: url("/img/cup-2.png") no-repeat;
+        transform: translate(200%, 20%) rotate(-30deg);
+        opacity: 1;
+    }
+
+    75% {
+        background: url("/img/cup-01.png") no-repeat;
+        transform: translate(200%, 10%) rotate(-20deg);
+        opacity: 0.5;
+    }
+
+    100% {
+        background: url("/img/cup-2.png") no-repeat;
+        transform: translate(200%, 0%) rotate(-40deg);
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes YanCup02 {
+    0% {
+        transform: translate(70%, -60%) rotate(30deg);
+    }
+
+    25% {
+        transform: translate(70%, 0%) rotate(30deg);
+    }
+
+    50% {
+        background: url("/img/cup-1.png") no-repeat;
+        transform: translate(0%, -30%) rotate(30deg);
+        opacity: 1;
+    }
+
+    75% {
+        background: url("/img/cup-02.png") no-repeat;
+        transform: translate(10%, -40%) rotate(40deg);
+        opacity: 0.5;
+    }
+
+    100% {
+        background: url("/img/cup-1.png") no-repeat;
+        transform: translate(20%, -50%)rotate(30deg);
+        opacity: 1;
+    }
+}
 }
