@@ -116,7 +116,7 @@
             padding-right: 0px;
         }
 
-        .padright40 {
+        .padright40 { 
             padding-right: 40px;
 
         }
@@ -955,7 +955,7 @@
 
                             <!-- 三層篩選 救救我QQ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                             <div class="light_Fill_in_theinformation_input_set d-flex col-8 paddingbottom40 marginauto chained-selects"
-                                data-selector="myselector">
+                            data-selector="myselector">
                                 <!--  input_1_選擇燈種 -->
                                 <div
                                     class="light_Fill_in_theinformation_input_1 d-flex alignitems col-7 marginauto p-0 ">
@@ -1921,6 +1921,9 @@
 
 
 
+
+
+        
         // 手機 祈福者增加
         // let addFamily_md = document.querySelector(".memberadd_md").innerHTML;
         // $('.member_add_md').click(function () {
@@ -2201,11 +2204,11 @@
 
         let nowcard = 1;
         $(document).on('click', '.member_add', function () {
-            let newLiiii = '<div id="newdata_' + nowcard + '">' + addCard_new + '</div>';
+            // let newLiiii = '<div id="newdata_' + nowcard + '">' + addCard_new + '</div>';
 
-            nowcard = nowcard + 1;
-            console.log('click', newLiiii)
-            $('.removeset').append(newLiiii);
+            // nowcard = nowcard + 1;
+            // console.log('click', newLiiii)
+            $('.removeset').append(addCard_new);
 
         })
 
@@ -2417,15 +2420,15 @@
         // })
 
         $(document).on('click', '.light_add', function () {
-            let newLi = '<div id="newlighcard_' + nowItem + '">' + addLight_new + '</div>';
+            // let newLi = '<div id="newlighcard_' + nowItem + '">' + addLight_new + '</div>';
 
-            nowItem = nowItem + 1;
-            console.log(newLi);
+            // nowItem = nowItem + 1;
+            // console.log(newLi);
 
-            $(this).parents('.button_add_set').prev('.lightadd_this').append(newLi);
+            $(this).parents('.button_add_set').prev('.lightadd_this').append(addLight_new);
         })
 
-        let addLight_new = `<div class="light_Fill_in_theinformation_input_set d-flex col-8 paddingbottom40 marginauto"  data-selector="myselector">
+        let addLight_new = `<div class="light_Fill_in_theinformation_input_set d-flex col-8 paddingbottom40 marginauto"  data-selector=myselector>
                                 <div
                                     class="light_Fill_in_theinformation_input_1 d-flex alignitems col-7 marginauto p-0 ">
                                     <div
@@ -2616,6 +2619,30 @@
                 $(this).parents('[data-selector=myselector]').find('[name=light_temple]').removeAttr("disabled").append("<option>" + temples[i] + "</option>");
             }
         });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
