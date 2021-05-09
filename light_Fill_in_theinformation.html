@@ -2426,6 +2426,7 @@
             // console.log(newLi);
 
             $(this).parents('.button_add_set').prev('.lightadd_this').append(addLight_new);
+            bindMySelector(options);
         })
 
         let addLight_new = `<div class="light_Fill_in_theinformation_input_set d-flex col-8 paddingbottom40 marginauto"  data-selector="myselector">
@@ -2600,28 +2601,30 @@
         // 三層篩選  救救我QQ  維修中~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
         var options = generateOptions();
-        $('[data-selector=myselector] [name=light_type]').change(function () {
-            var light_type = $(this).find("option:selected").text();
-            $(this).parents('[data-selector=myselector]').find('[name=light_area] option+').remove();
-            $(this).parents('[data-selector=myselector]').find('[name=light_temple] option+').remove();
-            $(this).parents('[data-selector=myselector]').find('[name=light_temple]').attr("disabled", true);
-            var areas = Object.keys(options[light_type]);
-            for (var i = 0; i < areas.length; i++) {
-                $(this).parents('[data-selector=myselector]').find('[name=light_area]').removeAttr("disabled").append("<option>" + areas[i] + "</option>");
-            }
-        });
-        $('[data-selector=myselector] [name=light_area]').change(function () {
-            var light_type = $(this).parents('[data-selector=myselector]').find('[name=light_type] option:selected').text();
-            var light_area = $(this).find("option:selected").text();
-            $(this).parents('[data-selector=myselector]').find('[name=light_temple] option+').remove();
-            var temples = Object.keys(options[light_type][light_area]);
-            for (var i = 0; i < temples.length; i++) {
-                $(this).parents('[data-selector=myselector]').find('[name=light_temple]').removeAttr("disabled").append("<option>" + temples[i] + "</option>");
-            }
-        });
-
-
-
+        
+        function bindMySelector(options) {
+            $("[data-selector=myselector] [name=light_type]:not([data-myselector='1'])").attr("data-myselector", "1").change(function () {
+                console.log("aaa");
+                var light_type = $(this).find("option:selected").text();
+                $(this).parents('[data-selector=myselector]').find('[name=light_area] option+').remove();
+                $(this).parents('[data-selector=myselector]').find('[name=light_temple] option+').remove();
+                $(this).parents('[data-selector=myselector]').find('[name=light_temple]').attr("disabled", true);
+                var areas = Object.keys(options[light_type]);
+                for (var i = 0; i < areas.length; i++) {
+                    $(this).parents('[data-selector=myselector]').find('[name=light_area]').removeAttr("disabled").append("<option>" + areas[i] + "</option>");
+                }
+            });
+            $("[data-selector=myselector] [name=light_area]:not([data-myselector=1])").attr("data-myselector", "1").change(function () {
+                var light_type = $(this).parents('[data-selector=myselector]').find('[name=light_type] option:selected').text();
+                var light_area = $(this).find("option:selected").text();
+                $(this).parents('[data-selector=myselector]').find('[name=light_temple] option+').remove();
+                var temples = Object.keys(options[light_type][light_area]);
+                for (var i = 0; i < temples.length; i++) {
+                    $(this).parents('[data-selector=myselector]').find('[name=light_temple]').removeAttr("disabled").append("<option>" + temples[i] + "</option>");
+                }
+            });
+        }
+        bindMySelector(options);
 
 
 
