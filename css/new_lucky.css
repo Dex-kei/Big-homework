@@ -12,7 +12,7 @@
     width: 170px;
     height: 160px;
     animation-iteration-count: 1;
-    background: url("/img/cup-0.png") no-repeat;
+    background: url("/img/cup-0-1.png") no-repeat;
     animation-fill-mode: forwards;
     transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 1);
 }
@@ -869,7 +869,7 @@ select{
     width: 70px;
     height: 60px;
     animation-iteration-count: 1;
-    background: url("/img/cup-0.png") no-repeat;
+    background: url("/img/cup-0-1.png") no-repeat;
     animation-fill-mode: forwards;
     transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 1);
 }

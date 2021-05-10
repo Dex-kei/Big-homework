@@ -113,18 +113,18 @@ $('.lucky_button01 .lucky_p2').click(function () {
 // p5
 // --------筊杯-動畫------------           
 let laugh = {
-    "img": "./img/YanCup-02-1.png",
+    "img": "./img/YanCup-02-1.svg",
     "name": "笑筊",
     "hint": "求籤失敗，請重新求籤",
 };
 let yin = {
-    "img": "./img/YanCup-03-1.png",
+    "img": "./img/YanCup-03-1.svg",
     "name": "陰筊",
     "hint": "求籤失敗，請重新求籤",
 
 };
 let san = {
-    "img": "./img/YanCup-01-1.png",
+    "img": "./img/YanCup-01-1.svg",
     "name": "聖筊",
     "hint": "求籤成功，請查閱籤詩",
 };
