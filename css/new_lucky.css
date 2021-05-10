@@ -863,6 +863,7 @@ select{
 
 }
 #YanCup {
+    margin:auto;
     animation-name: YanCup;
     animation-duration: 0.8s;
     width: 70px;

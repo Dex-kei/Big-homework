@@ -73,6 +73,7 @@ $('.unit').click(function () {
 $('.lucky_button01 .lucky_p2').click(function () {
 
     console.log(chosen.length)
+    $('#quest').find('p').remove();
     if (chosen.length > 0) {
         let boxleft = $('.wishes').position().left
         let boxtop = $('.wishes').position().top
@@ -144,12 +145,29 @@ $('.lucky_button01 .lucky_p4').click(function () {
     });
     document.getElementById('YanCup_1').addEventListener('animationend', function () {
         $('.lucky_Sign_animation05_0').addClass('d-none');
-        getRandomImage()
-        console.log(please[luckyNum].name)
+        $('.lucky_Sign_animation05_1').removeClass('d-none')
+        $('.lucky_result05_1').removeClass('d-none');
+        document.getElementById("lucky_result05_1").append("擲筊次數：" + failure);
+        $('#YanCup_1').css('visibility', 'hidden');
+        $('#YanCup_2').css('visibility', 'hidden');
         $('#YanCup').css('visibility', 'visible');
     });
+    lucky();
+    
 })
 
+function lucky() {
+    $('.lucky_Sign_animation05_0').removeClass('d-none');
+    $('.lucky_Sign_animation05_1').addClass('d-none');
+    $('.lucky_result05_1').addClass('d-none');
+    if (failure >= 2) {
+        luckyNum = 2;
+    } else {
+        luckyNum = Math.floor(Math.random() * please.length);
+    }
+    getRandomImage()
+    console.log(please[luckyNum].name)
+}
 let failure = 1
 $('.lucky_button01 .lucky_p5').click(function () {
     if (please[luckyNum].name == '聖筊') {
@@ -158,20 +176,7 @@ $('.lucky_button01 .lucky_p5').click(function () {
         $('.node6').addClass('stageColor').siblings().removeClass('stageColor')
         $('.lucky_Swipe_page p').text('06')
     } else {
-        $('.lucky_Sign_animation05_1').addClass('d-none');
-        $('.lucky_result05_1').addClass('d-none');
-        $('.lucky_Sign_animation05_0').removeClass('d-none');
-
-        document.getElementById('YanCup_1').addEventListener('animationend', function () {
-            $('.lucky_Sign_animation05_0').addClass('d-none');
-            $('.lucky_Sign_animation05_1').removeClass('d-none')
-            $('.lucky_result05_1').removeClass('d-none');
-            ;
-            luckyNum = Math.floor(Math.random() * please.length);
-            getRandomImage(luckyNum);
-            console.log(please[luckyNum].name)
-            document.getElementById("lucky_result05_1").append("擲筊次數：" + failure);
-        });
+        lucky();
         failure++;
     }
 
