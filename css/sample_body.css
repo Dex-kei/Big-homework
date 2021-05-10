@@ -64,12 +64,26 @@ button:focus {
     box-shadow: 0 0 0 1pt rgb(77, 77, 77);
 }
 
+.btnss {
+    padding: 12px 18px;
+    background-color: #cc543a;
+    color: white;
+    border-radius: 30px;
+    border: none;
+
+    /* font-family: 'Sitka Display', NSimSun, 'sans-serif'; */
+
+}
+
 i {
     padding: 0 8px;
 }
 a:hover{
     text-decoration: none;
+    color:#cc543a;
 }
+
+
 
 /* 麵包屑 */
 .breadcrumb_style {
