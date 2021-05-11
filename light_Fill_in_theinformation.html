@@ -116,7 +116,7 @@
             padding-right: 0px;
         }
 
-        .padright40 { 
+        .padright40 {
             padding-right: 40px;
 
         }
@@ -509,8 +509,10 @@
     <!-- 我是麵包屑-->
     <div class="breadcrumb_style   backgroundimg_1">
         <div class="d-flex flex-wrap breadcrumb_style_1 ">
-            <a href="" class="astlyep">燈種介紹</a>
+            <a href="./index" class="astlyep">首頁</a>
             <!-- 共用雲端找箭頭icon-->
+            <img src="./img/nav_arrow_right.svg">
+            <a href="./light_Introduction.html" class="astlyep">燈種介紹</a>
             <img src="./img/nav_arrow_right.svg">
             <a href="./light_Description.html" class="astlyep">服務說明</a>
             <img src="./img/nav_arrow_right.svg">
@@ -955,7 +957,7 @@
 
                             <!-- 三層篩選 救救我QQ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                             <div class="light_Fill_in_theinformation_input_set d-flex col-8 paddingbottom40 marginauto chained-selects"
-                            data-selector="myselector">
+                                data-selector="myselector">
                                 <!--  input_1_選擇燈種 -->
                                 <div
                                     class="light_Fill_in_theinformation_input_1 d-flex alignitems col-7 marginauto p-0 ">
@@ -1191,7 +1193,6 @@
                                     </div>
                                     <!--手機用 預設祈福者 boostarp 下拉選單 -->
                                     <div class="col-7 d-flex alignitems p-0">
-
                                         <div class="col p-0">
                                             <select name="light_type" class="form-control col-11 radius0 lightarray"
                                                 id="select-1">
@@ -1923,7 +1924,7 @@
 
 
 
-        
+
         // 手機 祈福者增加
         // let addFamily_md = document.querySelector(".memberadd_md").innerHTML;
         // $('.member_add_md').click(function () {
@@ -1940,7 +1941,8 @@
             $('.removeset').append(newLiiii_md);
 
         })
-        let addCard_new_md = `  <div class="light_Fill_in_theinformation_text_3 padddingtop40 displayno">
+        let addCard_new_md = `  
+                    <div class="light_Fill_in_theinformation_text_3 padddingtop40 displayno">
                         <!-- 手機用 預設祈福者(none)  小提示 -->
                         <div class="light_Fill_in_theinformation_text_star d-flex juscsb paddingbottom40">
                             <!-- 手機用 預設祈福者(none)  小提示 必填資料 -->
@@ -2114,7 +2116,8 @@
 
                             <!-- 改 手機用(none) 燈種+廟宇套裝-->
                             <div class="light_add_set_md lightadd_this_md">
-                                <div class="light_Fill_in_theinformation_input_set  col marginauto lightcard" data-selector="myselector">
+                                <div class="light_Fill_in_theinformation_input_set  col marginauto lightcard"
+                                    data-selector="myselector">
                                     <!--  手機用 預設祈福者(none) input_1_選擇燈種 -->
                                     <div
                                         class="light_Fill_in_theinformation_input_1 d-flex alignitems col marginauto paddingbottom40 ">
@@ -2128,15 +2131,15 @@
 
                                             <div class="col p-0">
                                                 <select name="light_type" class="form-control col-11 radius0 lightarray"
-                                                id="select-1">
-                                                <option selected>選擇燈種</option>
-                                                <option>光明燈</option>
-                                                <option>文昌燈</option>
-                                                <option>安太歲</option>
-                                                <option>藥師燈</option>
-                                                <option>發財燈</option>
-                                                <option>姻緣燈</option>
-                                            </select>
+                                                    id="select-1">
+                                                    <option selected>選擇燈種</option>
+                                                    <option>光明燈</option>
+                                                    <option>文昌燈</option>
+                                                    <option>安太歲</option>
+                                                    <option>藥師燈</option>
+                                                    <option>發財燈</option>
+                                                    <option>姻緣燈</option>
+                                                </select>
                                             </div>
                                             <!-- <i class="far fa-trash-alt marginauto removebut_far_md"></i> -->
                                         </div>
@@ -2154,9 +2157,9 @@
                                         <div class="col-7 d-flex alignitems p-0">
                                             <div class="col p-0">
                                                 <select name="light_area" class="form-control col-11 radius0 areaarray"
-                                                id="select-2" disabled>
-                                                <option selected>選擇地區</option>
-                                            </select>
+                                                    id="select-2" disabled>
+                                                    <option selected>選擇地區</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -2173,9 +2176,9 @@
                                         <div class="col-7 d-flex alignitems p-0">
                                             <div class="col p-0">
                                                 <select name="light_temple" class="form-control col-11 radius0"
-                                                id="select-3" disabled>
-                                                <option selected>選擇廟宇</option>
-                                            </select>
+                                                    id="select-3" disabled>
+                                                    <option selected>選擇廟宇</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -2193,7 +2196,8 @@
                             </div>
                         </div>
 
-                    </div>`;
+                    </div>
+                </div>`;
 
 
 
@@ -2489,13 +2493,14 @@
         // let addLight_md = document.querySelector(".lightadd_this_md").innerHTML;
         let nowItem_md = 1;
         $(document).on('click', '.light_add_md', function () {
-            let newLi_md = '<div id="newlighcard_' + nowItem_md + '">' + addLight_new_md + '</div>';
+            // let newLi_md = '<div id="newlighcard_' + nowItem_md + '">' + addLight_new_md + '</div>';
 
-            nowItem_md = nowItem + 1;
-            console.log(newLi_md);
+            // nowItem_md = nowItem + 1;
+            // console.log(newLi_md);
 
 
-            $(this).parents('.button_add_set_md').prev('.lightadd_this_md').append(newLi_md);
+            $(this).parents('.button_add_set_md').prev('.lightadd_this_md').append(addLight_new_md);
+            bindMySelector(options);
         })
 
 
@@ -2601,7 +2606,7 @@
         // 三層篩選  救救我QQ  維修中~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
         var options = generateOptions();
-        
+
         function bindMySelector(options) {
             $("[data-selector=myselector] [name=light_type]:not([data-myselector='1'])").attr("data-myselector", "1").change(function () {
                 console.log("aaa");

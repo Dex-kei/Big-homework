@@ -25,8 +25,8 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/sample_body.css">
-        <!-- navbar1 -->
-        <link rel="stylesheet" href="./css/navbar1.css">
+    <!-- navbar1 -->
+    <link rel="stylesheet" href="./css/navbar1.css">
 
     <style>
         /* 共用設定 */
@@ -603,7 +603,7 @@
                         <a class="dropdown-item nav_ser_item" href="#">求神問卜</a>
                     </ul>
                 </a>
-                
+
                 <a href="" class="nav_navbar_item">
                     <div class="nav_hide_ch">聖地行旅</div>
                     <div class="nav_hide_en">TRIP</div>
@@ -726,7 +726,28 @@
             </div>
         </div>
     </div>
-    
+
+
+
+    <!-- 我是麵包屑-->
+    <div class="breadcrumb_style   backgroundimg_1">
+        <div class="d-flex flex-wrap breadcrumb_style_1 ">
+            <a href="./index" class="astlyep">首頁</a>
+            <!-- 共用雲端找箭頭icon-->
+            <img src="./img/nav_arrow_right.svg">
+            <a href="./light_Introduction.html" class="astlyep">燈種介紹</a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
 
     <div class="light_light_Introduction_content">
 
@@ -861,7 +882,9 @@
                 </div>
 
                 <div class="light_Introduction_btn">
-                    <button id="clickToLight">我想點燈</button>
+                    <a href="./light_Description.html">
+                        <button id="clickToLight">我想點燈</button>
+                    </a>
                 </div>
 
             </div>
@@ -919,13 +942,13 @@
 
 
     <!-- Js  相關設定~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<!-- bootstrap4.6.0 -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-  crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- bootstrap4.6.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 
     <!-- js jq 開始 -->
 
@@ -999,7 +1022,7 @@
             console.log(scrollTop);
 
             //navBar進入動畫
-            if (scrollTop >= 250 && $(window).width() > 1400 ) {
+            if (scrollTop >= 250 && $(window).width() > 1400) {
 
                 let navAnimation = {
                     'animation': 'focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
@@ -1007,7 +1030,7 @@
                 }
 
                 $(".nav_index_navbar_com").css(navAnimation);
-            } 
+            }
 
         });
 
