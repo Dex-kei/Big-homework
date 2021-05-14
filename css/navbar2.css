@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 
 /* burgurBar */
 .nav_burgurBar{
-    background-image: url(/img/nav_bcc.png);
+    background-image: url(../img/nav_bcc.png);
     position: sticky;
     top: 0;
     display: none;
@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
 /* navbar */
 .nav_navbar_com {
     width: 100%;
-    background-image: url(/img/nav_barBcc.jpg);
+    background-image: url(../img/nav_barBcc.jpg);
     padding: 10px 0 0 0;
     position: sticky;
     top: 0;
@@ -234,7 +234,7 @@ nav img {
     position: absolute;
     top: 80%;
     left: 36.5%;
-    background-image: url(/img/nav_bcc2.png);
+    background-image: url(../img/nav_bcc2.png);
     border:1px solid #ddd;
     box-shadow: 0.5px 0.5px 5px 1px rgba(0, 0, 0, 0.1);
     display: none;
@@ -252,7 +252,7 @@ nav img {
 
 /* login */
 .modal-content-re {
-    background-image: url(/img/nav_bcc2.png);
+    background-image: url(../img/nav_bcc2.png);
     border: 0;
     border-radius: 20px;
     padding: 30px;
@@ -280,7 +280,7 @@ nav img {
 }
 
 .form-control-re {
-    background-image: url(/img/nav_bcc.png);
+    background-image: url(../img/nav_bcc.png);
     border-radius: 0%;
     border: 1px solid #cdcdcd;
 }

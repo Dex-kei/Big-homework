@@ -1,9 +1,16 @@
 <?php include __DIR__ . '/parts/config.php'; ?>
 
+<?
+// $sql = "SELECT * FROM testtext WHERE id = '" . $_GET['id'] . "'";
+// $stmt = $pdo->perpare($sql);
+// $stmt->execute();
+// $testtext = $stmt->fetch(PDO::FETCH_NUM);
+$sql = "SELECT * FROM testtext WHERE id = '" . $_GET['id'] . "'";
+$stmt = $pdo->query($sql)->fetch(PDO::FETCH_NUM)[0];
 
 
 
-
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -511,6 +518,7 @@
         </div>
     </div>
 
+
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="light_Fill_in_theinformation_ padtop100">
         <!--  max-width 992px -->
@@ -641,8 +649,10 @@
                         </div>
                         <!--   小提示 同會員資料 -->
                         <div class="light_Fill_in_theinformation_text_star_right    alignitems d-flex">
-                            <input type="checkbox" id="exampleCheck1">
-                            <p class="form-check-label padleft10" for="exampleCheck1">同會員資料</p>
+                            <input type="checkbox" id="exampleCheck1" class="form-check-input">
+                            <label class="form-check-label padleft10" for="exampleCheck1" type="submit">
+                                <p>同會員資料</p>
+                            </label>
                         </div>
                     </div>
 
@@ -652,49 +662,51 @@
                     </div>
 
                     <!--  申請人_input集合-->
-                    <div class="light_Fill_in_theinformation_inputset borderbottom ">
-                        <!--  _申請人input_1 姓名-->
-                        <div class="light_Fill_in_theinformation_input_1 d-flex alignitems col-lg-8 marginauto paddingbottom40">
-                            <!-- *姓名 -->
-                            <div class="light_Fill_in_theinformation_input_text col d-flex">
-                                <p class="redcolorh5">*</p>
-                                <p>姓名</p>
-                            </div>
-                            <!-- boostarp input -->
-                            <input type="text" class="form-control col-8 radius0" placeholder="請輸入姓名" aria-label="請輸入姓名" aria-describedby="addon-wrapping">
+                    <form method="get">
+                        <div class="light_Fill_in_theinformation_inputset borderbottom ">
+                            <!--  _申請人input_1 姓名-->
+                            <div class="light_Fill_in_theinformation_input_1 d-flex alignitems col-lg-8 marginauto paddingbottom40">
+                                <!-- *姓名 -->
+                                <div class="light_Fill_in_theinformation_input_text col d-flex">
+                                    <p class="redcolorh5">*</p>
+                                    <p>姓名</p>
+                                </div>
+                                <!-- boostarp input -->
+                                <input type="text" class="form-control col-8 radius0" placeholder="請輸入姓名" aria-label="請輸入姓名" aria-describedby="addon-wrapping">
 
-                        </div>
-                        <!--  _申請人input_1 連絡電話-->
-                        <div class="light_Fill_in_theinformation_input_1 d-flex alignitems col-lg-8 marginauto paddingbottom40">
-                            <!-- *連絡電話 -->
-                            <div class="light_Fill_in_theinformation_input_text col d-flex">
-                                <p class="redcolorh5">*</p>
-                                <p>連絡電話</p>
                             </div>
-                            <!-- boostarp input -->
-                            <input type="text" class="form-control col-8 radius0" placeholder="請輸入連絡電話" aria-label="請輸入連絡電話" aria-describedby="addon-wrapping">
-                        </div>
-                        <!--  _申請人input_1 地址-->
-                        <div class="light_Fill_in_theinformation_input_1 d-flex alignitems col-lg-8 marginauto paddingbottom40">
-                            <!-- *地址 -->
-                            <div class="light_Fill_in_theinformation_input_text col d-flex">
-                                <p class="redcolorh5">*</p>
-                                <p>地址</p>
+                            <!--  _申請人input_1 連絡電話-->
+                            <div class="light_Fill_in_theinformation_input_1 d-flex alignitems col-lg-8 marginauto paddingbottom40">
+                                <!-- *連絡電話 -->
+                                <div class="light_Fill_in_theinformation_input_text col d-flex">
+                                    <p class="redcolorh5">*</p>
+                                    <p>連絡電話</p>
+                                </div>
+                                <!-- boostarp input -->
+                                <input type="text" class="form-control col-8 radius0" placeholder="請輸入連絡電話" aria-label="請輸入連絡電話" aria-describedby="addon-wrapping">
                             </div>
-                            <!-- boostarp input -->
-                            <input type="text" class="form-control col-8 radius0" placeholder="請輸入地址" aria-label="請輸入地址" aria-describedby="addon-wrapping">
-                        </div>
-                        <!--  _申請人input_1 E-mail-->
-                        <div class="light_Fill_in_theinformation_input_1 d-flex alignitems col-lg-8 marginauto paddingbottom30">
-                            <!-- *E-mail -->
-                            <div class="light_Fill_in_theinformation_input_text col d-flex">
-                                <p class="redcolorh5">*</p>
-                                <p>E-mail</p>
+                            <!--  _申請人input_1 地址-->
+                            <div class="light_Fill_in_theinformation_input_1 d-flex alignitems col-lg-8 marginauto paddingbottom40">
+                                <!-- *地址 -->
+                                <div class="light_Fill_in_theinformation_input_text col d-flex">
+                                    <p class="redcolorh5">*</p>
+                                    <p>地址</p>
+                                </div>
+                                <!-- boostarp input -->
+                                <input type="text" class="form-control col-8 radius0" placeholder="請輸入地址" aria-label="請輸入地址" aria-describedby="addon-wrapping">
                             </div>
-                            <!-- boostarp input -->
-                            <input type="text" class="form-control col-8 radius0" placeholder="請輸入E-mail" aria-label="請輸入E-mail" aria-describedby="addon-wrapping">
+                            <!--  _申請人input_1 E-mail-->
+                            <div class="light_Fill_in_theinformation_input_1 d-flex alignitems col-lg-8 marginauto paddingbottom30">
+                                <!-- *E-mail -->
+                                <div class="light_Fill_in_theinformation_input_text col d-flex">
+                                    <p class="redcolorh5">*</p>
+                                    <p>E-mail</p>
+                                </div>
+                                <!-- boostarp input -->
+                                <input type="text" class="form-control col-8 radius0" placeholder="請輸入E-mail" aria-label="請輸入E-mail" aria-describedby="addon-wrapping">
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
                 <!--  手機用 申請人資料卡(付款人)區塊 -->
@@ -710,7 +722,9 @@
                         <!--  手機用 申請人小提示 同會員資料 -->
                         <div class="light_Fill_in_theinformation_text_star_right    alignitems d-flex">
                             <input type="checkbox" id="exampleCheck1" class="radius0">
-                            <p class="form-check-label padleft10" for="exampleCheck1">同會員資料</p>
+                            <label class="form-check-label padleft10" for="exampleCheck1">
+                                <p>同會員資料</p>
+                            </label>
                         </div>
                     </div>
 
@@ -780,7 +794,9 @@
                         <!--  預設祈福者  小提示 同會員資料 -->
                         <div class="light_Fill_in_theinformation_text_star_right    alignitems d-flex">
                             <input type="checkbox" id="exampleCheck1" class="radius0">
-                            <p class="form-check-label padleft10" for="exampleCheck1">同會員資料</p>
+                            <label class="form-check-label padleft10" for="exampleCheck1">
+                                <p>同會員資料</p>
+                            </label>
                         </div>
                     </div>
                     <!--  預設祈福者 _標題 -->
@@ -1443,7 +1459,9 @@
                             <!-- 手機用 預設祈福者(none)  小提示 同會員資料 -->
                             <div class="light_Fill_in_theinformation_text_star_right    alignitems d-flex">
                                 <input type="checkbox" id="exampleCheck1" class="radius0">
-                                <p class="form-check-label padleft10" for="exampleCheck1">同會員資料</p>
+                                <label class="form-check-label padleft10" for="exampleCheck1">
+                                    <p>同會員資料</p>
+                                </label>
                             </div>
                         </div>
                         <!-- 手機用 預設祈福者(none) _標題 -->
@@ -1693,15 +1711,14 @@
                         <p>新增祈福者</p>
                     </button>
                 </div>
-                <button class="butstyle_1">
+                <button class="butstyle_1" type="submit">
                     <p>加入購物車</p>
                 </button>
             </div>
         </div>
     </div>
 
-    </div>
-    </div>
+
 
 
     <!-- footer是我~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -1846,7 +1863,9 @@
                             <!-- 手機用 預設祈福者(none)  小提示 同會員資料 -->
                             <div class="light_Fill_in_theinformation_text_star_right    alignitems d-flex">
                                 <input type="checkbox" id="exampleCheck1" class="radius0">
-                                <p class="form-check-label padleft10" for="exampleCheck1">同會員資料</p>
+                                <label class="form-check-label padleft10" for="exampleCheck1">
+                                    <p>同會員資料</p>
+                                </label>
                             </div>
                         </div>
                         <!-- 手機用 預設祈福者(none) _標題 -->
