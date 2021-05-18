@@ -70,9 +70,9 @@ button:focus {
     color: white;
     border-radius: 30px;
     border: none;
-
+    
     /* font-family: 'Sitka Display', NSimSun, 'sans-serif'; */
-
+    cursor: pointer; 
 }
 
 i {
