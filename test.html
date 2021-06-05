@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div class="div1" id='1' data-index='0' haha='333333'>張三</div>
+    <div class="div1" id='2' data-index='1' haha='444444'>李四</div>
+    <div class="div1" id='3' data-index='2' haha='444444'>王五</div>
+
+    <div class="light_Fill_in_theinformation_input_1 d-flex aic col-lg-8 marginauto paddingbottom40">
+        <!-- *姓名 -->
+        <div class="light_Fill_in_theinformation_input_text col d-flex">
+            <p class="redcolorh5">*</p>
+            <p>姓名</p>
+        </div>
+        <!-- boostarp input -->
+        <div class="col-8 p-0">
+            <input type="text" class="form-control  radius0 exampleInputName_1 name" name="name">
+        </div>
+    </div>
+    <div class="" name="">123</div>
+    <input id="test" name="test" type="text" />
+
+
+
+
+
+    <div class="enterprise-list">
+        <label>銀行卡號：</label>
+        <input type="text" placeholder="請輸入16或19位銀行卡號" class="enterprise-inp" id="cartInput">
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- bootstrap4.6.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://unpkg.com/moment-lunar@0.0.4/moment-lunar.min.js"></script>
+
+
+    <script>
+        $('.div1').click(function (event) {
+            var event = event || e;
+            console.log(event.currentTarget.id);  //獲取id屬性值
+            console.log(event.currentTarget.dataset.name);  //獲取自定義data-屬性值
+            var ttt = $('.name').val()
+            //獲取div裡的值  2種方法
+            console.log($(this).html());
+            console.log($(this).text());
+            //獲取自定義屬性的屬性值 
+            console.log($(this).attr("haha", ttt));
+
+            //獲取當前操作下標
+            console.log($(this).index());
+            console.log($('.div1').index(this));
+
+            // $(".form-control").bind('input propertychange', function () {
+            //     var text = $(".form-control").val();
+
+            //     console.log(text)
+            // })
+
+
+            var text = $(".form-control").val();
+
+            console.log(text)
+
+
+            $('input').bind('input propertychange', function () {
+                if ($(this).val()) {
+                    console.log("123");
+                } else {
+                    console.log("xxxxxxxx");
+                }
+            })
+
+
+            $("input:text").attr("name", "111111");
+            $("input:text").prop("name");  // 也可以使用prop()方法获取属性
+
+            $("*[name='name']").val(); //获取vlaue值 
+            $("*[name='name']").attr('id', "input:text"); //添加id名称 
+            $("*[name='name']").after('<div>hello world</div>'); //在当前外添加元素 
+        });
+    </script>
+
+
+    <script>
+        $(function () {
+            $("#cartInput").bind('input propertychange', function () {
+                var text = $("#cartInput").val();
+                // text = text.replace(/[^\d]/g,'');
+                console.log(text)
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -12,7 +12,7 @@
     width: 170px;
     height: 160px;
     animation-iteration-count: 1;
-    background: url("/img/cup-0-1.png") no-repeat;
+    background: url("/img/cup-0.png") no-repeat;
     animation-fill-mode: forwards;
     transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 1);
 }
@@ -109,7 +109,7 @@
 }
 body {
     font-family: 'Faustina', serif;
-    background-image: url(/img/nav_bcc.png);
+    background-image: url(/img/background/bcc.png);
     position: relative;
     height: 100vh;
 }
@@ -863,13 +863,12 @@ select{
 
 }
 #YanCup {
-    margin:auto;
     animation-name: YanCup;
     animation-duration: 0.8s;
     width: 70px;
     height: 60px;
     animation-iteration-count: 1;
-    background: url("/img/cup-0-1.png") no-repeat;
+    background: url("/img/cup-0.png") no-repeat;
     animation-fill-mode: forwards;
     transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 1);
 }

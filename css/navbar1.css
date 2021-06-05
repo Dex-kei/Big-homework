@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 
 /* burgurBar */
 .nav_burgurBar {
-    background-image: url(/img/nav_bcc.png);
+    background-image: url(../img/nav_bcc.png);
     position: sticky;
     top: 0;
     display: none;
@@ -86,17 +86,28 @@ body::-webkit-scrollbar {
     padding-left: 18px !important; 
 }
 
-
 /* nav-bar */
 .nav_index_navbar_com {
     width: 100%;
-    background-image: url(/img/nav_barBcc.jpg);
+    background-image: url(../img/nav_barBcc.jpg);
     /* padding: 40px 0; */
     position: sticky;
     top: 0px;
     z-index: 99;
-    opacity: 0;
+    opacity: 1;
 }
+
+.profilepic{
+    width: 100px;
+    height: 100px;
+}
+
+.profilepic img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
 @keyframes focus-in-expand {
 0% {
     letter-spacing: -0.5em;
@@ -134,6 +145,13 @@ body::-webkit-scrollbar {
     justify-content: flex-end;
     list-style-type: none;
     margin: 0;
+}
+
+.nav_index_navbar_right img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .nav_index_navbarBox div {
@@ -209,8 +227,8 @@ body::-webkit-scrollbar {
 .nav_dropDownMenu{
     position: absolute;
     top: 80%;
-    left: 26%;
-    background-image: url(/img/nav_bcc2.png);
+    left: 31%;
+    background-image: url(../img/nav_bcc2.png);
     border:1px solid #ddd;
     box-shadow: 0.5px 0.5px 5px 1px rgba(0, 0, 0, 0.1);
     display: none;
@@ -225,7 +243,7 @@ body::-webkit-scrollbar {
 
 /* login */
 .modal-content-re {
-    background-image: url(/img/nav_bcc2.png);
+    background-image: url(../img/nav_bcc2.png);
     border: 0;
     border-radius: 20px;
     padding: 30px;
@@ -253,7 +271,7 @@ body::-webkit-scrollbar {
 }
 
 .form-control-re {
-    background-image: url(/img/nav_bcc.png);
+    background-image: url(../img/nav_bcc.png);
     border-radius: 0%;
     border: 1px solid #cdcdcd;
 }
@@ -287,7 +305,30 @@ body::-webkit-scrollbar {
     background-color: #dd745e;
 }
 
+form .form-group small.error {
+    color: red;
+}
+.nav_index_navbar_right {
+    align-items: center;
+}
 
+.nav_index_navbar_right img{
+    width: 50px;
+}
+
+.mobile_login{
+    width: 240%;
+    justify-content:space-between;
+    transform:translate(-30%,200%)
+}
+.mobile_nav_profile{
+    width:50px;
+    height:50px;
+}
+.mobile_nav_profile img{
+    width:100%;
+    border-radius: 50%;
+}
 
 @media (max-width: 770px) {
 

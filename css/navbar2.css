@@ -15,7 +15,6 @@ body::-webkit-scrollbar {
     border-radius: 10px;
     }
 
-
 /* burgurBar */
 .nav_burgurBar{
     background-image: url(../img/nav_bcc.png);
@@ -99,6 +98,35 @@ body::-webkit-scrollbar {
 
     animation: focus-in-expand 1.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+form .form-group small.error {
+    color: red;
+}
+.nav_nav_right {
+    align-items: center;
+}
+
+.nav_nav_right img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.mobile_login{
+    width: 240%;
+    justify-content:space-between;
+    transform:translate(-30%,200%);
+}
+.mobile_nav_profile{
+    width:50px;
+    height:50px;
+}
+.mobile_nav_profile img{
+    width:100%;
+}
+
+
 @keyframes focus-in-expand {
     0% {
         letter-spacing: -0.5em;

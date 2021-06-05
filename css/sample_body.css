@@ -87,7 +87,7 @@ a:hover{
 
 /* 麵包屑 */
 .breadcrumb_style {
-    background-image: url(../img/nav_background_1.png);
+    background-image: url(./img/nav_background_1.png);
     /* navbar多厚 就推多少paddding */
   
 }
@@ -112,6 +112,10 @@ a:hover{
     width: 10px;
     margin: 0 10px;
 }
+
+
+
+
 
 
 /* footer */
